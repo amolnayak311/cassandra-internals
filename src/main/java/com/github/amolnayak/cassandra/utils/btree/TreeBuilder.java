@@ -8,7 +8,7 @@ import java.util.Collection;
  * Refer to org.apache.cassandra.utils.btree.TreeBuilder in cassandra source code for original
  * implementation
  * 
- * @author nayaamo
+ * @author Amol Nayak
  *
  */
 public class TreeBuilder {

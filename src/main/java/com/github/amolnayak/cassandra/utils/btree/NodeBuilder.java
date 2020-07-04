@@ -8,7 +8,7 @@ import static com.github.amolnayak.cassandra.utils.btree.BTree.FAN_FACTOR;
 /**
  * Original reference source code is org.apache.cassandra.utils.btree.NodeBuilder
  * 
- * @author nayaamo
+ * @author Amol Nayak
  *
  */
 public class NodeBuilder {

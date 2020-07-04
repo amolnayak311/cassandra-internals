@@ -1,8 +1,7 @@
-// Generated from CQLParser.g4 by ANTLR 4.4
+// Generated from com\github\amolnayak\cassandra\cql3\CQLParser.g4 by ANTLR 4.8
 package com.github.amolnayak.cassandra.cql3;
 
 import org.antlr.v4.runtime.ParserRuleContext;
-import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
@@ -17,3384 +16,3384 @@ public class CQLParserBaseListener implements CQLParserListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAlterTableRename(@NotNull CQLParser.AlterTableRenameContext ctx) { }
+	@Override public void enterRoot(CQLParser.RootContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAlterTableRename(@NotNull CQLParser.AlterTableRenameContext ctx) { }
+	@Override public void exitRoot(CQLParser.RootContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDecimalLiteral(@NotNull CQLParser.DecimalLiteralContext ctx) { }
+	@Override public void enterCqls(CQLParser.CqlsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDecimalLiteral(@NotNull CQLParser.DecimalLiteralContext ctx) { }
+	@Override public void exitCqls(CQLParser.CqlsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwLimit(@NotNull CQLParser.KwLimitContext ctx) { }
+	@Override public void enterStatementSeparator(CQLParser.StatementSeparatorContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwLimit(@NotNull CQLParser.KwLimitContext ctx) { }
+	@Override public void exitStatementSeparator(CQLParser.StatementSeparatorContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwCalled(@NotNull CQLParser.KwCalledContext ctx) { }
+	@Override public void enterEmpty(CQLParser.EmptyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwCalled(@NotNull CQLParser.KwCalledContext ctx) { }
+	@Override public void exitEmpty(CQLParser.EmptyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCreateRole(@NotNull CQLParser.CreateRoleContext ctx) { }
+	@Override public void enterCql(CQLParser.CqlContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCreateRole(@NotNull CQLParser.CreateRoleContext ctx) { }
+	@Override public void exitCql(CQLParser.CqlContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAlterTableAdd(@NotNull CQLParser.AlterTableAddContext ctx) { }
+	@Override public void enterRevoke(CQLParser.RevokeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAlterTableAdd(@NotNull CQLParser.AlterTableAddContext ctx) { }
+	@Override public void exitRevoke(CQLParser.RevokeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwNosuperuser(@NotNull CQLParser.KwNosuperuserContext ctx) { }
+	@Override public void enterListUsers(CQLParser.ListUsersContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwNosuperuser(@NotNull CQLParser.KwNosuperuserContext ctx) { }
+	@Override public void exitListUsers(CQLParser.ListUsersContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwSelect(@NotNull CQLParser.KwSelectContext ctx) { }
+	@Override public void enterListRoles(CQLParser.ListRolesContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwSelect(@NotNull CQLParser.KwSelectContext ctx) { }
+	@Override public void exitListRoles(CQLParser.ListRolesContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterUsingTimestampSpec(@NotNull CQLParser.UsingTimestampSpecContext ctx) { }
+	@Override public void enterListPermissions(CQLParser.ListPermissionsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitUsingTimestampSpec(@NotNull CQLParser.UsingTimestampSpecContext ctx) { }
+	@Override public void exitListPermissions(CQLParser.ListPermissionsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPassword(@NotNull CQLParser.PasswordContext ctx) { }
+	@Override public void enterGrant(CQLParser.GrantContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPassword(@NotNull CQLParser.PasswordContext ctx) { }
+	@Override public void exitGrant(CQLParser.GrantContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAlterTableDropCompactStorage(@NotNull CQLParser.AlterTableDropCompactStorageContext ctx) { }
+	@Override public void enterPriviledge(CQLParser.PriviledgeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAlterTableDropCompactStorage(@NotNull CQLParser.AlterTableDropCompactStorageContext ctx) { }
+	@Override public void exitPriviledge(CQLParser.PriviledgeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterIndexEntriesSSpec(@NotNull CQLParser.IndexEntriesSSpecContext ctx) { }
+	@Override public void enterResource(CQLParser.ResourceContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitIndexEntriesSSpec(@NotNull CQLParser.IndexEntriesSSpecContext ctx) { }
+	@Override public void exitResource(CQLParser.ResourceContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAllowFilteringSpec(@NotNull CQLParser.AllowFilteringSpecContext ctx) { }
+	@Override public void enterCreateUser(CQLParser.CreateUserContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAllowFilteringSpec(@NotNull CQLParser.AllowFilteringSpecContext ctx) { }
+	@Override public void exitCreateUser(CQLParser.CreateUserContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwRename(@NotNull CQLParser.KwRenameContext ctx) { }
+	@Override public void enterCreateRole(CQLParser.CreateRoleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwRename(@NotNull CQLParser.KwRenameContext ctx) { }
+	@Override public void exitCreateRole(CQLParser.CreateRoleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwUser(@NotNull CQLParser.KwUserContext ctx) { }
+	@Override public void enterCreateType(CQLParser.CreateTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwUser(@NotNull CQLParser.KwUserContext ctx) { }
+	@Override public void exitCreateType(CQLParser.CreateTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDistinctSpec(@NotNull CQLParser.DistinctSpecContext ctx) { }
+	@Override public void enterTypeMemberColumnList(CQLParser.TypeMemberColumnListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDistinctSpec(@NotNull CQLParser.DistinctSpecContext ctx) { }
+	@Override public void exitTypeMemberColumnList(CQLParser.TypeMemberColumnListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterReplicationList(@NotNull CQLParser.ReplicationListContext ctx) { }
+	@Override public void enterCreateTrigger(CQLParser.CreateTriggerContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitReplicationList(@NotNull CQLParser.ReplicationListContext ctx) { }
+	@Override public void exitCreateTrigger(CQLParser.CreateTriggerContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAlterTableDropColumns(@NotNull CQLParser.AlterTableDropColumnsContext ctx) { }
+	@Override public void enterCreateMaterializedView(CQLParser.CreateMaterializedViewContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAlterTableDropColumns(@NotNull CQLParser.AlterTableDropColumnsContext ctx) { }
+	@Override public void exitCreateMaterializedView(CQLParser.CreateMaterializedViewContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAlterTableOperation(@NotNull CQLParser.AlterTableOperationContext ctx) { }
+	@Override public void enterMaterializedViewWhere(CQLParser.MaterializedViewWhereContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAlterTableOperation(@NotNull CQLParser.AlterTableOperationContext ctx) { }
+	@Override public void exitMaterializedViewWhere(CQLParser.MaterializedViewWhereContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwAggregate(@NotNull CQLParser.KwAggregateContext ctx) { }
+	@Override public void enterColumnNotNullList(CQLParser.ColumnNotNullListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwAggregate(@NotNull CQLParser.KwAggregateContext ctx) { }
+	@Override public void exitColumnNotNullList(CQLParser.ColumnNotNullListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwLogged(@NotNull CQLParser.KwLoggedContext ctx) { }
+	@Override public void enterColumnNotNull(CQLParser.ColumnNotNullContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwLogged(@NotNull CQLParser.KwLoggedContext ctx) { }
+	@Override public void exitColumnNotNull(CQLParser.ColumnNotNullContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwAllow(@NotNull CQLParser.KwAllowContext ctx) { }
+	@Override public void enterMaterializedViewOptions(CQLParser.MaterializedViewOptionsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwAllow(@NotNull CQLParser.KwAllowContext ctx) { }
+	@Override public void exitMaterializedViewOptions(CQLParser.MaterializedViewOptionsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAlterTypeOperation(@NotNull CQLParser.AlterTypeOperationContext ctx) { }
+	@Override public void enterCreateKeyspace(CQLParser.CreateKeyspaceContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAlterTypeOperation(@NotNull CQLParser.AlterTypeOperationContext ctx) { }
+	@Override public void exitCreateKeyspace(CQLParser.CreateKeyspaceContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAssignmentElement(@NotNull CQLParser.AssignmentElementContext ctx) { }
+	@Override public void enterCreateFunction(CQLParser.CreateFunctionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAssignmentElement(@NotNull CQLParser.AssignmentElementContext ctx) { }
+	@Override public void exitCreateFunction(CQLParser.CreateFunctionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwCompact(@NotNull CQLParser.KwCompactContext ctx) { }
+	@Override public void enterCodeBlock(CQLParser.CodeBlockContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwCompact(@NotNull CQLParser.KwCompactContext ctx) { }
+	@Override public void exitCodeBlock(CQLParser.CodeBlockContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDropRole(@NotNull CQLParser.DropRoleContext ctx) { }
+	@Override public void enterParamList(CQLParser.ParamListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDropRole(@NotNull CQLParser.DropRoleContext ctx) { }
+	@Override public void exitParamList(CQLParser.ParamListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExpressionList(@NotNull CQLParser.ExpressionListContext ctx) { }
+	@Override public void enterReturnMode(CQLParser.ReturnModeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExpressionList(@NotNull CQLParser.ExpressionListContext ctx) { }
+	@Override public void exitReturnMode(CQLParser.ReturnModeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwStype(@NotNull CQLParser.KwStypeContext ctx) { }
+	@Override public void enterCreateAggregate(CQLParser.CreateAggregateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwStype(@NotNull CQLParser.KwStypeContext ctx) { }
+	@Override public void exitCreateAggregate(CQLParser.CreateAggregateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAlterTypeAlterType(@NotNull CQLParser.AlterTypeAlterTypeContext ctx) { }
+	@Override public void enterInitCondDefinition(CQLParser.InitCondDefinitionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAlterTypeAlterType(@NotNull CQLParser.AlterTypeAlterTypeContext ctx) { }
+	@Override public void exitInitCondDefinition(CQLParser.InitCondDefinitionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwBatch(@NotNull CQLParser.KwBatchContext ctx) { }
+	@Override public void enterInitCondHash(CQLParser.InitCondHashContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwBatch(@NotNull CQLParser.KwBatchContext ctx) { }
+	@Override public void exitInitCondHash(CQLParser.InitCondHashContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterColumnNotNullList(@NotNull CQLParser.ColumnNotNullListContext ctx) { }
+	@Override public void enterInitCondHashItem(CQLParser.InitCondHashItemContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitColumnNotNullList(@NotNull CQLParser.ColumnNotNullListContext ctx) { }
+	@Override public void exitInitCondHashItem(CQLParser.InitCondHashItemContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterOrderDirection(@NotNull CQLParser.OrderDirectionContext ctx) { }
+	@Override public void enterInitCondListNested(CQLParser.InitCondListNestedContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitOrderDirection(@NotNull CQLParser.OrderDirectionContext ctx) { }
+	@Override public void exitInitCondListNested(CQLParser.InitCondListNestedContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAlterMaterializedView(@NotNull CQLParser.AlterMaterializedViewContext ctx) { }
+	@Override public void enterInitCondList(CQLParser.InitCondListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAlterMaterializedView(@NotNull CQLParser.AlterMaterializedViewContext ctx) { }
+	@Override public void exitInitCondList(CQLParser.InitCondListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBatchType(@NotNull CQLParser.BatchTypeContext ctx) { }
+	@Override public void enterOrReplace(CQLParser.OrReplaceContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBatchType(@NotNull CQLParser.BatchTypeContext ctx) { }
+	@Override public void exitOrReplace(CQLParser.OrReplaceContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwTruncate(@NotNull CQLParser.KwTruncateContext ctx) { }
+	@Override public void enterAlterUser(CQLParser.AlterUserContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwTruncate(@NotNull CQLParser.KwTruncateContext ctx) { }
+	@Override public void exitAlterUser(CQLParser.AlterUserContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwInput(@NotNull CQLParser.KwInputContext ctx) { }
+	@Override public void enterUserPassword(CQLParser.UserPasswordContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwInput(@NotNull CQLParser.KwInputContext ctx) { }
+	@Override public void exitUserPassword(CQLParser.UserPasswordContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwStorage(@NotNull CQLParser.KwStorageContext ctx) { }
+	@Override public void enterUserSuperUser(CQLParser.UserSuperUserContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwStorage(@NotNull CQLParser.KwStorageContext ctx) { }
+	@Override public void exitUserSuperUser(CQLParser.UserSuperUserContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterRoleWith(@NotNull CQLParser.RoleWithContext ctx) { }
+	@Override public void enterAlterType(CQLParser.AlterTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitRoleWith(@NotNull CQLParser.RoleWithContext ctx) { }
+	@Override public void exitAlterType(CQLParser.AlterTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAlterKeyspace(@NotNull CQLParser.AlterKeyspaceContext ctx) { }
+	@Override public void enterAlterTypeOperation(CQLParser.AlterTypeOperationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAlterKeyspace(@NotNull CQLParser.AlterKeyspaceContext ctx) { }
+	@Override public void exitAlterTypeOperation(CQLParser.AlterTypeOperationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDeleteColumnItem(@NotNull CQLParser.DeleteColumnItemContext ctx) { }
+	@Override public void enterAlterTypeRename(CQLParser.AlterTypeRenameContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDeleteColumnItem(@NotNull CQLParser.DeleteColumnItemContext ctx) { }
+	@Override public void exitAlterTypeRename(CQLParser.AlterTypeRenameContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterRelalationContains(@NotNull CQLParser.RelalationContainsContext ctx) { }
+	@Override public void enterAlterTypeRenameList(CQLParser.AlterTypeRenameListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitRelalationContains(@NotNull CQLParser.RelalationContainsContext ctx) { }
+	@Override public void exitAlterTypeRenameList(CQLParser.AlterTypeRenameListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterRole(@NotNull CQLParser.RoleContext ctx) { }
+	@Override public void enterAlterTypeRenameItem(CQLParser.AlterTypeRenameItemContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitRole(@NotNull CQLParser.RoleContext ctx) { }
+	@Override public void exitAlterTypeRenameItem(CQLParser.AlterTypeRenameItemContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterInsertValuesSpec(@NotNull CQLParser.InsertValuesSpecContext ctx) { }
+	@Override public void enterAlterTypeAdd(CQLParser.AlterTypeAddContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitInsertValuesSpec(@NotNull CQLParser.InsertValuesSpecContext ctx) { }
+	@Override public void exitAlterTypeAdd(CQLParser.AlterTypeAddContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwKeyspaces(@NotNull CQLParser.KwKeyspacesContext ctx) { }
+	@Override public void enterAlterTypeAlterType(CQLParser.AlterTypeAlterTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwKeyspaces(@NotNull CQLParser.KwKeyspacesContext ctx) { }
+	@Override public void exitAlterTypeAlterType(CQLParser.AlterTypeAlterTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwExists(@NotNull CQLParser.KwExistsContext ctx) { }
+	@Override public void enterAlterTable(CQLParser.AlterTableContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwExists(@NotNull CQLParser.KwExistsContext ctx) { }
+	@Override public void exitAlterTable(CQLParser.AlterTableContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTableOptions(@NotNull CQLParser.TableOptionsContext ctx) { }
+	@Override public void enterAlterTableOperation(CQLParser.AlterTableOperationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitTableOptions(@NotNull CQLParser.TableOptionsContext ctx) { }
+	@Override public void exitAlterTableOperation(CQLParser.AlterTableOperationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterOrderSpecElement(@NotNull CQLParser.OrderSpecElementContext ctx) { }
+	@Override public void enterAlterTableWith(CQLParser.AlterTableWithContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitOrderSpecElement(@NotNull CQLParser.OrderSpecElementContext ctx) { }
+	@Override public void exitAlterTableWith(CQLParser.AlterTableWithContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTableOptionValue(@NotNull CQLParser.TableOptionValueContext ctx) { }
+	@Override public void enterAlterTableRename(CQLParser.AlterTableRenameContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitTableOptionValue(@NotNull CQLParser.TableOptionValueContext ctx) { }
+	@Override public void exitAlterTableRename(CQLParser.AlterTableRenameContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwPrimary(@NotNull CQLParser.KwPrimaryContext ctx) { }
+	@Override public void enterAlterTableDropCompactStorage(CQLParser.AlterTableDropCompactStorageContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwPrimary(@NotNull CQLParser.KwPrimaryContext ctx) { }
+	@Override public void exitAlterTableDropCompactStorage(CQLParser.AlterTableDropCompactStorageContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterWithElement(@NotNull CQLParser.WithElementContext ctx) { }
+	@Override public void enterAlterTableDropColumns(CQLParser.AlterTableDropColumnsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitWithElement(@NotNull CQLParser.WithElementContext ctx) { }
+	@Override public void exitAlterTableDropColumns(CQLParser.AlterTableDropColumnsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSelectElements(@NotNull CQLParser.SelectElementsContext ctx) { }
+	@Override public void enterAlterTableDropColumnList(CQLParser.AlterTableDropColumnListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSelectElements(@NotNull CQLParser.SelectElementsContext ctx) { }
+	@Override public void exitAlterTableDropColumnList(CQLParser.AlterTableDropColumnListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwOf(@NotNull CQLParser.KwOfContext ctx) { }
+	@Override public void enterAlterTableAdd(CQLParser.AlterTableAddContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwOf(@NotNull CQLParser.KwOfContext ctx) { }
+	@Override public void exitAlterTableAdd(CQLParser.AlterTableAddContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPartitionKey(@NotNull CQLParser.PartitionKeyContext ctx) { }
+	@Override public void enterAlterTableColumnDefinition(CQLParser.AlterTableColumnDefinitionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPartitionKey(@NotNull CQLParser.PartitionKeyContext ctx) { }
+	@Override public void exitAlterTableColumnDefinition(CQLParser.AlterTableColumnDefinitionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwUsing(@NotNull CQLParser.KwUsingContext ctx) { }
+	@Override public void enterAlterRole(CQLParser.AlterRoleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwUsing(@NotNull CQLParser.KwUsingContext ctx) { }
+	@Override public void exitAlterRole(CQLParser.AlterRoleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwOn(@NotNull CQLParser.KwOnContext ctx) { }
+	@Override public void enterRoleWith(CQLParser.RoleWithContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwOn(@NotNull CQLParser.KwOnContext ctx) { }
+	@Override public void exitRoleWith(CQLParser.RoleWithContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCqls(@NotNull CQLParser.CqlsContext ctx) { }
+	@Override public void enterRoleWithOptions(CQLParser.RoleWithOptionsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCqls(@NotNull CQLParser.CqlsContext ctx) { }
+	@Override public void exitRoleWithOptions(CQLParser.RoleWithOptionsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwNull(@NotNull CQLParser.KwNullContext ctx) { }
+	@Override public void enterAlterMaterializedView(CQLParser.AlterMaterializedViewContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwNull(@NotNull CQLParser.KwNullContext ctx) { }
+	@Override public void exitAlterMaterializedView(CQLParser.AlterMaterializedViewContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwOr(@NotNull CQLParser.KwOrContext ctx) { }
+	@Override public void enterDropUser(CQLParser.DropUserContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwOr(@NotNull CQLParser.KwOrContext ctx) { }
+	@Override public void exitDropUser(CQLParser.DropUserContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterMaterializedView(@NotNull CQLParser.MaterializedViewContext ctx) { }
+	@Override public void enterDropType(CQLParser.DropTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitMaterializedView(@NotNull CQLParser.MaterializedViewContext ctx) { }
+	@Override public void exitDropType(CQLParser.DropTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTimestamp(@NotNull CQLParser.TimestampContext ctx) { }
+	@Override public void enterDropMaterializedView(CQLParser.DropMaterializedViewContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitTimestamp(@NotNull CQLParser.TimestampContext ctx) { }
+	@Override public void exitDropMaterializedView(CQLParser.DropMaterializedViewContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwUse(@NotNull CQLParser.KwUseContext ctx) { }
+	@Override public void enterDropAggregate(CQLParser.DropAggregateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwUse(@NotNull CQLParser.KwUseContext ctx) { }
+	@Override public void exitDropAggregate(CQLParser.DropAggregateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterOptionHashItem(@NotNull CQLParser.OptionHashItemContext ctx) { }
+	@Override public void enterDropFunction(CQLParser.DropFunctionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitOptionHashItem(@NotNull CQLParser.OptionHashItemContext ctx) { }
+	@Override public void exitDropFunction(CQLParser.DropFunctionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSelectElement(@NotNull CQLParser.SelectElementContext ctx) { }
+	@Override public void enterDropTrigger(CQLParser.DropTriggerContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSelectElement(@NotNull CQLParser.SelectElementContext ctx) { }
+	@Override public void exitDropTrigger(CQLParser.DropTriggerContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExpression(@NotNull CQLParser.ExpressionContext ctx) { }
+	@Override public void enterDropRole(CQLParser.DropRoleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExpression(@NotNull CQLParser.ExpressionContext ctx) { }
+	@Override public void exitDropRole(CQLParser.DropRoleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDataTypeName(@NotNull CQLParser.DataTypeNameContext ctx) { }
+	@Override public void enterDropTable(CQLParser.DropTableContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDataTypeName(@NotNull CQLParser.DataTypeNameContext ctx) { }
+	@Override public void exitDropTable(CQLParser.DropTableContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAssignmentSet(@NotNull CQLParser.AssignmentSetContext ctx) { }
+	@Override public void enterDropKeyspace(CQLParser.DropKeyspaceContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAssignmentSet(@NotNull CQLParser.AssignmentSetContext ctx) { }
+	@Override public void exitDropKeyspace(CQLParser.DropKeyspaceContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterColumn(@NotNull CQLParser.ColumnContext ctx) { }
+	@Override public void enterDropIndex(CQLParser.DropIndexContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitColumn(@NotNull CQLParser.ColumnContext ctx) { }
+	@Override public void exitDropIndex(CQLParser.DropIndexContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterRelalationContainsKey(@NotNull CQLParser.RelalationContainsKeyContext ctx) { }
+	@Override public void enterCreateTable(CQLParser.CreateTableContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitRelalationContainsKey(@NotNull CQLParser.RelalationContainsKeyContext ctx) { }
+	@Override public void exitCreateTable(CQLParser.CreateTableContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterColumnDefinitionList(@NotNull CQLParser.ColumnDefinitionListContext ctx) { }
+	@Override public void enterWithElement(CQLParser.WithElementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitColumnDefinitionList(@NotNull CQLParser.ColumnDefinitionListContext ctx) { }
+	@Override public void exitWithElement(CQLParser.WithElementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCreateIndex(@NotNull CQLParser.CreateIndexContext ctx) { }
+	@Override public void enterClusteringOrder(CQLParser.ClusteringOrderContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCreateIndex(@NotNull CQLParser.CreateIndexContext ctx) { }
+	@Override public void exitClusteringOrder(CQLParser.ClusteringOrderContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAssignmentList(@NotNull CQLParser.AssignmentListContext ctx) { }
+	@Override public void enterTableOptions(CQLParser.TableOptionsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAssignmentList(@NotNull CQLParser.AssignmentListContext ctx) { }
+	@Override public void exitTableOptions(CQLParser.TableOptionsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterInitCondList(@NotNull CQLParser.InitCondListContext ctx) { }
+	@Override public void enterTableOptionItem(CQLParser.TableOptionItemContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitInitCondList(@NotNull CQLParser.InitCondListContext ctx) { }
+	@Override public void exitTableOptionItem(CQLParser.TableOptionItemContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterOptionHashValue(@NotNull CQLParser.OptionHashValueContext ctx) { }
+	@Override public void enterTableOptionName(CQLParser.TableOptionNameContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitOptionHashValue(@NotNull CQLParser.OptionHashValueContext ctx) { }
+	@Override public void exitTableOptionName(CQLParser.TableOptionNameContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwFrom(@NotNull CQLParser.KwFromContext ctx) { }
+	@Override public void enterTableOptionValue(CQLParser.TableOptionValueContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwFrom(@NotNull CQLParser.KwFromContext ctx) { }
+	@Override public void exitTableOptionValue(CQLParser.TableOptionValueContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterListUsers(@NotNull CQLParser.ListUsersContext ctx) { }
+	@Override public void enterOptionHash(CQLParser.OptionHashContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitListUsers(@NotNull CQLParser.ListUsersContext ctx) { }
+	@Override public void exitOptionHash(CQLParser.OptionHashContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwApply(@NotNull CQLParser.KwApplyContext ctx) { }
+	@Override public void enterOptionHashItem(CQLParser.OptionHashItemContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwApply(@NotNull CQLParser.KwApplyContext ctx) { }
+	@Override public void exitOptionHashItem(CQLParser.OptionHashItemContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAlterType(@NotNull CQLParser.AlterTypeContext ctx) { }
+	@Override public void enterOptionHashKey(CQLParser.OptionHashKeyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAlterType(@NotNull CQLParser.AlterTypeContext ctx) { }
+	@Override public void exitOptionHashKey(CQLParser.OptionHashKeyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTriggerClass(@NotNull CQLParser.TriggerClassContext ctx) { }
+	@Override public void enterOptionHashValue(CQLParser.OptionHashValueContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitTriggerClass(@NotNull CQLParser.TriggerClassContext ctx) { }
+	@Override public void exitOptionHashValue(CQLParser.OptionHashValueContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwGrant(@NotNull CQLParser.KwGrantContext ctx) { }
+	@Override public void enterColumnDefinitionList(CQLParser.ColumnDefinitionListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwGrant(@NotNull CQLParser.KwGrantContext ctx) { }
+	@Override public void exitColumnDefinitionList(CQLParser.ColumnDefinitionListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterIndexFullSpec(@NotNull CQLParser.IndexFullSpecContext ctx) { }
+	@Override public void enterColumnDefinition(CQLParser.ColumnDefinitionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitIndexFullSpec(@NotNull CQLParser.IndexFullSpecContext ctx) { }
+	@Override public void exitColumnDefinition(CQLParser.ColumnDefinitionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSyntaxComma(@NotNull CQLParser.SyntaxCommaContext ctx) { }
+	@Override public void enterPrimaryKeyColumn(CQLParser.PrimaryKeyColumnContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSyntaxComma(@NotNull CQLParser.SyntaxCommaContext ctx) { }
+	@Override public void exitPrimaryKeyColumn(CQLParser.PrimaryKeyColumnContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterClusteringKey(@NotNull CQLParser.ClusteringKeyContext ctx) { }
+	@Override public void enterPrimaryKeyElement(CQLParser.PrimaryKeyElementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitClusteringKey(@NotNull CQLParser.ClusteringKeyContext ctx) { }
+	@Override public void exitPrimaryKeyElement(CQLParser.PrimaryKeyElementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterColumnNotNull(@NotNull CQLParser.ColumnNotNullContext ctx) { }
+	@Override public void enterPrimaryKeyDefinition(CQLParser.PrimaryKeyDefinitionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitColumnNotNull(@NotNull CQLParser.ColumnNotNullContext ctx) { }
+	@Override public void exitPrimaryKeyDefinition(CQLParser.PrimaryKeyDefinitionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterOrderSpec(@NotNull CQLParser.OrderSpecContext ctx) { }
+	@Override public void enterSinglePrimaryKey(CQLParser.SinglePrimaryKeyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitOrderSpec(@NotNull CQLParser.OrderSpecContext ctx) { }
+	@Override public void exitSinglePrimaryKey(CQLParser.SinglePrimaryKeyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwClustering(@NotNull CQLParser.KwClusteringContext ctx) { }
+	@Override public void enterCompoundKey(CQLParser.CompoundKeyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwClustering(@NotNull CQLParser.KwClusteringContext ctx) { }
+	@Override public void exitCompoundKey(CQLParser.CompoundKeyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterIfSpec(@NotNull CQLParser.IfSpecContext ctx) { }
+	@Override public void enterCompositeKey(CQLParser.CompositeKeyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitIfSpec(@NotNull CQLParser.IfSpecContext ctx) { }
+	@Override public void exitCompositeKey(CQLParser.CompositeKeyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterLanguage(@NotNull CQLParser.LanguageContext ctx) { }
+	@Override public void enterPartitionKeyList(CQLParser.PartitionKeyListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitLanguage(@NotNull CQLParser.LanguageContext ctx) { }
+	@Override public void exitPartitionKeyList(CQLParser.PartitionKeyListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwAs(@NotNull CQLParser.KwAsContext ctx) { }
+	@Override public void enterClusteringKeyList(CQLParser.ClusteringKeyListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwAs(@NotNull CQLParser.KwAsContext ctx) { }
+	@Override public void exitClusteringKeyList(CQLParser.ClusteringKeyListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEmpty(@NotNull CQLParser.EmptyContext ctx) { }
+	@Override public void enterPartitionKey(CQLParser.PartitionKeyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEmpty(@NotNull CQLParser.EmptyContext ctx) { }
+	@Override public void exitPartitionKey(CQLParser.PartitionKeyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwAll(@NotNull CQLParser.KwAllContext ctx) { }
+	@Override public void enterClusteringKey(CQLParser.ClusteringKeyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwAll(@NotNull CQLParser.KwAllContext ctx) { }
+	@Override public void exitClusteringKey(CQLParser.ClusteringKeyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAlterTableWith(@NotNull CQLParser.AlterTableWithContext ctx) { }
+	@Override public void enterApplyBatch(CQLParser.ApplyBatchContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAlterTableWith(@NotNull CQLParser.AlterTableWithContext ctx) { }
+	@Override public void exitApplyBatch(CQLParser.ApplyBatchContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwMaterialized(@NotNull CQLParser.KwMaterializedContext ctx) { }
+	@Override public void enterBeginBatch(CQLParser.BeginBatchContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwMaterialized(@NotNull CQLParser.KwMaterializedContext ctx) { }
+	@Override public void exitBeginBatch(CQLParser.BeginBatchContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwModify(@NotNull CQLParser.KwModifyContext ctx) { }
+	@Override public void enterBatchType(CQLParser.BatchTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwModify(@NotNull CQLParser.KwModifyContext ctx) { }
+	@Override public void exitBatchType(CQLParser.BatchTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwOptions(@NotNull CQLParser.KwOptionsContext ctx) { }
+	@Override public void enterAlterKeyspace(CQLParser.AlterKeyspaceContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwOptions(@NotNull CQLParser.KwOptionsContext ctx) { }
+	@Override public void exitAlterKeyspace(CQLParser.AlterKeyspaceContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwOrder(@NotNull CQLParser.KwOrderContext ctx) { }
+	@Override public void enterReplicationList(CQLParser.ReplicationListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwOrder(@NotNull CQLParser.KwOrderContext ctx) { }
+	@Override public void exitReplicationList(CQLParser.ReplicationListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBooleanLiteral(@NotNull CQLParser.BooleanLiteralContext ctx) { }
+	@Override public void enterReplicationListItem(CQLParser.ReplicationListItemContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBooleanLiteral(@NotNull CQLParser.BooleanLiteralContext ctx) { }
+	@Override public void exitReplicationListItem(CQLParser.ReplicationListItemContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwWhere(@NotNull CQLParser.KwWhereContext ctx) { }
+	@Override public void enterDurableWrites(CQLParser.DurableWritesContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwWhere(@NotNull CQLParser.KwWhereContext ctx) { }
+	@Override public void exitDurableWrites(CQLParser.DurableWritesContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPrimaryKeyDefinition(@NotNull CQLParser.PrimaryKeyDefinitionContext ctx) { }
+	@Override public void enterUse(CQLParser.UseContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPrimaryKeyDefinition(@NotNull CQLParser.PrimaryKeyDefinitionContext ctx) { }
+	@Override public void exitUse(CQLParser.UseContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAlterTableDropColumnList(@NotNull CQLParser.AlterTableDropColumnListContext ctx) { }
+	@Override public void enterTruncate(CQLParser.TruncateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAlterTableDropColumnList(@NotNull CQLParser.AlterTableDropColumnListContext ctx) { }
+	@Override public void exitTruncate(CQLParser.TruncateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDataType(@NotNull CQLParser.DataTypeContext ctx) { }
+	@Override public void enterCreateIndex(CQLParser.CreateIndexContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDataType(@NotNull CQLParser.DataTypeContext ctx) { }
+	@Override public void exitCreateIndex(CQLParser.CreateIndexContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwInto(@NotNull CQLParser.KwIntoContext ctx) { }
+	@Override public void enterIndexName(CQLParser.IndexNameContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwInto(@NotNull CQLParser.KwIntoContext ctx) { }
+	@Override public void exitIndexName(CQLParser.IndexNameContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwReplication(@NotNull CQLParser.KwReplicationContext ctx) { }
+	@Override public void enterIndexColumnSpec(CQLParser.IndexColumnSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwReplication(@NotNull CQLParser.KwReplicationContext ctx) { }
+	@Override public void exitIndexColumnSpec(CQLParser.IndexColumnSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterHexadecimalLiteral(@NotNull CQLParser.HexadecimalLiteralContext ctx) { }
+	@Override public void enterIndexKeysSpec(CQLParser.IndexKeysSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitHexadecimalLiteral(@NotNull CQLParser.HexadecimalLiteralContext ctx) { }
+	@Override public void exitIndexKeysSpec(CQLParser.IndexKeysSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwRoles(@NotNull CQLParser.KwRolesContext ctx) { }
+	@Override public void enterIndexEntriesSSpec(CQLParser.IndexEntriesSSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwRoles(@NotNull CQLParser.KwRolesContext ctx) { }
+	@Override public void exitIndexEntriesSSpec(CQLParser.IndexEntriesSSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAlterTypeRename(@NotNull CQLParser.AlterTypeRenameContext ctx) { }
+	@Override public void enterIndexFullSpec(CQLParser.IndexFullSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAlterTypeRename(@NotNull CQLParser.AlterTypeRenameContext ctx) { }
+	@Override public void exitIndexFullSpec(CQLParser.IndexFullSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterInsertColumnSpec(@NotNull CQLParser.InsertColumnSpecContext ctx) { }
+	@Override public void enterDelete(CQLParser.DeleteContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitInsertColumnSpec(@NotNull CQLParser.InsertColumnSpecContext ctx) { }
+	@Override public void exitDelete(CQLParser.DeleteContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterParamList(@NotNull CQLParser.ParamListContext ctx) { }
+	@Override public void enterDeleteColumnList(CQLParser.DeleteColumnListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitParamList(@NotNull CQLParser.ParamListContext ctx) { }
+	@Override public void exitDeleteColumnList(CQLParser.DeleteColumnListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBeginBatch(@NotNull CQLParser.BeginBatchContext ctx) { }
+	@Override public void enterDeleteColumnItem(CQLParser.DeleteColumnItemContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBeginBatch(@NotNull CQLParser.BeginBatchContext ctx) { }
+	@Override public void exitDeleteColumnItem(CQLParser.DeleteColumnItemContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwExecute(@NotNull CQLParser.KwExecuteContext ctx) { }
+	@Override public void enterUpdate(CQLParser.UpdateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwExecute(@NotNull CQLParser.KwExecuteContext ctx) { }
+	@Override public void exitUpdate(CQLParser.UpdateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAlterTypeRenameList(@NotNull CQLParser.AlterTypeRenameListContext ctx) { }
+	@Override public void enterIfSpec(CQLParser.IfSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAlterTypeRenameList(@NotNull CQLParser.AlterTypeRenameListContext ctx) { }
+	@Override public void exitIfSpec(CQLParser.IfSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwKeyspace(@NotNull CQLParser.KwKeyspaceContext ctx) { }
+	@Override public void enterIfConditionList(CQLParser.IfConditionListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwKeyspace(@NotNull CQLParser.KwKeyspaceContext ctx) { }
+	@Override public void exitIfConditionList(CQLParser.IfConditionListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwPassword(@NotNull CQLParser.KwPasswordContext ctx) { }
+	@Override public void enterIfCondition(CQLParser.IfConditionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwPassword(@NotNull CQLParser.KwPasswordContext ctx) { }
+	@Override public void exitIfCondition(CQLParser.IfConditionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSyntaxBracketLs(@NotNull CQLParser.SyntaxBracketLsContext ctx) { }
+	@Override public void enterAssignments(CQLParser.AssignmentsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSyntaxBracketLs(@NotNull CQLParser.SyntaxBracketLsContext ctx) { }
+	@Override public void exitAssignments(CQLParser.AssignmentsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSyntaxBracketLr(@NotNull CQLParser.SyntaxBracketLrContext ctx) { }
+	@Override public void enterAssignmentElement(CQLParser.AssignmentElementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSyntaxBracketLr(@NotNull CQLParser.SyntaxBracketLrContext ctx) { }
+	@Override public void exitAssignmentElement(CQLParser.AssignmentElementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwRevoke(@NotNull CQLParser.KwRevokeContext ctx) { }
+	@Override public void enterAssignmentSet(CQLParser.AssignmentSetContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwRevoke(@NotNull CQLParser.KwRevokeContext ctx) { }
+	@Override public void exitAssignmentSet(CQLParser.AssignmentSetContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwKeys(@NotNull CQLParser.KwKeysContext ctx) { }
+	@Override public void enterAssignmentMap(CQLParser.AssignmentMapContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwKeys(@NotNull CQLParser.KwKeysContext ctx) { }
+	@Override public void exitAssignmentMap(CQLParser.AssignmentMapContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterRevoke(@NotNull CQLParser.RevokeContext ctx) { }
+	@Override public void enterAssignmentList(CQLParser.AssignmentListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitRevoke(@NotNull CQLParser.RevokeContext ctx) { }
+	@Override public void exitAssignmentList(CQLParser.AssignmentListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDropFunction(@NotNull CQLParser.DropFunctionContext ctx) { }
+	@Override public void enterAssignmentTuple(CQLParser.AssignmentTupleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDropFunction(@NotNull CQLParser.DropFunctionContext ctx) { }
+	@Override public void exitAssignmentTuple(CQLParser.AssignmentTupleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDeleteColumnList(@NotNull CQLParser.DeleteColumnListContext ctx) { }
+	@Override public void enterInsert(CQLParser.InsertContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDeleteColumnList(@NotNull CQLParser.DeleteColumnListContext ctx) { }
+	@Override public void exitInsert(CQLParser.InsertContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterUpdate(@NotNull CQLParser.UpdateContext ctx) { }
+	@Override public void enterUsingTtlTimestamp(CQLParser.UsingTtlTimestampContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitUpdate(@NotNull CQLParser.UpdateContext ctx) { }
+	@Override public void exitUsingTtlTimestamp(CQLParser.UsingTtlTimestampContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwLanguage(@NotNull CQLParser.KwLanguageContext ctx) { }
+	@Override public void enterTimestamp(CQLParser.TimestampContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwLanguage(@NotNull CQLParser.KwLanguageContext ctx) { }
+	@Override public void exitTimestamp(CQLParser.TimestampContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterParamName(@NotNull CQLParser.ParamNameContext ctx) { }
+	@Override public void enterTtl(CQLParser.TtlContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitParamName(@NotNull CQLParser.ParamNameContext ctx) { }
+	@Override public void exitTtl(CQLParser.TtlContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwReturns(@NotNull CQLParser.KwReturnsContext ctx) { }
+	@Override public void enterUsingTimestampSpec(CQLParser.UsingTimestampSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwReturns(@NotNull CQLParser.KwReturnsContext ctx) { }
+	@Override public void exitUsingTimestampSpec(CQLParser.UsingTimestampSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCreateKeyspace(@NotNull CQLParser.CreateKeyspaceContext ctx) { }
+	@Override public void enterIfNotExist(CQLParser.IfNotExistContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCreateKeyspace(@NotNull CQLParser.CreateKeyspaceContext ctx) { }
+	@Override public void exitIfNotExist(CQLParser.IfNotExistContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDurableWrites(@NotNull CQLParser.DurableWritesContext ctx) { }
+	@Override public void enterIfExist(CQLParser.IfExistContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDurableWrites(@NotNull CQLParser.DurableWritesContext ctx) { }
+	@Override public void exitIfExist(CQLParser.IfExistContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwAnd(@NotNull CQLParser.KwAndContext ctx) { }
+	@Override public void enterInsertValuesSpec(CQLParser.InsertValuesSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwAnd(@NotNull CQLParser.KwAndContext ctx) { }
+	@Override public void exitInsertValuesSpec(CQLParser.InsertValuesSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwBy(@NotNull CQLParser.KwByContext ctx) { }
+	@Override public void enterInsertColumnSpec(CQLParser.InsertColumnSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwBy(@NotNull CQLParser.KwByContext ctx) { }
+	@Override public void exitInsertColumnSpec(CQLParser.InsertColumnSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterParam(@NotNull CQLParser.ParamContext ctx) { }
+	@Override public void enterColumnList(CQLParser.ColumnListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitParam(@NotNull CQLParser.ParamContext ctx) { }
+	@Override public void exitColumnList(CQLParser.ColumnListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterRoot(@NotNull CQLParser.RootContext ctx) { }
+	@Override public void enterExpressionList(CQLParser.ExpressionListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitRoot(@NotNull CQLParser.RootContext ctx) { }
+	@Override public void exitExpressionList(CQLParser.ExpressionListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCreateMaterializedView(@NotNull CQLParser.CreateMaterializedViewContext ctx) { }
+	@Override public void enterExpression(CQLParser.ExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCreateMaterializedView(@NotNull CQLParser.CreateMaterializedViewContext ctx) { }
+	@Override public void exitExpression(CQLParser.ExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwUpdate(@NotNull CQLParser.KwUpdateContext ctx) { }
+	@Override public void enterSelect(CQLParser.SelectContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwUpdate(@NotNull CQLParser.KwUpdateContext ctx) { }
+	@Override public void exitSelect(CQLParser.SelectContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterInitCondHash(@NotNull CQLParser.InitCondHashContext ctx) { }
+	@Override public void enterAllowFilteringSpec(CQLParser.AllowFilteringSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitInitCondHash(@NotNull CQLParser.InitCondHashContext ctx) { }
+	@Override public void exitAllowFilteringSpec(CQLParser.AllowFilteringSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDropTable(@NotNull CQLParser.DropTableContext ctx) { }
+	@Override public void enterLimitSpec(CQLParser.LimitSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDropTable(@NotNull CQLParser.DropTableContext ctx) { }
+	@Override public void exitLimitSpec(CQLParser.LimitSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwSuperuser(@NotNull CQLParser.KwSuperuserContext ctx) { }
+	@Override public void enterFromSpec(CQLParser.FromSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwSuperuser(@NotNull CQLParser.KwSuperuserContext ctx) { }
+	@Override public void exitFromSpec(CQLParser.FromSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDataTypeDefinition(@NotNull CQLParser.DataTypeDefinitionContext ctx) { }
+	@Override public void enterFromSpecElement(CQLParser.FromSpecElementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDataTypeDefinition(@NotNull CQLParser.DataTypeDefinitionContext ctx) { }
+	@Override public void exitFromSpecElement(CQLParser.FromSpecElementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDropAggregate(@NotNull CQLParser.DropAggregateContext ctx) { }
+	@Override public void enterOrderSpec(CQLParser.OrderSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDropAggregate(@NotNull CQLParser.DropAggregateContext ctx) { }
+	@Override public void exitOrderSpec(CQLParser.OrderSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSinglePrimaryKey(@NotNull CQLParser.SinglePrimaryKeyContext ctx) { }
+	@Override public void enterOrderSpecElement(CQLParser.OrderSpecElementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSinglePrimaryKey(@NotNull CQLParser.SinglePrimaryKeyContext ctx) { }
+	@Override public void exitOrderSpecElement(CQLParser.OrderSpecElementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterListRoles(@NotNull CQLParser.ListRolesContext ctx) { }
+	@Override public void enterWhereSpec(CQLParser.WhereSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitListRoles(@NotNull CQLParser.ListRolesContext ctx) { }
+	@Override public void exitWhereSpec(CQLParser.WhereSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDropType(@NotNull CQLParser.DropTypeContext ctx) { }
+	@Override public void enterDistinctSpec(CQLParser.DistinctSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDropType(@NotNull CQLParser.DropTypeContext ctx) { }
+	@Override public void exitDistinctSpec(CQLParser.DistinctSpecContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKeyspace(@NotNull CQLParser.KeyspaceContext ctx) { }
+	@Override public void enterSelectElements(CQLParser.SelectElementsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKeyspace(@NotNull CQLParser.KeyspaceContext ctx) { }
+	@Override public void exitSelectElements(CQLParser.SelectElementsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterRoleWithOptions(@NotNull CQLParser.RoleWithOptionsContext ctx) { }
+	@Override public void enterSelectElement(CQLParser.SelectElementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitRoleWithOptions(@NotNull CQLParser.RoleWithOptionsContext ctx) { }
+	@Override public void exitSelectElement(CQLParser.SelectElementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwLogin(@NotNull CQLParser.KwLoginContext ctx) { }
+	@Override public void enterRelationElements(CQLParser.RelationElementsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwLogin(@NotNull CQLParser.KwLoginContext ctx) { }
+	@Override public void exitRelationElements(CQLParser.RelationElementsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSyntaxBracketLc(@NotNull CQLParser.SyntaxBracketLcContext ctx) { }
+	@Override public void enterRelationElement(CQLParser.RelationElementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSyntaxBracketLc(@NotNull CQLParser.SyntaxBracketLcContext ctx) { }
+	@Override public void exitRelationElement(CQLParser.RelationElementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterInitCondListNested(@NotNull CQLParser.InitCondListNestedContext ctx) { }
+	@Override public void enterRelalationContains(CQLParser.RelalationContainsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitInitCondListNested(@NotNull CQLParser.InitCondListNestedContext ctx) { }
+	@Override public void exitRelalationContains(CQLParser.RelalationContainsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterReplicationListItem(@NotNull CQLParser.ReplicationListItemContext ctx) { }
+	@Override public void enterRelalationContainsKey(CQLParser.RelalationContainsKeyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitReplicationListItem(@NotNull CQLParser.ReplicationListItemContext ctx) { }
+	@Override public void exitRelalationContainsKey(CQLParser.RelalationContainsKeyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSyntaxBracketLa(@NotNull CQLParser.SyntaxBracketLaContext ctx) { }
+	@Override public void enterFunctionCall(CQLParser.FunctionCallContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSyntaxBracketLa(@NotNull CQLParser.SyntaxBracketLaContext ctx) { }
+	@Override public void exitFunctionCall(CQLParser.FunctionCallContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterOptionHash(@NotNull CQLParser.OptionHashContext ctx) { }
+	@Override public void enterFunctionArgs(CQLParser.FunctionArgsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitOptionHash(@NotNull CQLParser.OptionHashContext ctx) { }
+	@Override public void exitFunctionArgs(CQLParser.FunctionArgsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterIfConditionList(@NotNull CQLParser.IfConditionListContext ctx) { }
+	@Override public void enterConstant(CQLParser.ConstantContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitIfConditionList(@NotNull CQLParser.IfConditionListContext ctx) { }
+	@Override public void exitConstant(CQLParser.ConstantContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwTtl(@NotNull CQLParser.KwTtlContext ctx) { }
+	@Override public void enterDecimalLiteral(CQLParser.DecimalLiteralContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwTtl(@NotNull CQLParser.KwTtlContext ctx) { }
+	@Override public void exitDecimalLiteral(CQLParser.DecimalLiteralContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterGrant(@NotNull CQLParser.GrantContext ctx) { }
+	@Override public void enterFloatLiteral(CQLParser.FloatLiteralContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitGrant(@NotNull CQLParser.GrantContext ctx) { }
+	@Override public void exitFloatLiteral(CQLParser.FloatLiteralContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwAuthorize(@NotNull CQLParser.KwAuthorizeContext ctx) { }
+	@Override public void enterStringLiteral(CQLParser.StringLiteralContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwAuthorize(@NotNull CQLParser.KwAuthorizeContext ctx) { }
+	@Override public void exitStringLiteral(CQLParser.StringLiteralContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEof(@NotNull CQLParser.EofContext ctx) { }
+	@Override public void enterBooleanLiteral(CQLParser.BooleanLiteralContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEof(@NotNull CQLParser.EofContext ctx) { }
+	@Override public void exitBooleanLiteral(CQLParser.BooleanLiteralContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwTrigger(@NotNull CQLParser.KwTriggerContext ctx) { }
+	@Override public void enterHexadecimalLiteral(CQLParser.HexadecimalLiteralContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwTrigger(@NotNull CQLParser.KwTriggerContext ctx) { }
+	@Override public void exitHexadecimalLiteral(CQLParser.HexadecimalLiteralContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAssignments(@NotNull CQLParser.AssignmentsContext ctx) { }
+	@Override public void enterKeyspace(CQLParser.KeyspaceContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAssignments(@NotNull CQLParser.AssignmentsContext ctx) { }
+	@Override public void exitKeyspace(CQLParser.KeyspaceContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSelect(@NotNull CQLParser.SelectContext ctx) { }
+	@Override public void enterTable(CQLParser.TableContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSelect(@NotNull CQLParser.SelectContext ctx) { }
+	@Override public void exitTable(CQLParser.TableContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDropMaterializedView(@NotNull CQLParser.DropMaterializedViewContext ctx) { }
+	@Override public void enterColumn(CQLParser.ColumnContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDropMaterializedView(@NotNull CQLParser.DropMaterializedViewContext ctx) { }
+	@Override public void exitColumn(CQLParser.ColumnContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAlterUser(@NotNull CQLParser.AlterUserContext ctx) { }
+	@Override public void enterDataType(CQLParser.DataTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAlterUser(@NotNull CQLParser.AlterUserContext ctx) { }
+	@Override public void exitDataType(CQLParser.DataTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSyntaxBracketRs(@NotNull CQLParser.SyntaxBracketRsContext ctx) { }
+	@Override public void enterDataTypeName(CQLParser.DataTypeNameContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSyntaxBracketRs(@NotNull CQLParser.SyntaxBracketRsContext ctx) { }
+	@Override public void exitDataTypeName(CQLParser.DataTypeNameContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSyntaxBracketRr(@NotNull CQLParser.SyntaxBracketRrContext ctx) { }
+	@Override public void enterDataTypeDefinition(CQLParser.DataTypeDefinitionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSyntaxBracketRr(@NotNull CQLParser.SyntaxBracketRrContext ctx) { }
+	@Override public void exitDataTypeDefinition(CQLParser.DataTypeDefinitionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterColumnDefinition(@NotNull CQLParser.ColumnDefinitionContext ctx) { }
+	@Override public void enterOrderDirection(CQLParser.OrderDirectionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitColumnDefinition(@NotNull CQLParser.ColumnDefinitionContext ctx) { }
+	@Override public void exitOrderDirection(CQLParser.OrderDirectionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterType(@NotNull CQLParser.TypeContext ctx) { }
+	@Override public void enterRole(CQLParser.RoleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitType(@NotNull CQLParser.TypeContext ctx) { }
+	@Override public void exitRole(CQLParser.RoleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDropIndex(@NotNull CQLParser.DropIndexContext ctx) { }
+	@Override public void enterTrigger(CQLParser.TriggerContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDropIndex(@NotNull CQLParser.DropIndexContext ctx) { }
+	@Override public void exitTrigger(CQLParser.TriggerContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCompoundKey(@NotNull CQLParser.CompoundKeyContext ctx) { }
+	@Override public void enterTriggerClass(CQLParser.TriggerClassContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCompoundKey(@NotNull CQLParser.CompoundKeyContext ctx) { }
+	@Override public void exitTriggerClass(CQLParser.TriggerClassContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwReplace(@NotNull CQLParser.KwReplaceContext ctx) { }
+	@Override public void enterMaterializedView(CQLParser.MaterializedViewContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwReplace(@NotNull CQLParser.KwReplaceContext ctx) { }
+	@Override public void exitMaterializedView(CQLParser.MaterializedViewContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTruncate(@NotNull CQLParser.TruncateContext ctx) { }
+	@Override public void enterType(CQLParser.TypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitTruncate(@NotNull CQLParser.TruncateContext ctx) { }
+	@Override public void exitType(CQLParser.TypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwAlter(@NotNull CQLParser.KwAlterContext ctx) { }
+	@Override public void enterAggregate(CQLParser.AggregateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwAlter(@NotNull CQLParser.KwAlterContext ctx) { }
+	@Override public void exitAggregate(CQLParser.AggregateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwDistinct(@NotNull CQLParser.KwDistinctContext ctx) { }
+	@Override public void enterFunction(CQLParser.FunctionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwDistinct(@NotNull CQLParser.KwDistinctContext ctx) { }
+	@Override public void exitFunction(CQLParser.FunctionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterWhereSpec(@NotNull CQLParser.WhereSpecContext ctx) { }
+	@Override public void enterLanguage(CQLParser.LanguageContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitWhereSpec(@NotNull CQLParser.WhereSpecContext ctx) { }
+	@Override public void exitLanguage(CQLParser.LanguageContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwWith(@NotNull CQLParser.KwWithContext ctx) { }
+	@Override public void enterUser(CQLParser.UserContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwWith(@NotNull CQLParser.KwWithContext ctx) { }
+	@Override public void exitUser(CQLParser.UserContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAlterTableColumnDefinition(@NotNull CQLParser.AlterTableColumnDefinitionContext ctx) { }
+	@Override public void enterPassword(CQLParser.PasswordContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAlterTableColumnDefinition(@NotNull CQLParser.AlterTableColumnDefinitionContext ctx) { }
+	@Override public void exitPassword(CQLParser.PasswordContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwContains(@NotNull CQLParser.KwContainsContext ctx) { }
+	@Override public void enterHashKey(CQLParser.HashKeyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwContains(@NotNull CQLParser.KwContainsContext ctx) { }
+	@Override public void exitHashKey(CQLParser.HashKeyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwEntries(@NotNull CQLParser.KwEntriesContext ctx) { }
+	@Override public void enterParam(CQLParser.ParamContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwEntries(@NotNull CQLParser.KwEntriesContext ctx) { }
+	@Override public void exitParam(CQLParser.ParamContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterMaterializedViewWhere(@NotNull CQLParser.MaterializedViewWhereContext ctx) { }
+	@Override public void enterParamName(CQLParser.ParamNameContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitMaterializedViewWhere(@NotNull CQLParser.MaterializedViewWhereContext ctx) { }
+	@Override public void exitParamName(CQLParser.ParamNameContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwUnlogged(@NotNull CQLParser.KwUnloggedContext ctx) { }
+	@Override public void enterKwAdd(CQLParser.KwAddContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwUnlogged(@NotNull CQLParser.KwUnloggedContext ctx) { }
+	@Override public void exitKwAdd(CQLParser.KwAddContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterMaterializedViewOptions(@NotNull CQLParser.MaterializedViewOptionsContext ctx) { }
+	@Override public void enterKwAggregate(CQLParser.KwAggregateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitMaterializedViewOptions(@NotNull CQLParser.MaterializedViewOptionsContext ctx) { }
+	@Override public void exitKwAggregate(CQLParser.KwAggregateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwJson(@NotNull CQLParser.KwJsonContext ctx) { }
+	@Override public void enterKwAll(CQLParser.KwAllContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwJson(@NotNull CQLParser.KwJsonContext ctx) { }
+	@Override public void exitKwAll(CQLParser.KwAllContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAlterTypeRenameItem(@NotNull CQLParser.AlterTypeRenameItemContext ctx) { }
+	@Override public void enterKwAllPermissions(CQLParser.KwAllPermissionsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAlterTypeRenameItem(@NotNull CQLParser.AlterTypeRenameItemContext ctx) { }
+	@Override public void exitKwAllPermissions(CQLParser.KwAllPermissionsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterStringLiteral(@NotNull CQLParser.StringLiteralContext ctx) { }
+	@Override public void enterKwAllow(CQLParser.KwAllowContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitStringLiteral(@NotNull CQLParser.StringLiteralContext ctx) { }
+	@Override public void exitKwAllow(CQLParser.KwAllowContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwTo(@NotNull CQLParser.KwToContext ctx) { }
+	@Override public void enterKwAlter(CQLParser.KwAlterContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwTo(@NotNull CQLParser.KwToContext ctx) { }
+	@Override public void exitKwAlter(CQLParser.KwAlterContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterOrReplace(@NotNull CQLParser.OrReplaceContext ctx) { }
+	@Override public void enterKwAnd(CQLParser.KwAndContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitOrReplace(@NotNull CQLParser.OrReplaceContext ctx) { }
+	@Override public void exitKwAnd(CQLParser.KwAndContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFunctionCall(@NotNull CQLParser.FunctionCallContext ctx) { }
+	@Override public void enterKwApply(CQLParser.KwApplyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFunctionCall(@NotNull CQLParser.FunctionCallContext ctx) { }
+	@Override public void exitKwApply(CQLParser.KwApplyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSyntaxBracketRc(@NotNull CQLParser.SyntaxBracketRcContext ctx) { }
+	@Override public void enterKwAs(CQLParser.KwAsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSyntaxBracketRc(@NotNull CQLParser.SyntaxBracketRcContext ctx) { }
+	@Override public void exitKwAs(CQLParser.KwAsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAssignmentTuple(@NotNull CQLParser.AssignmentTupleContext ctx) { }
+	@Override public void enterKwAsc(CQLParser.KwAscContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAssignmentTuple(@NotNull CQLParser.AssignmentTupleContext ctx) { }
+	@Override public void exitKwAsc(CQLParser.KwAscContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSyntaxBracketRa(@NotNull CQLParser.SyntaxBracketRaContext ctx) { }
+	@Override public void enterKwAuthorize(CQLParser.KwAuthorizeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSyntaxBracketRa(@NotNull CQLParser.SyntaxBracketRaContext ctx) { }
+	@Override public void exitKwAuthorize(CQLParser.KwAuthorizeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCreateAggregate(@NotNull CQLParser.CreateAggregateContext ctx) { }
+	@Override public void enterKwBatch(CQLParser.KwBatchContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCreateAggregate(@NotNull CQLParser.CreateAggregateContext ctx) { }
+	@Override public void exitKwBatch(CQLParser.KwBatchContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwDrop(@NotNull CQLParser.KwDropContext ctx) { }
+	@Override public void enterKwBegin(CQLParser.KwBeginContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwDrop(@NotNull CQLParser.KwDropContext ctx) { }
+	@Override public void exitKwBegin(CQLParser.KwBeginContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterUserPassword(@NotNull CQLParser.UserPasswordContext ctx) { }
+	@Override public void enterKwBy(CQLParser.KwByContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitUserPassword(@NotNull CQLParser.UserPasswordContext ctx) { }
+	@Override public void exitKwBy(CQLParser.KwByContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterReturnMode(@NotNull CQLParser.ReturnModeContext ctx) { }
+	@Override public void enterKwCalled(CQLParser.KwCalledContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitReturnMode(@NotNull CQLParser.ReturnModeContext ctx) { }
+	@Override public void exitKwCalled(CQLParser.KwCalledContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwFunctions(@NotNull CQLParser.KwFunctionsContext ctx) { }
+	@Override public void enterKwClustering(CQLParser.KwClusteringContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwFunctions(@NotNull CQLParser.KwFunctionsContext ctx) { }
+	@Override public void exitKwClustering(CQLParser.KwClusteringContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwIndex(@NotNull CQLParser.KwIndexContext ctx) { }
+	@Override public void enterKwCompact(CQLParser.KwCompactContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwIndex(@NotNull CQLParser.KwIndexContext ctx) { }
+	@Override public void exitKwCompact(CQLParser.KwCompactContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwKey(@NotNull CQLParser.KwKeyContext ctx) { }
+	@Override public void enterKwContains(CQLParser.KwContainsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwKey(@NotNull CQLParser.KwKeyContext ctx) { }
+	@Override public void exitKwContains(CQLParser.KwContainsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwRole(@NotNull CQLParser.KwRoleContext ctx) { }
+	@Override public void enterKwCreate(CQLParser.KwCreateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwRole(@NotNull CQLParser.KwRoleContext ctx) { }
+	@Override public void exitKwCreate(CQLParser.KwCreateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFromSpec(@NotNull CQLParser.FromSpecContext ctx) { }
+	@Override public void enterKwDelete(CQLParser.KwDeleteContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFromSpec(@NotNull CQLParser.FromSpecContext ctx) { }
+	@Override public void exitKwDelete(CQLParser.KwDeleteContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwSet(@NotNull CQLParser.KwSetContext ctx) { }
+	@Override public void enterKwDesc(CQLParser.KwDescContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwSet(@NotNull CQLParser.KwSetContext ctx) { }
+	@Override public void exitKwDesc(CQLParser.KwDescContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterClusteringOrder(@NotNull CQLParser.ClusteringOrderContext ctx) { }
+	@Override public void enterKwDescibe(CQLParser.KwDescibeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitClusteringOrder(@NotNull CQLParser.ClusteringOrderContext ctx) { }
+	@Override public void exitKwDescibe(CQLParser.KwDescibeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwDurableWrites(@NotNull CQLParser.KwDurableWritesContext ctx) { }
+	@Override public void enterKwDistinct(CQLParser.KwDistinctContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwDurableWrites(@NotNull CQLParser.KwDurableWritesContext ctx) { }
+	@Override public void exitKwDistinct(CQLParser.KwDistinctContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwFinalfunc(@NotNull CQLParser.KwFinalfuncContext ctx) { }
+	@Override public void enterKwDrop(CQLParser.KwDropContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwFinalfunc(@NotNull CQLParser.KwFinalfuncContext ctx) { }
+	@Override public void exitKwDrop(CQLParser.KwDropContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTypeMemberColumnList(@NotNull CQLParser.TypeMemberColumnListContext ctx) { }
+	@Override public void enterKwDurableWrites(CQLParser.KwDurableWritesContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitTypeMemberColumnList(@NotNull CQLParser.TypeMemberColumnListContext ctx) { }
+	@Override public void exitKwDurableWrites(CQLParser.KwDurableWritesContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterIfCondition(@NotNull CQLParser.IfConditionContext ctx) { }
+	@Override public void enterKwEntries(CQLParser.KwEntriesContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitIfCondition(@NotNull CQLParser.IfConditionContext ctx) { }
+	@Override public void exitKwEntries(CQLParser.KwEntriesContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterIfExist(@NotNull CQLParser.IfExistContext ctx) { }
+	@Override public void enterKwExecute(CQLParser.KwExecuteContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitIfExist(@NotNull CQLParser.IfExistContext ctx) { }
+	@Override public void exitKwExecute(CQLParser.KwExecuteContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTable(@NotNull CQLParser.TableContext ctx) { }
+	@Override public void enterKwExists(CQLParser.KwExistsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitTable(@NotNull CQLParser.TableContext ctx) { }
+	@Override public void exitKwExists(CQLParser.KwExistsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwDesc(@NotNull CQLParser.KwDescContext ctx) { }
+	@Override public void enterKwFiltering(CQLParser.KwFilteringContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwDesc(@NotNull CQLParser.KwDescContext ctx) { }
+	@Override public void exitKwFiltering(CQLParser.KwFilteringContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwFull(@NotNull CQLParser.KwFullContext ctx) { }
+	@Override public void enterKwFinalfunc(CQLParser.KwFinalfuncContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwFull(@NotNull CQLParser.KwFullContext ctx) { }
+	@Override public void exitKwFinalfunc(CQLParser.KwFinalfuncContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterUserSuperUser(@NotNull CQLParser.UserSuperUserContext ctx) { }
+	@Override public void enterKwFrom(CQLParser.KwFromContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitUserSuperUser(@NotNull CQLParser.UserSuperUserContext ctx) { }
+	@Override public void exitKwFrom(CQLParser.KwFromContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDropUser(@NotNull CQLParser.DropUserContext ctx) { }
+	@Override public void enterKwFull(CQLParser.KwFullContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDropUser(@NotNull CQLParser.DropUserContext ctx) { }
+	@Override public void exitKwFull(CQLParser.KwFullContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwCreate(@NotNull CQLParser.KwCreateContext ctx) { }
+	@Override public void enterKwFunction(CQLParser.KwFunctionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwCreate(@NotNull CQLParser.KwCreateContext ctx) { }
+	@Override public void exitKwFunction(CQLParser.KwFunctionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwDescibe(@NotNull CQLParser.KwDescibeContext ctx) { }
+	@Override public void enterKwFunctions(CQLParser.KwFunctionsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwDescibe(@NotNull CQLParser.KwDescibeContext ctx) { }
+	@Override public void exitKwFunctions(CQLParser.KwFunctionsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterColumnList(@NotNull CQLParser.ColumnListContext ctx) { }
+	@Override public void enterKwGrant(CQLParser.KwGrantContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitColumnList(@NotNull CQLParser.ColumnListContext ctx) { }
+	@Override public void exitKwGrant(CQLParser.KwGrantContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTrigger(@NotNull CQLParser.TriggerContext ctx) { }
+	@Override public void enterKwIf(CQLParser.KwIfContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitTrigger(@NotNull CQLParser.TriggerContext ctx) { }
+	@Override public void exitKwIf(CQLParser.KwIfContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwList(@NotNull CQLParser.KwListContext ctx) { }
+	@Override public void enterKwIn(CQLParser.KwInContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwList(@NotNull CQLParser.KwListContext ctx) { }
+	@Override public void exitKwIn(CQLParser.KwInContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAssignmentMap(@NotNull CQLParser.AssignmentMapContext ctx) { }
+	@Override public void enterKwIndex(CQLParser.KwIndexContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAssignmentMap(@NotNull CQLParser.AssignmentMapContext ctx) { }
+	@Override public void exitKwIndex(CQLParser.KwIndexContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterRelationElement(@NotNull CQLParser.RelationElementContext ctx) { }
+	@Override public void enterKwInitcond(CQLParser.KwInitcondContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitRelationElement(@NotNull CQLParser.RelationElementContext ctx) { }
+	@Override public void exitKwInitcond(CQLParser.KwInitcondContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTableOptionName(@NotNull CQLParser.TableOptionNameContext ctx) { }
+	@Override public void enterKwInput(CQLParser.KwInputContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitTableOptionName(@NotNull CQLParser.TableOptionNameContext ctx) { }
+	@Override public void exitKwInput(CQLParser.KwInputContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCreateUser(@NotNull CQLParser.CreateUserContext ctx) { }
+	@Override public void enterKwInsert(CQLParser.KwInsertContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCreateUser(@NotNull CQLParser.CreateUserContext ctx) { }
+	@Override public void exitKwInsert(CQLParser.KwInsertContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwView(@NotNull CQLParser.KwViewContext ctx) { }
+	@Override public void enterKwInto(CQLParser.KwIntoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwView(@NotNull CQLParser.KwViewContext ctx) { }
+	@Override public void exitKwInto(CQLParser.KwIntoContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwAsc(@NotNull CQLParser.KwAscContext ctx) { }
+	@Override public void enterKwIs(CQLParser.KwIsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwAsc(@NotNull CQLParser.KwAscContext ctx) { }
+	@Override public void exitKwIs(CQLParser.KwIsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwTimestamp(@NotNull CQLParser.KwTimestampContext ctx) { }
+	@Override public void enterKwJson(CQLParser.KwJsonContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwTimestamp(@NotNull CQLParser.KwTimestampContext ctx) { }
+	@Override public void exitKwJson(CQLParser.KwJsonContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwBegin(@NotNull CQLParser.KwBeginContext ctx) { }
+	@Override public void enterKwKey(CQLParser.KwKeyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwBegin(@NotNull CQLParser.KwBeginContext ctx) { }
+	@Override public void exitKwKey(CQLParser.KwKeyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterConstant(@NotNull CQLParser.ConstantContext ctx) { }
+	@Override public void enterKwKeys(CQLParser.KwKeysContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitConstant(@NotNull CQLParser.ConstantContext ctx) { }
+	@Override public void exitKwKeys(CQLParser.KwKeysContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwIn(@NotNull CQLParser.KwInContext ctx) { }
+	@Override public void enterKwKeyspace(CQLParser.KwKeyspaceContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwIn(@NotNull CQLParser.KwInContext ctx) { }
+	@Override public void exitKwKeyspace(CQLParser.KwKeyspaceContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwIs(@NotNull CQLParser.KwIsContext ctx) { }
+	@Override public void enterKwKeyspaces(CQLParser.KwKeyspacesContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwIs(@NotNull CQLParser.KwIsContext ctx) { }
+	@Override public void exitKwKeyspaces(CQLParser.KwKeyspacesContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterUse(@NotNull CQLParser.UseContext ctx) { }
+	@Override public void enterKwLanguage(CQLParser.KwLanguageContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitUse(@NotNull CQLParser.UseContext ctx) { }
+	@Override public void exitKwLanguage(CQLParser.KwLanguageContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCompositeKey(@NotNull CQLParser.CompositeKeyContext ctx) { }
+	@Override public void enterKwLimit(CQLParser.KwLimitContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCompositeKey(@NotNull CQLParser.CompositeKeyContext ctx) { }
+	@Override public void exitKwLimit(CQLParser.KwLimitContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDropTrigger(@NotNull CQLParser.DropTriggerContext ctx) { }
+	@Override public void enterKwList(CQLParser.KwListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDropTrigger(@NotNull CQLParser.DropTriggerContext ctx) { }
+	@Override public void exitKwList(CQLParser.KwListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwType(@NotNull CQLParser.KwTypeContext ctx) { }
+	@Override public void enterKwLogged(CQLParser.KwLoggedContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwType(@NotNull CQLParser.KwTypeContext ctx) { }
+	@Override public void exitKwLogged(CQLParser.KwLoggedContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwAdd(@NotNull CQLParser.KwAddContext ctx) { }
+	@Override public void enterKwLogin(CQLParser.KwLoginContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwAdd(@NotNull CQLParser.KwAddContext ctx) { }
+	@Override public void exitKwLogin(CQLParser.KwLoginContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCodeBlock(@NotNull CQLParser.CodeBlockContext ctx) { }
+	@Override public void enterKwMaterialized(CQLParser.KwMaterializedContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCodeBlock(@NotNull CQLParser.CodeBlockContext ctx) { }
+	@Override public void exitKwMaterialized(CQLParser.KwMaterializedContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFunction(@NotNull CQLParser.FunctionContext ctx) { }
+	@Override public void enterKwModify(CQLParser.KwModifyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFunction(@NotNull CQLParser.FunctionContext ctx) { }
+	@Override public void exitKwModify(CQLParser.KwModifyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFloatLiteral(@NotNull CQLParser.FloatLiteralContext ctx) { }
+	@Override public void enterKwNosuperuser(CQLParser.KwNosuperuserContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFloatLiteral(@NotNull CQLParser.FloatLiteralContext ctx) { }
+	@Override public void exitKwNosuperuser(CQLParser.KwNosuperuserContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwIf(@NotNull CQLParser.KwIfContext ctx) { }
+	@Override public void enterKwNorecursive(CQLParser.KwNorecursiveContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwIf(@NotNull CQLParser.KwIfContext ctx) { }
+	@Override public void exitKwNorecursive(CQLParser.KwNorecursiveContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterResource(@NotNull CQLParser.ResourceContext ctx) { }
+	@Override public void enterKwNot(CQLParser.KwNotContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitResource(@NotNull CQLParser.ResourceContext ctx) { }
+	@Override public void exitKwNot(CQLParser.KwNotContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPrimaryKeyElement(@NotNull CQLParser.PrimaryKeyElementContext ctx) { }
+	@Override public void enterKwNull(CQLParser.KwNullContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPrimaryKeyElement(@NotNull CQLParser.PrimaryKeyElementContext ctx) { }
+	@Override public void exitKwNull(CQLParser.KwNullContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCreateTrigger(@NotNull CQLParser.CreateTriggerContext ctx) { }
+	@Override public void enterKwOf(CQLParser.KwOfContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCreateTrigger(@NotNull CQLParser.CreateTriggerContext ctx) { }
+	@Override public void exitKwOf(CQLParser.KwOfContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAlterTypeAdd(@NotNull CQLParser.AlterTypeAddContext ctx) { }
+	@Override public void enterKwOn(CQLParser.KwOnContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAlterTypeAdd(@NotNull CQLParser.AlterTypeAddContext ctx) { }
+	@Override public void exitKwOn(CQLParser.KwOnContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterIndexName(@NotNull CQLParser.IndexNameContext ctx) { }
+	@Override public void enterKwOptions(CQLParser.KwOptionsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitIndexName(@NotNull CQLParser.IndexNameContext ctx) { }
+	@Override public void exitKwOptions(CQLParser.KwOptionsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwSfunc(@NotNull CQLParser.KwSfuncContext ctx) { }
+	@Override public void enterKwOr(CQLParser.KwOrContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwSfunc(@NotNull CQLParser.KwSfuncContext ctx) { }
+	@Override public void exitKwOr(CQLParser.KwOrContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAlterRole(@NotNull CQLParser.AlterRoleContext ctx) { }
+	@Override public void enterKwOrder(CQLParser.KwOrderContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAlterRole(@NotNull CQLParser.AlterRoleContext ctx) { }
+	@Override public void exitKwOrder(CQLParser.KwOrderContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPriviledge(@NotNull CQLParser.PriviledgeContext ctx) { }
+	@Override public void enterKwPassword(CQLParser.KwPasswordContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPriviledge(@NotNull CQLParser.PriviledgeContext ctx) { }
+	@Override public void exitKwPassword(CQLParser.KwPasswordContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFromSpecElement(@NotNull CQLParser.FromSpecElementContext ctx) { }
+	@Override public void enterKwPrimary(CQLParser.KwPrimaryContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFromSpecElement(@NotNull CQLParser.FromSpecElementContext ctx) { }
+	@Override public void exitKwPrimary(CQLParser.KwPrimaryContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterRelationElements(@NotNull CQLParser.RelationElementsContext ctx) { }
+	@Override public void enterKwRename(CQLParser.KwRenameContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitRelationElements(@NotNull CQLParser.RelationElementsContext ctx) { }
+	@Override public void exitKwRename(CQLParser.KwRenameContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterInitCondDefinition(@NotNull CQLParser.InitCondDefinitionContext ctx) { }
+	@Override public void enterKwReplace(CQLParser.KwReplaceContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitInitCondDefinition(@NotNull CQLParser.InitCondDefinitionContext ctx) { }
+	@Override public void exitKwReplace(CQLParser.KwReplaceContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFunctionArgs(@NotNull CQLParser.FunctionArgsContext ctx) { }
+	@Override public void enterKwReplication(CQLParser.KwReplicationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFunctionArgs(@NotNull CQLParser.FunctionArgsContext ctx) { }
+	@Override public void exitKwReplication(CQLParser.KwReplicationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterIndexColumnSpec(@NotNull CQLParser.IndexColumnSpecContext ctx) { }
+	@Override public void enterKwReturns(CQLParser.KwReturnsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitIndexColumnSpec(@NotNull CQLParser.IndexColumnSpecContext ctx) { }
+	@Override public void exitKwReturns(CQLParser.KwReturnsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCreateFunction(@NotNull CQLParser.CreateFunctionContext ctx) { }
+	@Override public void enterKwRole(CQLParser.KwRoleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCreateFunction(@NotNull CQLParser.CreateFunctionContext ctx) { }
+	@Override public void exitKwRole(CQLParser.KwRoleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterInitCondHashItem(@NotNull CQLParser.InitCondHashItemContext ctx) { }
+	@Override public void enterKwRoles(CQLParser.KwRolesContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitInitCondHashItem(@NotNull CQLParser.InitCondHashItemContext ctx) { }
+	@Override public void exitKwRoles(CQLParser.KwRolesContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterOptionHashKey(@NotNull CQLParser.OptionHashKeyContext ctx) { }
+	@Override public void enterKwSelect(CQLParser.KwSelectContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitOptionHashKey(@NotNull CQLParser.OptionHashKeyContext ctx) { }
+	@Override public void exitKwSelect(CQLParser.KwSelectContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwInsert(@NotNull CQLParser.KwInsertContext ctx) { }
+	@Override public void enterKwSet(CQLParser.KwSetContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwInsert(@NotNull CQLParser.KwInsertContext ctx) { }
+	@Override public void exitKwSet(CQLParser.KwSetContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAlterTable(@NotNull CQLParser.AlterTableContext ctx) { }
+	@Override public void enterKwSfunc(CQLParser.KwSfuncContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAlterTable(@NotNull CQLParser.AlterTableContext ctx) { }
+	@Override public void exitKwSfunc(CQLParser.KwSfuncContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCql(@NotNull CQLParser.CqlContext ctx) { }
+	@Override public void enterKwStorage(CQLParser.KwStorageContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCql(@NotNull CQLParser.CqlContext ctx) { }
+	@Override public void exitKwStorage(CQLParser.KwStorageContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCreateTable(@NotNull CQLParser.CreateTableContext ctx) { }
+	@Override public void enterKwStype(CQLParser.KwStypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCreateTable(@NotNull CQLParser.CreateTableContext ctx) { }
+	@Override public void exitKwStype(CQLParser.KwStypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDropKeyspace(@NotNull CQLParser.DropKeyspaceContext ctx) { }
+	@Override public void enterKwSuperuser(CQLParser.KwSuperuserContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDropKeyspace(@NotNull CQLParser.DropKeyspaceContext ctx) { }
+	@Override public void exitKwSuperuser(CQLParser.KwSuperuserContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwValues(@NotNull CQLParser.KwValuesContext ctx) { }
+	@Override public void enterKwTable(CQLParser.KwTableContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwValues(@NotNull CQLParser.KwValuesContext ctx) { }
+	@Override public void exitKwTable(CQLParser.KwTableContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterInsert(@NotNull CQLParser.InsertContext ctx) { }
+	@Override public void enterKwTimestamp(CQLParser.KwTimestampContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitInsert(@NotNull CQLParser.InsertContext ctx) { }
+	@Override public void exitKwTimestamp(CQLParser.KwTimestampContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCreateType(@NotNull CQLParser.CreateTypeContext ctx) { }
+	@Override public void enterKwTo(CQLParser.KwToContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCreateType(@NotNull CQLParser.CreateTypeContext ctx) { }
+	@Override public void exitKwTo(CQLParser.KwToContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPrimaryKeyColumn(@NotNull CQLParser.PrimaryKeyColumnContext ctx) { }
+	@Override public void enterKwTrigger(CQLParser.KwTriggerContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPrimaryKeyColumn(@NotNull CQLParser.PrimaryKeyColumnContext ctx) { }
+	@Override public void exitKwTrigger(CQLParser.KwTriggerContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDelete(@NotNull CQLParser.DeleteContext ctx) { }
+	@Override public void enterKwTruncate(CQLParser.KwTruncateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDelete(@NotNull CQLParser.DeleteContext ctx) { }
+	@Override public void exitKwTruncate(CQLParser.KwTruncateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAggregate(@NotNull CQLParser.AggregateContext ctx) { }
+	@Override public void enterKwTtl(CQLParser.KwTtlContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAggregate(@NotNull CQLParser.AggregateContext ctx) { }
+	@Override public void exitKwTtl(CQLParser.KwTtlContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwFunction(@NotNull CQLParser.KwFunctionContext ctx) { }
+	@Override public void enterKwType(CQLParser.KwTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwFunction(@NotNull CQLParser.KwFunctionContext ctx) { }
+	@Override public void exitKwType(CQLParser.KwTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwUsers(@NotNull CQLParser.KwUsersContext ctx) { }
+	@Override public void enterKwUnlogged(CQLParser.KwUnloggedContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwUsers(@NotNull CQLParser.KwUsersContext ctx) { }
+	@Override public void exitKwUnlogged(CQLParser.KwUnloggedContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwAllPermissions(@NotNull CQLParser.KwAllPermissionsContext ctx) { }
+	@Override public void enterKwUpdate(CQLParser.KwUpdateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwAllPermissions(@NotNull CQLParser.KwAllPermissionsContext ctx) { }
+	@Override public void exitKwUpdate(CQLParser.KwUpdateContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterListPermissions(@NotNull CQLParser.ListPermissionsContext ctx) { }
+	@Override public void enterKwUse(CQLParser.KwUseContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitListPermissions(@NotNull CQLParser.ListPermissionsContext ctx) { }
+	@Override public void exitKwUse(CQLParser.KwUseContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwDelete(@NotNull CQLParser.KwDeleteContext ctx) { }
+	@Override public void enterKwUser(CQLParser.KwUserContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwDelete(@NotNull CQLParser.KwDeleteContext ctx) { }
+	@Override public void exitKwUser(CQLParser.KwUserContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwTable(@NotNull CQLParser.KwTableContext ctx) { }
+	@Override public void enterKwUsers(CQLParser.KwUsersContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwTable(@NotNull CQLParser.KwTableContext ctx) { }
+	@Override public void exitKwUsers(CQLParser.KwUsersContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwNot(@NotNull CQLParser.KwNotContext ctx) { }
+	@Override public void enterKwUsing(CQLParser.KwUsingContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwNot(@NotNull CQLParser.KwNotContext ctx) { }
+	@Override public void exitKwUsing(CQLParser.KwUsingContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwInitcond(@NotNull CQLParser.KwInitcondContext ctx) { }
+	@Override public void enterKwValues(CQLParser.KwValuesContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwInitcond(@NotNull CQLParser.KwInitcondContext ctx) { }
+	@Override public void exitKwValues(CQLParser.KwValuesContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterApplyBatch(@NotNull CQLParser.ApplyBatchContext ctx) { }
+	@Override public void enterKwView(CQLParser.KwViewContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitApplyBatch(@NotNull CQLParser.ApplyBatchContext ctx) { }
+	@Override public void exitKwView(CQLParser.KwViewContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwNorecursive(@NotNull CQLParser.KwNorecursiveContext ctx) { }
+	@Override public void enterKwWhere(CQLParser.KwWhereContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwNorecursive(@NotNull CQLParser.KwNorecursiveContext ctx) { }
+	@Override public void exitKwWhere(CQLParser.KwWhereContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTableOptionItem(@NotNull CQLParser.TableOptionItemContext ctx) { }
+	@Override public void enterKwWith(CQLParser.KwWithContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitTableOptionItem(@NotNull CQLParser.TableOptionItemContext ctx) { }
+	@Override public void exitKwWith(CQLParser.KwWithContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterUsingTtlTimestamp(@NotNull CQLParser.UsingTtlTimestampContext ctx) { }
+	@Override public void enterKwRevoke(CQLParser.KwRevokeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitUsingTtlTimestamp(@NotNull CQLParser.UsingTtlTimestampContext ctx) { }
+	@Override public void exitKwRevoke(CQLParser.KwRevokeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterHashKey(@NotNull CQLParser.HashKeyContext ctx) { }
+	@Override public void enterEof(CQLParser.EofContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitHashKey(@NotNull CQLParser.HashKeyContext ctx) { }
+	@Override public void exitEof(CQLParser.EofContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPartitionKeyList(@NotNull CQLParser.PartitionKeyListContext ctx) { }
+	@Override public void enterSyntaxBracketLr(CQLParser.SyntaxBracketLrContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPartitionKeyList(@NotNull CQLParser.PartitionKeyListContext ctx) { }
+	@Override public void exitSyntaxBracketLr(CQLParser.SyntaxBracketLrContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterIfNotExist(@NotNull CQLParser.IfNotExistContext ctx) { }
+	@Override public void enterSyntaxBracketRr(CQLParser.SyntaxBracketRrContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitIfNotExist(@NotNull CQLParser.IfNotExistContext ctx) { }
+	@Override public void exitSyntaxBracketRr(CQLParser.SyntaxBracketRrContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterStatementSeparator(@NotNull CQLParser.StatementSeparatorContext ctx) { }
+	@Override public void enterSyntaxBracketLc(CQLParser.SyntaxBracketLcContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitStatementSeparator(@NotNull CQLParser.StatementSeparatorContext ctx) { }
+	@Override public void exitSyntaxBracketLc(CQLParser.SyntaxBracketLcContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTtl(@NotNull CQLParser.TtlContext ctx) { }
+	@Override public void enterSyntaxBracketRc(CQLParser.SyntaxBracketRcContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitTtl(@NotNull CQLParser.TtlContext ctx) { }
+	@Override public void exitSyntaxBracketRc(CQLParser.SyntaxBracketRcContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterLimitSpec(@NotNull CQLParser.LimitSpecContext ctx) { }
+	@Override public void enterSyntaxBracketLa(CQLParser.SyntaxBracketLaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitLimitSpec(@NotNull CQLParser.LimitSpecContext ctx) { }
+	@Override public void exitSyntaxBracketLa(CQLParser.SyntaxBracketLaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSyntaxColon(@NotNull CQLParser.SyntaxColonContext ctx) { }
+	@Override public void enterSyntaxBracketRa(CQLParser.SyntaxBracketRaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSyntaxColon(@NotNull CQLParser.SyntaxColonContext ctx) { }
+	@Override public void exitSyntaxBracketRa(CQLParser.SyntaxBracketRaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterIndexKeysSpec(@NotNull CQLParser.IndexKeysSpecContext ctx) { }
+	@Override public void enterSyntaxBracketLs(CQLParser.SyntaxBracketLsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitIndexKeysSpec(@NotNull CQLParser.IndexKeysSpecContext ctx) { }
+	@Override public void exitSyntaxBracketLs(CQLParser.SyntaxBracketLsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterUser(@NotNull CQLParser.UserContext ctx) { }
+	@Override public void enterSyntaxBracketRs(CQLParser.SyntaxBracketRsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitUser(@NotNull CQLParser.UserContext ctx) { }
+	@Override public void exitSyntaxBracketRs(CQLParser.SyntaxBracketRsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterKwFiltering(@NotNull CQLParser.KwFilteringContext ctx) { }
+	@Override public void enterSyntaxComma(CQLParser.SyntaxCommaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitKwFiltering(@NotNull CQLParser.KwFilteringContext ctx) { }
+	@Override public void exitSyntaxComma(CQLParser.SyntaxCommaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterClusteringKeyList(@NotNull CQLParser.ClusteringKeyListContext ctx) { }
+	@Override public void enterSyntaxColon(CQLParser.SyntaxColonContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitClusteringKeyList(@NotNull CQLParser.ClusteringKeyListContext ctx) { }
+	@Override public void exitSyntaxColon(CQLParser.SyntaxColonContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEveryRule(@NotNull ParserRuleContext ctx) { }
+	@Override public void enterEveryRule(ParserRuleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEveryRule(@NotNull ParserRuleContext ctx) { }
+	@Override public void exitEveryRule(ParserRuleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void visitTerminal(@NotNull TerminalNode node) { }
+	@Override public void visitTerminal(TerminalNode node) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void visitErrorNode(@NotNull ErrorNode node) { }
+	@Override public void visitErrorNode(ErrorNode node) { }
 }

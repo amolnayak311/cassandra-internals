@@ -1,4 +1,4 @@
-// Generated from CQLParser.g4 by ANTLR 4.4
+// Generated from com\github\amolnayak\cassandra\cql3\CQLParser.g4 by ANTLR 4.8
 package com.github.amolnayak.cassandra.cql3;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
@@ -11,73 +11,44 @@ import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class CQLParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.4", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.8", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		K_DESCRIBE=47, K_COMPACT=40, K_MATERIALIZED=84, K_SET=113, K_REPLACE=105, 
-		K_JSON=72, K_MAP=154, K_INDEX=65, K_KEY=73, K_KEYSPACES=76, OPERATOR_GT=173, 
-		MINUS=20, K_INPUT=68, K_ASC=32, K_CREATE=43, K_LOCAL_QUORUM=81, K_APPLY=30, 
-		K_USING=134, K_PASSWORD=98, K_TIME=158, K_ONE=93, K_QUORUM=103, K_SUPERUSER=118, 
-		DOT=14, K_STATIC=115, K_CONTAINS=42, K_INITCOND=67, K_KEYS=74, K_UNLOGGED=130, 
-		LINE_COMMENT=13, K_DROP=49, K_ORDER=96, K_CLUSTERING=38, DQUOTE=21, K_USE=132, 
-		K_VARINT=162, K_NORECURSIVE=87, OPERATOR_EQ=171, K_PER=99, K_BLOB=143, 
-		K_ALTER=27, K_PERMISSIONS=101, K_INSERT=69, K_LIMIT=79, K_VIEW=137, SEMI=8, 
-		K_FROM=58, K_NAN=86, K_PRIMARY=102, K_LIST=153, K_BIGINT=142, DIVIDE=16, 
-		SPACE=10, K_INET=151, K_STYPE=117, K_DESC=46, REAL_LITERAL=168, K_FULL=59, 
-		K_BOOLEAN=144, LS_BRACKET=5, K_TRUE=125, COMMA=7, K_AGGREGATE=24, K_USER=133, 
-		K_OPTIONS=94, K_WITH=139, K_LOGGED=82, OPERATOR_LT=172, K_MODIFY=85, K_OF=91, 
-		K_DECIMAL=147, K_VARCHAR=161, K_ON=92, K_STORAGE=116, K_UUID=135, K_ALLOW=26, 
-		RR_BRACKET=2, STAR=15, K_CUSTOM=44, K_OR=95, K_DATE=146, K_TWO=128, COMMENT_INPUT=12, 
-		K_BATCH=34, K_VALUES=136, K_ASCII=141, OBJECT_NAME=169, K_INFINITY=66, 
-		K_DELETE=45, K_FUNCTIONS=61, DECIMAL_LITERAL=165, RC_BRACKET=4, LC_BRACKET=3, 
-		K_AS=31, K_CALLED=37, K_FILTERING=56, K_FALSE=55, LR_BRACKET=1, K_SELECT=112, 
-		K_INTO=70, K_WRITETIME=140, CODE_BLOCK=163, K_AND=28, K_FROZEN=150, K_USERS=176, 
-		K_ROLES=110, K_FUNCTION=60, K_COLUMNFAMILY=39, K_SMALLINT=155, K_ANY=29, 
-		K_TTL=127, OPERATOR_LTE=174, K_GRANT=62, K_INT=152, K_COUNTER=145, K_AUTHORIZE=33, 
-		UUID=170, K_TRIGGER=124, K_TIMESTAMP=121, K_EXECUTE=53, K_NULL=90, K_FINALFUNC=57, 
-		K_WHERE=138, MINUSMINUS=19, K_LANGUAGE=77, K_LEVEL=78, K_REVOKE=108, K_TIMEUUID=157, 
-		K_TOKEN=123, MODULE=17, K_IF=63, HEXADECIMAL_LITERAL=167, SPEC_MYSQL_COMMENT=11, 
-		K_DISTINCT=48, K_LOGIN=83, K_ROLE=109, K_DOUBLE=148, K_IN=64, K_PERMISSION=100, 
-		K_EACH_QUORUM=51, K_CONSISTENCY=41, K_IS=71, PLUS=18, K_ADD=23, K_ALL=25, 
-		K_PARTITION=97, K_FLOAT=149, K_UPDATE=131, K_BEGIN=35, RS_BRACKET=6, K_LOCAL_ONE=80, 
-		K_SCHEMA=111, K_TO=122, K_RETURNS=107, SQUOTE=22, K_THREE=120, K_TRUNCATE=126, 
-		K_SFUNC=114, K_TUPLE=160, K_DURABLE_WRITES=50, K_NOSUPERUSER=88, K_BY=36, 
-		COLON=9, OPERATOR_GTE=175, K_EXISTS=54, K_NOT=89, K_TYPE=129, K_RENAME=104, 
-		K_TABLE=119, K_TINYINT=159, FLOAT_LITERAL=166, K_ENTRIES=52, K_REPLICATION=106, 
-		STRING_LITERAL=164, K_TEXT=156, K_KEYSPACE=75;
-	public static final String[] tokenNames = {
-		"<INVALID>", "'('", "')'", "'{'", "'}'", "'['", "']'", "','", "';'", "':'", 
-		"SPACE", "SPEC_MYSQL_COMMENT", "COMMENT_INPUT", "LINE_COMMENT", "'.'", 
-		"'*'", "'/'", "'%'", "'+'", "'--'", "'-'", "'\"'", "'''", "K_ADD", "K_AGGREGATE", 
-		"K_ALL", "K_ALLOW", "K_ALTER", "K_AND", "K_ANY", "K_APPLY", "K_AS", "K_ASC", 
-		"K_AUTHORIZE", "K_BATCH", "K_BEGIN", "K_BY", "K_CALLED", "K_CLUSTERING", 
-		"K_COLUMNFAMILY", "K_COMPACT", "K_CONSISTENCY", "K_CONTAINS", "K_CREATE", 
-		"K_CUSTOM", "K_DELETE", "K_DESC", "K_DESCRIBE", "K_DISTINCT", "K_DROP", 
-		"K_DURABLE_WRITES", "K_EACH_QUORUM", "K_ENTRIES", "K_EXECUTE", "K_EXISTS", 
-		"K_FALSE", "K_FILTERING", "K_FINALFUNC", "K_FROM", "K_FULL", "K_FUNCTION", 
-		"K_FUNCTIONS", "K_GRANT", "K_IF", "K_IN", "K_INDEX", "K_INFINITY", "K_INITCOND", 
-		"K_INPUT", "K_INSERT", "K_INTO", "K_IS", "K_JSON", "K_KEY", "K_KEYS", 
-		"K_KEYSPACE", "K_KEYSPACES", "K_LANGUAGE", "K_LEVEL", "K_LIMIT", "K_LOCAL_ONE", 
-		"K_LOCAL_QUORUM", "K_LOGGED", "K_LOGIN", "K_MATERIALIZED", "K_MODIFY", 
-		"K_NAN", "K_NORECURSIVE", "K_NOSUPERUSER", "K_NOT", "K_NULL", "K_OF", 
-		"K_ON", "K_ONE", "K_OPTIONS", "K_OR", "K_ORDER", "K_PARTITION", "K_PASSWORD", 
-		"K_PER", "K_PERMISSION", "K_PERMISSIONS", "K_PRIMARY", "K_QUORUM", "K_RENAME", 
-		"K_REPLACE", "K_REPLICATION", "K_RETURNS", "K_REVOKE", "K_ROLE", "K_ROLES", 
-		"K_SCHEMA", "K_SELECT", "K_SET", "K_SFUNC", "K_STATIC", "K_STORAGE", "K_STYPE", 
-		"K_SUPERUSER", "K_TABLE", "K_THREE", "K_TIMESTAMP", "K_TO", "K_TOKEN", 
-		"K_TRIGGER", "K_TRUE", "K_TRUNCATE", "K_TTL", "K_TWO", "K_TYPE", "K_UNLOGGED", 
-		"K_UPDATE", "K_USE", "K_USER", "K_USING", "K_UUID", "K_VALUES", "K_VIEW", 
-		"K_WHERE", "K_WITH", "K_WRITETIME", "K_ASCII", "K_BIGINT", "K_BLOB", "K_BOOLEAN", 
-		"K_COUNTER", "K_DATE", "K_DECIMAL", "K_DOUBLE", "K_FLOAT", "K_FROZEN", 
-		"K_INET", "K_INT", "K_LIST", "K_MAP", "K_SMALLINT", "K_TEXT", "K_TIMEUUID", 
-		"K_TIME", "K_TINYINT", "K_TUPLE", "K_VARCHAR", "K_VARINT", "CODE_BLOCK", 
-		"STRING_LITERAL", "DECIMAL_LITERAL", "FLOAT_LITERAL", "HEXADECIMAL_LITERAL", 
-		"REAL_LITERAL", "OBJECT_NAME", "UUID", "OPERATOR_EQ", "OPERATOR_LT", "OPERATOR_GT", 
-		"OPERATOR_LTE", "OPERATOR_GTE", "K_USERS"
-	};
+		LR_BRACKET=1, RR_BRACKET=2, LC_BRACKET=3, RC_BRACKET=4, LS_BRACKET=5, 
+		RS_BRACKET=6, COMMA=7, SEMI=8, COLON=9, SPACE=10, SPEC_MYSQL_COMMENT=11, 
+		COMMENT_INPUT=12, LINE_COMMENT=13, DOT=14, STAR=15, DIVIDE=16, MODULE=17, 
+		PLUS=18, MINUSMINUS=19, MINUS=20, DQUOTE=21, SQUOTE=22, K_ADD=23, K_AGGREGATE=24, 
+		K_ALL=25, K_ALLOW=26, K_ALTER=27, K_AND=28, K_ANY=29, K_APPLY=30, K_AS=31, 
+		K_ASC=32, K_AUTHORIZE=33, K_BATCH=34, K_BEGIN=35, K_BY=36, K_CALLED=37, 
+		K_CLUSTERING=38, K_COLUMNFAMILY=39, K_COMPACT=40, K_CONSISTENCY=41, K_CONTAINS=42, 
+		K_CREATE=43, K_CUSTOM=44, K_DELETE=45, K_DESC=46, K_DESCRIBE=47, K_DISTINCT=48, 
+		K_DROP=49, K_DURABLE_WRITES=50, K_EACH_QUORUM=51, K_ENTRIES=52, K_EXECUTE=53, 
+		K_EXISTS=54, K_FALSE=55, K_FILTERING=56, K_FINALFUNC=57, K_FROM=58, K_FULL=59, 
+		K_FUNCTION=60, K_FUNCTIONS=61, K_GRANT=62, K_IF=63, K_IN=64, K_INDEX=65, 
+		K_INFINITY=66, K_INITCOND=67, K_INPUT=68, K_INSERT=69, K_INTO=70, K_IS=71, 
+		K_JSON=72, K_KEY=73, K_KEYS=74, K_KEYSPACE=75, K_KEYSPACES=76, K_LANGUAGE=77, 
+		K_LEVEL=78, K_LIMIT=79, K_LOCAL_ONE=80, K_LOCAL_QUORUM=81, K_LOGGED=82, 
+		K_LOGIN=83, K_MATERIALIZED=84, K_MODIFY=85, K_NAN=86, K_NORECURSIVE=87, 
+		K_NOSUPERUSER=88, K_NOT=89, K_NULL=90, K_OF=91, K_ON=92, K_ONE=93, K_OPTIONS=94, 
+		K_OR=95, K_ORDER=96, K_PARTITION=97, K_PASSWORD=98, K_PER=99, K_PERMISSION=100, 
+		K_PERMISSIONS=101, K_PRIMARY=102, K_QUORUM=103, K_RENAME=104, K_REPLACE=105, 
+		K_REPLICATION=106, K_RETURNS=107, K_REVOKE=108, K_ROLE=109, K_ROLES=110, 
+		K_SCHEMA=111, K_SELECT=112, K_SET=113, K_SFUNC=114, K_STATIC=115, K_STORAGE=116, 
+		K_STYPE=117, K_SUPERUSER=118, K_TABLE=119, K_THREE=120, K_TIMESTAMP=121, 
+		K_TO=122, K_TOKEN=123, K_TRIGGER=124, K_TRUE=125, K_TRUNCATE=126, K_TTL=127, 
+		K_TWO=128, K_TYPE=129, K_UNLOGGED=130, K_UPDATE=131, K_USE=132, K_USER=133, 
+		K_USING=134, K_UUID=135, K_VALUES=136, K_VIEW=137, K_WHERE=138, K_WITH=139, 
+		K_WRITETIME=140, K_ASCII=141, K_BIGINT=142, K_BLOB=143, K_BOOLEAN=144, 
+		K_COUNTER=145, K_DATE=146, K_DECIMAL=147, K_DOUBLE=148, K_FLOAT=149, K_FROZEN=150, 
+		K_INET=151, K_INT=152, K_LIST=153, K_MAP=154, K_SMALLINT=155, K_TEXT=156, 
+		K_TIMEUUID=157, K_TIME=158, K_TINYINT=159, K_TUPLE=160, K_VARCHAR=161, 
+		K_VARINT=162, CODE_BLOCK=163, STRING_LITERAL=164, DECIMAL_LITERAL=165, 
+		FLOAT_LITERAL=166, HEXADECIMAL_LITERAL=167, REAL_LITERAL=168, OBJECT_NAME=169, 
+		UUID=170, OPERATOR_EQ=171, OPERATOR_LT=172, OPERATOR_GT=173, OPERATOR_LTE=174, 
+		OPERATOR_GTE=175, K_USERS=176;
 	public static final int
 		RULE_root = 0, RULE_cqls = 1, RULE_statementSeparator = 2, RULE_empty = 3, 
 		RULE_cql = 4, RULE_revoke = 5, RULE_listUsers = 6, RULE_listRoles = 7, 
@@ -161,68 +132,145 @@ public class CQLParser extends Parser {
 		RULE_syntaxBracketLc = 272, RULE_syntaxBracketRc = 273, RULE_syntaxBracketLa = 274, 
 		RULE_syntaxBracketRa = 275, RULE_syntaxBracketLs = 276, RULE_syntaxBracketRs = 277, 
 		RULE_syntaxComma = 278, RULE_syntaxColon = 279;
-	public static final String[] ruleNames = {
-		"root", "cqls", "statementSeparator", "empty", "cql", "revoke", "listUsers", 
-		"listRoles", "listPermissions", "grant", "priviledge", "resource", "createUser", 
-		"createRole", "createType", "typeMemberColumnList", "createTrigger", "createMaterializedView", 
-		"materializedViewWhere", "columnNotNullList", "columnNotNull", "materializedViewOptions", 
-		"createKeyspace", "createFunction", "codeBlock", "paramList", "returnMode", 
-		"createAggregate", "initCondDefinition", "initCondHash", "initCondHashItem", 
-		"initCondListNested", "initCondList", "orReplace", "alterUser", "userPassword", 
-		"userSuperUser", "alterType", "alterTypeOperation", "alterTypeRename", 
-		"alterTypeRenameList", "alterTypeRenameItem", "alterTypeAdd", "alterTypeAlterType", 
-		"alterTable", "alterTableOperation", "alterTableWith", "alterTableRename", 
-		"alterTableDropCompactStorage", "alterTableDropColumns", "alterTableDropColumnList", 
-		"alterTableAdd", "alterTableColumnDefinition", "alterRole", "roleWith", 
-		"roleWithOptions", "alterMaterializedView", "dropUser", "dropType", "dropMaterializedView", 
-		"dropAggregate", "dropFunction", "dropTrigger", "dropRole", "dropTable", 
-		"dropKeyspace", "dropIndex", "createTable", "withElement", "clusteringOrder", 
-		"tableOptions", "tableOptionItem", "tableOptionName", "tableOptionValue", 
-		"optionHash", "optionHashItem", "optionHashKey", "optionHashValue", "columnDefinitionList", 
-		"columnDefinition", "primaryKeyColumn", "primaryKeyElement", "primaryKeyDefinition", 
-		"singlePrimaryKey", "compoundKey", "compositeKey", "partitionKeyList", 
-		"clusteringKeyList", "partitionKey", "clusteringKey", "applyBatch", "beginBatch", 
-		"batchType", "alterKeyspace", "replicationList", "replicationListItem", 
-		"durableWrites", "use", "truncate", "createIndex", "indexName", "indexColumnSpec", 
-		"indexKeysSpec", "indexEntriesSSpec", "indexFullSpec", "delete", "deleteColumnList", 
-		"deleteColumnItem", "update", "ifSpec", "ifConditionList", "ifCondition", 
-		"assignments", "assignmentElement", "assignmentSet", "assignmentMap", 
-		"assignmentList", "assignmentTuple", "insert", "usingTtlTimestamp", "timestamp", 
-		"ttl", "usingTimestampSpec", "ifNotExist", "ifExist", "insertValuesSpec", 
-		"insertColumnSpec", "columnList", "expressionList", "expression", "select", 
-		"allowFilteringSpec", "limitSpec", "fromSpec", "fromSpecElement", "orderSpec", 
-		"orderSpecElement", "whereSpec", "distinctSpec", "selectElements", "selectElement", 
-		"relationElements", "relationElement", "relalationContains", "relalationContainsKey", 
-		"functionCall", "functionArgs", "constant", "decimalLiteral", "floatLiteral", 
-		"stringLiteral", "booleanLiteral", "hexadecimalLiteral", "keyspace", "table", 
-		"column", "dataType", "dataTypeName", "dataTypeDefinition", "orderDirection", 
-		"role", "trigger", "triggerClass", "materializedView", "type", "aggregate", 
-		"function", "language", "user", "password", "hashKey", "param", "paramName", 
-		"kwAdd", "kwAggregate", "kwAll", "kwAllPermissions", "kwAllow", "kwAlter", 
-		"kwAnd", "kwApply", "kwAs", "kwAsc", "kwAuthorize", "kwBatch", "kwBegin", 
-		"kwBy", "kwCalled", "kwClustering", "kwCompact", "kwContains", "kwCreate", 
-		"kwDelete", "kwDesc", "kwDescibe", "kwDistinct", "kwDrop", "kwDurableWrites", 
-		"kwEntries", "kwExecute", "kwExists", "kwFiltering", "kwFinalfunc", "kwFrom", 
-		"kwFull", "kwFunction", "kwFunctions", "kwGrant", "kwIf", "kwIn", "kwIndex", 
-		"kwInitcond", "kwInput", "kwInsert", "kwInto", "kwIs", "kwJson", "kwKey", 
-		"kwKeys", "kwKeyspace", "kwKeyspaces", "kwLanguage", "kwLimit", "kwList", 
-		"kwLogged", "kwLogin", "kwMaterialized", "kwModify", "kwNosuperuser", 
-		"kwNorecursive", "kwNot", "kwNull", "kwOf", "kwOn", "kwOptions", "kwOr", 
-		"kwOrder", "kwPassword", "kwPrimary", "kwRename", "kwReplace", "kwReplication", 
-		"kwReturns", "kwRole", "kwRoles", "kwSelect", "kwSet", "kwSfunc", "kwStorage", 
-		"kwStype", "kwSuperuser", "kwTable", "kwTimestamp", "kwTo", "kwTrigger", 
-		"kwTruncate", "kwTtl", "kwType", "kwUnlogged", "kwUpdate", "kwUse", "kwUser", 
-		"kwUsers", "kwUsing", "kwValues", "kwView", "kwWhere", "kwWith", "kwRevoke", 
-		"eof", "syntaxBracketLr", "syntaxBracketRr", "syntaxBracketLc", "syntaxBracketRc", 
-		"syntaxBracketLa", "syntaxBracketRa", "syntaxBracketLs", "syntaxBracketRs", 
-		"syntaxComma", "syntaxColon"
-	};
+	private static String[] makeRuleNames() {
+		return new String[] {
+			"root", "cqls", "statementSeparator", "empty", "cql", "revoke", "listUsers", 
+			"listRoles", "listPermissions", "grant", "priviledge", "resource", "createUser", 
+			"createRole", "createType", "typeMemberColumnList", "createTrigger", 
+			"createMaterializedView", "materializedViewWhere", "columnNotNullList", 
+			"columnNotNull", "materializedViewOptions", "createKeyspace", "createFunction", 
+			"codeBlock", "paramList", "returnMode", "createAggregate", "initCondDefinition", 
+			"initCondHash", "initCondHashItem", "initCondListNested", "initCondList", 
+			"orReplace", "alterUser", "userPassword", "userSuperUser", "alterType", 
+			"alterTypeOperation", "alterTypeRename", "alterTypeRenameList", "alterTypeRenameItem", 
+			"alterTypeAdd", "alterTypeAlterType", "alterTable", "alterTableOperation", 
+			"alterTableWith", "alterTableRename", "alterTableDropCompactStorage", 
+			"alterTableDropColumns", "alterTableDropColumnList", "alterTableAdd", 
+			"alterTableColumnDefinition", "alterRole", "roleWith", "roleWithOptions", 
+			"alterMaterializedView", "dropUser", "dropType", "dropMaterializedView", 
+			"dropAggregate", "dropFunction", "dropTrigger", "dropRole", "dropTable", 
+			"dropKeyspace", "dropIndex", "createTable", "withElement", "clusteringOrder", 
+			"tableOptions", "tableOptionItem", "tableOptionName", "tableOptionValue", 
+			"optionHash", "optionHashItem", "optionHashKey", "optionHashValue", "columnDefinitionList", 
+			"columnDefinition", "primaryKeyColumn", "primaryKeyElement", "primaryKeyDefinition", 
+			"singlePrimaryKey", "compoundKey", "compositeKey", "partitionKeyList", 
+			"clusteringKeyList", "partitionKey", "clusteringKey", "applyBatch", "beginBatch", 
+			"batchType", "alterKeyspace", "replicationList", "replicationListItem", 
+			"durableWrites", "use", "truncate", "createIndex", "indexName", "indexColumnSpec", 
+			"indexKeysSpec", "indexEntriesSSpec", "indexFullSpec", "delete", "deleteColumnList", 
+			"deleteColumnItem", "update", "ifSpec", "ifConditionList", "ifCondition", 
+			"assignments", "assignmentElement", "assignmentSet", "assignmentMap", 
+			"assignmentList", "assignmentTuple", "insert", "usingTtlTimestamp", "timestamp", 
+			"ttl", "usingTimestampSpec", "ifNotExist", "ifExist", "insertValuesSpec", 
+			"insertColumnSpec", "columnList", "expressionList", "expression", "select", 
+			"allowFilteringSpec", "limitSpec", "fromSpec", "fromSpecElement", "orderSpec", 
+			"orderSpecElement", "whereSpec", "distinctSpec", "selectElements", "selectElement", 
+			"relationElements", "relationElement", "relalationContains", "relalationContainsKey", 
+			"functionCall", "functionArgs", "constant", "decimalLiteral", "floatLiteral", 
+			"stringLiteral", "booleanLiteral", "hexadecimalLiteral", "keyspace", 
+			"table", "column", "dataType", "dataTypeName", "dataTypeDefinition", 
+			"orderDirection", "role", "trigger", "triggerClass", "materializedView", 
+			"type", "aggregate", "function", "language", "user", "password", "hashKey", 
+			"param", "paramName", "kwAdd", "kwAggregate", "kwAll", "kwAllPermissions", 
+			"kwAllow", "kwAlter", "kwAnd", "kwApply", "kwAs", "kwAsc", "kwAuthorize", 
+			"kwBatch", "kwBegin", "kwBy", "kwCalled", "kwClustering", "kwCompact", 
+			"kwContains", "kwCreate", "kwDelete", "kwDesc", "kwDescibe", "kwDistinct", 
+			"kwDrop", "kwDurableWrites", "kwEntries", "kwExecute", "kwExists", "kwFiltering", 
+			"kwFinalfunc", "kwFrom", "kwFull", "kwFunction", "kwFunctions", "kwGrant", 
+			"kwIf", "kwIn", "kwIndex", "kwInitcond", "kwInput", "kwInsert", "kwInto", 
+			"kwIs", "kwJson", "kwKey", "kwKeys", "kwKeyspace", "kwKeyspaces", "kwLanguage", 
+			"kwLimit", "kwList", "kwLogged", "kwLogin", "kwMaterialized", "kwModify", 
+			"kwNosuperuser", "kwNorecursive", "kwNot", "kwNull", "kwOf", "kwOn", 
+			"kwOptions", "kwOr", "kwOrder", "kwPassword", "kwPrimary", "kwRename", 
+			"kwReplace", "kwReplication", "kwReturns", "kwRole", "kwRoles", "kwSelect", 
+			"kwSet", "kwSfunc", "kwStorage", "kwStype", "kwSuperuser", "kwTable", 
+			"kwTimestamp", "kwTo", "kwTrigger", "kwTruncate", "kwTtl", "kwType", 
+			"kwUnlogged", "kwUpdate", "kwUse", "kwUser", "kwUsers", "kwUsing", "kwValues", 
+			"kwView", "kwWhere", "kwWith", "kwRevoke", "eof", "syntaxBracketLr", 
+			"syntaxBracketRr", "syntaxBracketLc", "syntaxBracketRc", "syntaxBracketLa", 
+			"syntaxBracketRa", "syntaxBracketLs", "syntaxBracketRs", "syntaxComma", 
+			"syntaxColon"
+		};
+	}
+	public static final String[] ruleNames = makeRuleNames();
+
+	private static String[] makeLiteralNames() {
+		return new String[] {
+			null, "'('", "')'", "'{'", "'}'", "'['", "']'", "','", "';'", "':'", 
+			null, null, null, null, "'.'", "'*'", "'/'", "'%'", "'+'", "'--'", "'-'", 
+			"'\"'", "'''"
+		};
+	}
+	private static final String[] _LITERAL_NAMES = makeLiteralNames();
+	private static String[] makeSymbolicNames() {
+		return new String[] {
+			null, "LR_BRACKET", "RR_BRACKET", "LC_BRACKET", "RC_BRACKET", "LS_BRACKET", 
+			"RS_BRACKET", "COMMA", "SEMI", "COLON", "SPACE", "SPEC_MYSQL_COMMENT", 
+			"COMMENT_INPUT", "LINE_COMMENT", "DOT", "STAR", "DIVIDE", "MODULE", "PLUS", 
+			"MINUSMINUS", "MINUS", "DQUOTE", "SQUOTE", "K_ADD", "K_AGGREGATE", "K_ALL", 
+			"K_ALLOW", "K_ALTER", "K_AND", "K_ANY", "K_APPLY", "K_AS", "K_ASC", "K_AUTHORIZE", 
+			"K_BATCH", "K_BEGIN", "K_BY", "K_CALLED", "K_CLUSTERING", "K_COLUMNFAMILY", 
+			"K_COMPACT", "K_CONSISTENCY", "K_CONTAINS", "K_CREATE", "K_CUSTOM", "K_DELETE", 
+			"K_DESC", "K_DESCRIBE", "K_DISTINCT", "K_DROP", "K_DURABLE_WRITES", "K_EACH_QUORUM", 
+			"K_ENTRIES", "K_EXECUTE", "K_EXISTS", "K_FALSE", "K_FILTERING", "K_FINALFUNC", 
+			"K_FROM", "K_FULL", "K_FUNCTION", "K_FUNCTIONS", "K_GRANT", "K_IF", "K_IN", 
+			"K_INDEX", "K_INFINITY", "K_INITCOND", "K_INPUT", "K_INSERT", "K_INTO", 
+			"K_IS", "K_JSON", "K_KEY", "K_KEYS", "K_KEYSPACE", "K_KEYSPACES", "K_LANGUAGE", 
+			"K_LEVEL", "K_LIMIT", "K_LOCAL_ONE", "K_LOCAL_QUORUM", "K_LOGGED", "K_LOGIN", 
+			"K_MATERIALIZED", "K_MODIFY", "K_NAN", "K_NORECURSIVE", "K_NOSUPERUSER", 
+			"K_NOT", "K_NULL", "K_OF", "K_ON", "K_ONE", "K_OPTIONS", "K_OR", "K_ORDER", 
+			"K_PARTITION", "K_PASSWORD", "K_PER", "K_PERMISSION", "K_PERMISSIONS", 
+			"K_PRIMARY", "K_QUORUM", "K_RENAME", "K_REPLACE", "K_REPLICATION", "K_RETURNS", 
+			"K_REVOKE", "K_ROLE", "K_ROLES", "K_SCHEMA", "K_SELECT", "K_SET", "K_SFUNC", 
+			"K_STATIC", "K_STORAGE", "K_STYPE", "K_SUPERUSER", "K_TABLE", "K_THREE", 
+			"K_TIMESTAMP", "K_TO", "K_TOKEN", "K_TRIGGER", "K_TRUE", "K_TRUNCATE", 
+			"K_TTL", "K_TWO", "K_TYPE", "K_UNLOGGED", "K_UPDATE", "K_USE", "K_USER", 
+			"K_USING", "K_UUID", "K_VALUES", "K_VIEW", "K_WHERE", "K_WITH", "K_WRITETIME", 
+			"K_ASCII", "K_BIGINT", "K_BLOB", "K_BOOLEAN", "K_COUNTER", "K_DATE", 
+			"K_DECIMAL", "K_DOUBLE", "K_FLOAT", "K_FROZEN", "K_INET", "K_INT", "K_LIST", 
+			"K_MAP", "K_SMALLINT", "K_TEXT", "K_TIMEUUID", "K_TIME", "K_TINYINT", 
+			"K_TUPLE", "K_VARCHAR", "K_VARINT", "CODE_BLOCK", "STRING_LITERAL", "DECIMAL_LITERAL", 
+			"FLOAT_LITERAL", "HEXADECIMAL_LITERAL", "REAL_LITERAL", "OBJECT_NAME", 
+			"UUID", "OPERATOR_EQ", "OPERATOR_LT", "OPERATOR_GT", "OPERATOR_LTE", 
+			"OPERATOR_GTE", "K_USERS"
+		};
+	}
+	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
+	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
+
+	/**
+	 * @deprecated Use {@link #VOCABULARY} instead.
+	 */
+	@Deprecated
+	public static final String[] tokenNames;
+	static {
+		tokenNames = new String[_SYMBOLIC_NAMES.length];
+		for (int i = 0; i < tokenNames.length; i++) {
+			tokenNames[i] = VOCABULARY.getLiteralName(i);
+			if (tokenNames[i] == null) {
+				tokenNames[i] = VOCABULARY.getSymbolicName(i);
+			}
+
+			if (tokenNames[i] == null) {
+				tokenNames[i] = "<INVALID>";
+			}
+		}
+	}
+
+	@Override
+	@Deprecated
+	public String[] getTokenNames() {
+		return tokenNames;
+	}
+
+	@Override
+
+	public Vocabulary getVocabulary() {
+		return VOCABULARY;
+	}
 
 	@Override
 	public String getGrammarFileName() { return "CQLParser.g4"; }
-
-	@Override
-	public String[] getTokenNames() { return tokenNames; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -237,14 +285,15 @@ public class CQLParser extends Parser {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
+
 	public static class RootContext extends ParserRuleContext {
+		public EofContext eof() {
+			return getRuleContext(EofContext.class,0);
+		}
 		public CqlsContext cqls() {
 			return getRuleContext(CqlsContext.class,0);
 		}
 		public TerminalNode MINUSMINUS() { return getToken(CQLParser.MINUSMINUS, 0); }
-		public EofContext eof() {
-			return getRuleContext(EofContext.class,0);
-		}
 		public RootContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -267,22 +316,27 @@ public class CQLParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(561);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (((((_la - 8)) & ~0x3f) == 0 && ((1L << (_la - 8)) & ((1L << (SEMI - 8)) | (1L << (K_ALTER - 8)) | (1L << (K_APPLY - 8)) | (1L << (K_BEGIN - 8)) | (1L << (K_CREATE - 8)) | (1L << (K_DELETE - 8)) | (1L << (K_DROP - 8)) | (1L << (K_GRANT - 8)) | (1L << (K_INSERT - 8)))) != 0) || ((((_la - 108)) & ~0x3f) == 0 && ((1L << (_la - 108)) & ((1L << (K_REVOKE - 108)) | (1L << (K_SELECT - 108)) | (1L << (K_TRUNCATE - 108)) | (1L << (K_UPDATE - 108)) | (1L << (K_USE - 108)) | (1L << (K_LIST - 108)))) != 0)) {
 				{
-				setState(560); cqls();
+				setState(560);
+				cqls();
 				}
 			}
 
 			setState(564);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==MINUSMINUS) {
 				{
-				setState(563); match(MINUSMINUS);
+				setState(563);
+				match(MINUSMINUS);
 				}
 			}
 
-			setState(566); eof();
+			setState(566);
+			eof();
 			}
 		}
 		catch (RecognitionException re) {
@@ -297,27 +351,27 @@ public class CQLParser extends Parser {
 	}
 
 	public static class CqlsContext extends ParserRuleContext {
-		public List<StatementSeparatorContext> statementSeparator() {
-			return getRuleContexts(StatementSeparatorContext.class);
+		public List<CqlContext> cql() {
+			return getRuleContexts(CqlContext.class);
 		}
 		public CqlContext cql(int i) {
 			return getRuleContext(CqlContext.class,i);
 		}
+		public List<EmptyContext> empty() {
+			return getRuleContexts(EmptyContext.class);
+		}
 		public EmptyContext empty(int i) {
 			return getRuleContext(EmptyContext.class,i);
 		}
-		public List<CqlContext> cql() {
-			return getRuleContexts(CqlContext.class);
+		public List<StatementSeparatorContext> statementSeparator() {
+			return getRuleContexts(StatementSeparatorContext.class);
 		}
-		public List<EmptyContext> empty() {
-			return getRuleContexts(EmptyContext.class);
+		public StatementSeparatorContext statementSeparator(int i) {
+			return getRuleContext(StatementSeparatorContext.class,i);
 		}
 		public List<TerminalNode> MINUSMINUS() { return getTokens(CQLParser.MINUSMINUS); }
 		public TerminalNode MINUSMINUS(int i) {
 			return getToken(CQLParser.MINUSMINUS, i);
-		}
-		public StatementSeparatorContext statementSeparator(int i) {
-			return getRuleContext(StatementSeparatorContext.class,i);
 		}
 		public CqlsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -348,6 +402,7 @@ public class CQLParser extends Parser {
 				if ( _alt==1 ) {
 					{
 					setState(575);
+					_errHandler.sync(this);
 					switch (_input.LA(1)) {
 					case K_ALTER:
 					case K_APPLY:
@@ -364,21 +419,26 @@ public class CQLParser extends Parser {
 					case K_USE:
 					case K_LIST:
 						{
-						setState(568); cql();
+						setState(568);
+						cql();
 						setState(570);
+						_errHandler.sync(this);
 						_la = _input.LA(1);
 						if (_la==MINUSMINUS) {
 							{
-							setState(569); match(MINUSMINUS);
+							setState(569);
+							match(MINUSMINUS);
 							}
 						}
 
-						setState(572); statementSeparator();
+						setState(572);
+						statementSeparator();
 						}
 						break;
 					case SEMI:
 						{
-						setState(574); empty();
+						setState(574);
+						empty();
 						}
 						break;
 					default:
@@ -391,6 +451,7 @@ public class CQLParser extends Parser {
 				_alt = getInterpreter().adaptivePredict(_input,4,_ctx);
 			}
 			setState(588);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case K_ALTER:
 			case K_APPLY:
@@ -407,20 +468,25 @@ public class CQLParser extends Parser {
 			case K_USE:
 			case K_LIST:
 				{
-				setState(580); cql();
+				setState(580);
+				cql();
 				setState(585);
+				_errHandler.sync(this);
 				switch ( getInterpreter().adaptivePredict(_input,6,_ctx) ) {
 				case 1:
 					{
 					setState(582);
+					_errHandler.sync(this);
 					_la = _input.LA(1);
 					if (_la==MINUSMINUS) {
 						{
-						setState(581); match(MINUSMINUS);
+						setState(581);
+						match(MINUSMINUS);
 						}
 					}
 
-					setState(584); statementSeparator();
+					setState(584);
+					statementSeparator();
 					}
 					break;
 				}
@@ -428,7 +494,8 @@ public class CQLParser extends Parser {
 				break;
 			case SEMI:
 				{
-				setState(587); empty();
+				setState(587);
+				empty();
 				}
 				break;
 			default:
@@ -469,7 +536,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(590); match(SEMI);
+			setState(590);
+			match(SEMI);
 			}
 		}
 		catch (RecognitionException re) {
@@ -507,7 +575,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(592); statementSeparator();
+			setState(592);
+			statementSeparator();
 			}
 		}
 		catch (RecognitionException re) {
@@ -525,23 +594,38 @@ public class CQLParser extends Parser {
 		public AlterKeyspaceContext alterKeyspace() {
 			return getRuleContext(AlterKeyspaceContext.class,0);
 		}
-		public CreateMaterializedViewContext createMaterializedView() {
-			return getRuleContext(CreateMaterializedViewContext.class,0);
-		}
-		public DropRoleContext dropRole() {
-			return getRuleContext(DropRoleContext.class,0);
-		}
-		public AlterTableContext alterTable() {
-			return getRuleContext(AlterTableContext.class,0);
-		}
-		public GrantContext grant() {
-			return getRuleContext(GrantContext.class,0);
+		public AlterMaterializedViewContext alterMaterializedView() {
+			return getRuleContext(AlterMaterializedViewContext.class,0);
 		}
 		public AlterRoleContext alterRole() {
 			return getRuleContext(AlterRoleContext.class,0);
 		}
-		public UseContext use() {
-			return getRuleContext(UseContext.class,0);
+		public AlterTableContext alterTable() {
+			return getRuleContext(AlterTableContext.class,0);
+		}
+		public AlterTypeContext alterType() {
+			return getRuleContext(AlterTypeContext.class,0);
+		}
+		public AlterUserContext alterUser() {
+			return getRuleContext(AlterUserContext.class,0);
+		}
+		public ApplyBatchContext applyBatch() {
+			return getRuleContext(ApplyBatchContext.class,0);
+		}
+		public CreateAggregateContext createAggregate() {
+			return getRuleContext(CreateAggregateContext.class,0);
+		}
+		public CreateFunctionContext createFunction() {
+			return getRuleContext(CreateFunctionContext.class,0);
+		}
+		public CreateIndexContext createIndex() {
+			return getRuleContext(CreateIndexContext.class,0);
+		}
+		public CreateKeyspaceContext createKeyspace() {
+			return getRuleContext(CreateKeyspaceContext.class,0);
+		}
+		public CreateMaterializedViewContext createMaterializedView() {
+			return getRuleContext(CreateMaterializedViewContext.class,0);
 		}
 		public CreateRoleContext createRole() {
 			return getRuleContext(CreateRoleContext.class,0);
@@ -549,41 +633,17 @@ public class CQLParser extends Parser {
 		public CreateTableContext createTable() {
 			return getRuleContext(CreateTableContext.class,0);
 		}
-		public DropMaterializedViewContext dropMaterializedView() {
-			return getRuleContext(DropMaterializedViewContext.class,0);
-		}
-		public TruncateContext truncate() {
-			return getRuleContext(TruncateContext.class,0);
-		}
-		public DropTypeContext dropType() {
-			return getRuleContext(DropTypeContext.class,0);
-		}
-		public AlterTypeContext alterType() {
-			return getRuleContext(AlterTypeContext.class,0);
-		}
-		public CreateUserContext createUser() {
-			return getRuleContext(CreateUserContext.class,0);
-		}
-		public AlterUserContext alterUser() {
-			return getRuleContext(AlterUserContext.class,0);
-		}
-		public DropKeyspaceContext dropKeyspace() {
-			return getRuleContext(DropKeyspaceContext.class,0);
-		}
-		public SelectContext select() {
-			return getRuleContext(SelectContext.class,0);
-		}
-		public DropIndexContext dropIndex() {
-			return getRuleContext(DropIndexContext.class,0);
-		}
-		public ApplyBatchContext applyBatch() {
-			return getRuleContext(ApplyBatchContext.class,0);
+		public CreateTriggerContext createTrigger() {
+			return getRuleContext(CreateTriggerContext.class,0);
 		}
 		public CreateTypeContext createType() {
 			return getRuleContext(CreateTypeContext.class,0);
 		}
-		public CreateIndexContext createIndex() {
-			return getRuleContext(CreateIndexContext.class,0);
+		public CreateUserContext createUser() {
+			return getRuleContext(CreateUserContext.class,0);
+		}
+		public DeleteContext delete() {
+			return getRuleContext(DeleteContext.class,0);
 		}
 		public DropAggregateContext dropAggregate() {
 			return getRuleContext(DropAggregateContext.class,0);
@@ -591,47 +651,56 @@ public class CQLParser extends Parser {
 		public DropFunctionContext dropFunction() {
 			return getRuleContext(DropFunctionContext.class,0);
 		}
-		public RevokeContext revoke() {
-			return getRuleContext(RevokeContext.class,0);
+		public DropIndexContext dropIndex() {
+			return getRuleContext(DropIndexContext.class,0);
 		}
-		public InsertContext insert() {
-			return getRuleContext(InsertContext.class,0);
+		public DropKeyspaceContext dropKeyspace() {
+			return getRuleContext(DropKeyspaceContext.class,0);
 		}
-		public ListRolesContext listRoles() {
-			return getRuleContext(ListRolesContext.class,0);
+		public DropMaterializedViewContext dropMaterializedView() {
+			return getRuleContext(DropMaterializedViewContext.class,0);
 		}
-		public CreateFunctionContext createFunction() {
-			return getRuleContext(CreateFunctionContext.class,0);
-		}
-		public DeleteContext delete() {
-			return getRuleContext(DeleteContext.class,0);
-		}
-		public DropUserContext dropUser() {
-			return getRuleContext(DropUserContext.class,0);
-		}
-		public AlterMaterializedViewContext alterMaterializedView() {
-			return getRuleContext(AlterMaterializedViewContext.class,0);
-		}
-		public CreateAggregateContext createAggregate() {
-			return getRuleContext(CreateAggregateContext.class,0);
-		}
-		public CreateTriggerContext createTrigger() {
-			return getRuleContext(CreateTriggerContext.class,0);
+		public DropRoleContext dropRole() {
+			return getRuleContext(DropRoleContext.class,0);
 		}
 		public DropTableContext dropTable() {
 			return getRuleContext(DropTableContext.class,0);
 		}
-		public CreateKeyspaceContext createKeyspace() {
-			return getRuleContext(CreateKeyspaceContext.class,0);
+		public DropTriggerContext dropTrigger() {
+			return getRuleContext(DropTriggerContext.class,0);
+		}
+		public DropTypeContext dropType() {
+			return getRuleContext(DropTypeContext.class,0);
+		}
+		public DropUserContext dropUser() {
+			return getRuleContext(DropUserContext.class,0);
+		}
+		public GrantContext grant() {
+			return getRuleContext(GrantContext.class,0);
+		}
+		public InsertContext insert() {
+			return getRuleContext(InsertContext.class,0);
+		}
+		public ListPermissionsContext listPermissions() {
+			return getRuleContext(ListPermissionsContext.class,0);
+		}
+		public ListRolesContext listRoles() {
+			return getRuleContext(ListRolesContext.class,0);
+		}
+		public RevokeContext revoke() {
+			return getRuleContext(RevokeContext.class,0);
+		}
+		public SelectContext select() {
+			return getRuleContext(SelectContext.class,0);
+		}
+		public TruncateContext truncate() {
+			return getRuleContext(TruncateContext.class,0);
 		}
 		public UpdateContext update() {
 			return getRuleContext(UpdateContext.class,0);
 		}
-		public DropTriggerContext dropTrigger() {
-			return getRuleContext(DropTriggerContext.class,0);
-		}
-		public ListPermissionsContext listPermissions() {
-			return getRuleContext(ListPermissionsContext.class,0);
+		public UseContext use() {
+			return getRuleContext(UseContext.class,0);
 		}
 		public CqlContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -652,227 +721,265 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 8, RULE_cql);
 		try {
 			setState(631);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,8,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(594); alterKeyspace();
+				setState(594);
+				alterKeyspace();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(595); alterMaterializedView();
+				setState(595);
+				alterMaterializedView();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(596); alterRole();
+				setState(596);
+				alterRole();
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(597); alterTable();
+				setState(597);
+				alterTable();
 				}
 				break;
 			case 5:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(598); alterType();
+				setState(598);
+				alterType();
 				}
 				break;
 			case 6:
 				enterOuterAlt(_localctx, 6);
 				{
-				setState(599); alterUser();
+				setState(599);
+				alterUser();
 				}
 				break;
 			case 7:
 				enterOuterAlt(_localctx, 7);
 				{
-				setState(600); applyBatch();
+				setState(600);
+				applyBatch();
 				}
 				break;
 			case 8:
 				enterOuterAlt(_localctx, 8);
 				{
-				setState(601); createAggregate();
+				setState(601);
+				createAggregate();
 				}
 				break;
 			case 9:
 				enterOuterAlt(_localctx, 9);
 				{
-				setState(602); createFunction();
+				setState(602);
+				createFunction();
 				}
 				break;
 			case 10:
 				enterOuterAlt(_localctx, 10);
 				{
-				setState(603); createIndex();
+				setState(603);
+				createIndex();
 				}
 				break;
 			case 11:
 				enterOuterAlt(_localctx, 11);
 				{
-				setState(604); createKeyspace();
+				setState(604);
+				createKeyspace();
 				}
 				break;
 			case 12:
 				enterOuterAlt(_localctx, 12);
 				{
-				setState(605); createMaterializedView();
+				setState(605);
+				createMaterializedView();
 				}
 				break;
 			case 13:
 				enterOuterAlt(_localctx, 13);
 				{
-				setState(606); createRole();
+				setState(606);
+				createRole();
 				}
 				break;
 			case 14:
 				enterOuterAlt(_localctx, 14);
 				{
-				setState(607); createTable();
+				setState(607);
+				createTable();
 				}
 				break;
 			case 15:
 				enterOuterAlt(_localctx, 15);
 				{
-				setState(608); createTrigger();
+				setState(608);
+				createTrigger();
 				}
 				break;
 			case 16:
 				enterOuterAlt(_localctx, 16);
 				{
-				setState(609); createType();
+				setState(609);
+				createType();
 				}
 				break;
 			case 17:
 				enterOuterAlt(_localctx, 17);
 				{
-				setState(610); createUser();
+				setState(610);
+				createUser();
 				}
 				break;
 			case 18:
 				enterOuterAlt(_localctx, 18);
 				{
-				setState(611); delete();
+				setState(611);
+				delete();
 				}
 				break;
 			case 19:
 				enterOuterAlt(_localctx, 19);
 				{
-				setState(612); dropAggregate();
+				setState(612);
+				dropAggregate();
 				}
 				break;
 			case 20:
 				enterOuterAlt(_localctx, 20);
 				{
-				setState(613); dropFunction();
+				setState(613);
+				dropFunction();
 				}
 				break;
 			case 21:
 				enterOuterAlt(_localctx, 21);
 				{
-				setState(614); dropIndex();
+				setState(614);
+				dropIndex();
 				}
 				break;
 			case 22:
 				enterOuterAlt(_localctx, 22);
 				{
-				setState(615); dropKeyspace();
+				setState(615);
+				dropKeyspace();
 				}
 				break;
 			case 23:
 				enterOuterAlt(_localctx, 23);
 				{
-				setState(616); dropMaterializedView();
+				setState(616);
+				dropMaterializedView();
 				}
 				break;
 			case 24:
 				enterOuterAlt(_localctx, 24);
 				{
-				setState(617); dropRole();
+				setState(617);
+				dropRole();
 				}
 				break;
 			case 25:
 				enterOuterAlt(_localctx, 25);
 				{
-				setState(618); dropTable();
+				setState(618);
+				dropTable();
 				}
 				break;
 			case 26:
 				enterOuterAlt(_localctx, 26);
 				{
-				setState(619); dropTrigger();
+				setState(619);
+				dropTrigger();
 				}
 				break;
 			case 27:
 				enterOuterAlt(_localctx, 27);
 				{
-				setState(620); dropType();
+				setState(620);
+				dropType();
 				}
 				break;
 			case 28:
 				enterOuterAlt(_localctx, 28);
 				{
-				setState(621); dropUser();
+				setState(621);
+				dropUser();
 				}
 				break;
 			case 29:
 				enterOuterAlt(_localctx, 29);
 				{
-				setState(622); grant();
+				setState(622);
+				grant();
 				}
 				break;
 			case 30:
 				enterOuterAlt(_localctx, 30);
 				{
-				setState(623); insert();
+				setState(623);
+				insert();
 				}
 				break;
 			case 31:
 				enterOuterAlt(_localctx, 31);
 				{
-				setState(624); listPermissions();
+				setState(624);
+				listPermissions();
 				}
 				break;
 			case 32:
 				enterOuterAlt(_localctx, 32);
 				{
-				setState(625); listRoles();
+				setState(625);
+				listRoles();
 				}
 				break;
 			case 33:
 				enterOuterAlt(_localctx, 33);
 				{
-				setState(626); revoke();
+				setState(626);
+				revoke();
 				}
 				break;
 			case 34:
 				enterOuterAlt(_localctx, 34);
 				{
-				setState(627); select();
+				setState(627);
+				select();
 				}
 				break;
 			case 35:
 				enterOuterAlt(_localctx, 35);
 				{
-				setState(628); truncate();
+				setState(628);
+				truncate();
 				}
 				break;
 			case 36:
 				enterOuterAlt(_localctx, 36);
 				{
-				setState(629); update();
+				setState(629);
+				update();
 				}
 				break;
 			case 37:
 				enterOuterAlt(_localctx, 37);
 				{
-				setState(630); use();
+				setState(630);
+				use();
 				}
 				break;
 			}
@@ -889,23 +996,23 @@ public class CQLParser extends Parser {
 	}
 
 	public static class RevokeContext extends ParserRuleContext {
-		public RoleContext role() {
-			return getRuleContext(RoleContext.class,0);
-		}
-		public ResourceContext resource() {
-			return getRuleContext(ResourceContext.class,0);
-		}
 		public KwRevokeContext kwRevoke() {
 			return getRuleContext(KwRevokeContext.class,0);
-		}
-		public KwOnContext kwOn() {
-			return getRuleContext(KwOnContext.class,0);
 		}
 		public PriviledgeContext priviledge() {
 			return getRuleContext(PriviledgeContext.class,0);
 		}
+		public KwOnContext kwOn() {
+			return getRuleContext(KwOnContext.class,0);
+		}
+		public ResourceContext resource() {
+			return getRuleContext(ResourceContext.class,0);
+		}
 		public KwFromContext kwFrom() {
 			return getRuleContext(KwFromContext.class,0);
+		}
+		public RoleContext role() {
+			return getRuleContext(RoleContext.class,0);
 		}
 		public RevokeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -927,12 +1034,18 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(633); kwRevoke();
-			setState(634); priviledge();
-			setState(635); kwOn();
-			setState(636); resource();
-			setState(637); kwFrom();
-			setState(638); role();
+			setState(633);
+			kwRevoke();
+			setState(634);
+			priviledge();
+			setState(635);
+			kwOn();
+			setState(636);
+			resource();
+			setState(637);
+			kwFrom();
+			setState(638);
+			role();
 			}
 		}
 		catch (RecognitionException re) {
@@ -947,11 +1060,11 @@ public class CQLParser extends Parser {
 	}
 
 	public static class ListUsersContext extends ParserRuleContext {
-		public KwUsersContext kwUsers() {
-			return getRuleContext(KwUsersContext.class,0);
-		}
 		public KwListContext kwList() {
 			return getRuleContext(KwListContext.class,0);
+		}
+		public KwUsersContext kwUsers() {
+			return getRuleContext(KwUsersContext.class,0);
 		}
 		public ListUsersContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -973,8 +1086,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(640); kwList();
-			setState(641); kwUsers();
+			setState(640);
+			kwList();
+			setState(641);
+			kwUsers();
 			}
 		}
 		catch (RecognitionException re) {
@@ -989,12 +1104,6 @@ public class CQLParser extends Parser {
 	}
 
 	public static class ListRolesContext extends ParserRuleContext {
-		public KwNorecursiveContext kwNorecursive() {
-			return getRuleContext(KwNorecursiveContext.class,0);
-		}
-		public RoleContext role() {
-			return getRuleContext(RoleContext.class,0);
-		}
 		public KwListContext kwList() {
 			return getRuleContext(KwListContext.class,0);
 		}
@@ -1003,6 +1112,12 @@ public class CQLParser extends Parser {
 		}
 		public KwOfContext kwOf() {
 			return getRuleContext(KwOfContext.class,0);
+		}
+		public RoleContext role() {
+			return getRuleContext(RoleContext.class,0);
+		}
+		public KwNorecursiveContext kwNorecursive() {
+			return getRuleContext(KwNorecursiveContext.class,0);
 		}
 		public ListRolesContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1025,22 +1140,29 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(643); kwList();
-			setState(644); kwRoles();
+			setState(643);
+			kwList();
+			setState(644);
+			kwRoles();
 			setState(648);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_OF) {
 				{
-				setState(645); kwOf();
-				setState(646); role();
+				setState(645);
+				kwOf();
+				setState(646);
+				role();
 				}
 			}
 
 			setState(651);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_NORECURSIVE) {
 				{
-				setState(650); kwNorecursive();
+				setState(650);
+				kwNorecursive();
 				}
 			}
 
@@ -1058,23 +1180,23 @@ public class CQLParser extends Parser {
 	}
 
 	public static class ListPermissionsContext extends ParserRuleContext {
-		public RoleContext role() {
-			return getRuleContext(RoleContext.class,0);
-		}
-		public ResourceContext resource() {
-			return getRuleContext(ResourceContext.class,0);
-		}
 		public KwListContext kwList() {
 			return getRuleContext(KwListContext.class,0);
-		}
-		public KwOnContext kwOn() {
-			return getRuleContext(KwOnContext.class,0);
 		}
 		public PriviledgeContext priviledge() {
 			return getRuleContext(PriviledgeContext.class,0);
 		}
+		public KwOnContext kwOn() {
+			return getRuleContext(KwOnContext.class,0);
+		}
+		public ResourceContext resource() {
+			return getRuleContext(ResourceContext.class,0);
+		}
 		public KwOfContext kwOf() {
 			return getRuleContext(KwOfContext.class,0);
+		}
+		public RoleContext role() {
+			return getRuleContext(RoleContext.class,0);
 		}
 		public ListPermissionsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1097,23 +1219,31 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(653); kwList();
-			setState(654); priviledge();
+			setState(653);
+			kwList();
+			setState(654);
+			priviledge();
 			setState(658);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_ON) {
 				{
-				setState(655); kwOn();
-				setState(656); resource();
+				setState(655);
+				kwOn();
+				setState(656);
+				resource();
 				}
 			}
 
 			setState(663);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_OF) {
 				{
-				setState(660); kwOf();
-				setState(661); role();
+				setState(660);
+				kwOf();
+				setState(661);
+				role();
 				}
 			}
 
@@ -1134,8 +1264,11 @@ public class CQLParser extends Parser {
 		public KwGrantContext kwGrant() {
 			return getRuleContext(KwGrantContext.class,0);
 		}
-		public RoleContext role() {
-			return getRuleContext(RoleContext.class,0);
+		public PriviledgeContext priviledge() {
+			return getRuleContext(PriviledgeContext.class,0);
+		}
+		public KwOnContext kwOn() {
+			return getRuleContext(KwOnContext.class,0);
 		}
 		public ResourceContext resource() {
 			return getRuleContext(ResourceContext.class,0);
@@ -1143,11 +1276,8 @@ public class CQLParser extends Parser {
 		public KwToContext kwTo() {
 			return getRuleContext(KwToContext.class,0);
 		}
-		public KwOnContext kwOn() {
-			return getRuleContext(KwOnContext.class,0);
-		}
-		public PriviledgeContext priviledge() {
-			return getRuleContext(PriviledgeContext.class,0);
+		public RoleContext role() {
+			return getRuleContext(RoleContext.class,0);
 		}
 		public GrantContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1169,12 +1299,18 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(665); kwGrant();
-			setState(666); priviledge();
-			setState(667); kwOn();
-			setState(668); resource();
-			setState(669); kwTo();
-			setState(670); role();
+			setState(665);
+			kwGrant();
+			setState(666);
+			priviledge();
+			setState(667);
+			kwOn();
+			setState(668);
+			resource();
+			setState(669);
+			kwTo();
+			setState(670);
+			role();
 			}
 		}
 		catch (RecognitionException re) {
@@ -1189,29 +1325,29 @@ public class CQLParser extends Parser {
 	}
 
 	public static class PriviledgeContext extends ParserRuleContext {
-		public KwAlterContext kwAlter() {
-			return getRuleContext(KwAlterContext.class,0);
-		}
 		public KwAllContext kwAll() {
 			return getRuleContext(KwAllContext.class,0);
-		}
-		public KwDropContext kwDrop() {
-			return getRuleContext(KwDropContext.class,0);
 		}
 		public KwAllPermissionsContext kwAllPermissions() {
 			return getRuleContext(KwAllPermissionsContext.class,0);
 		}
-		public KwDescibeContext kwDescibe() {
-			return getRuleContext(KwDescibeContext.class,0);
+		public KwAlterContext kwAlter() {
+			return getRuleContext(KwAlterContext.class,0);
 		}
 		public KwAuthorizeContext kwAuthorize() {
 			return getRuleContext(KwAuthorizeContext.class,0);
+		}
+		public KwDescibeContext kwDescibe() {
+			return getRuleContext(KwDescibeContext.class,0);
 		}
 		public KwExecuteContext kwExecute() {
 			return getRuleContext(KwExecuteContext.class,0);
 		}
 		public KwCreateContext kwCreate() {
 			return getRuleContext(KwCreateContext.class,0);
+		}
+		public KwDropContext kwDrop() {
+			return getRuleContext(KwDropContext.class,0);
 		}
 		public KwModifyContext kwModify() {
 			return getRuleContext(KwModifyContext.class,0);
@@ -1238,20 +1374,24 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 20, RULE_priviledge);
 		try {
 			setState(684);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case K_ALL:
 				enterOuterAlt(_localctx, 1);
 				{
 				setState(674);
+				_errHandler.sync(this);
 				switch ( getInterpreter().adaptivePredict(_input,13,_ctx) ) {
 				case 1:
 					{
-					setState(672); kwAll();
+					setState(672);
+					kwAll();
 					}
 					break;
 				case 2:
 					{
-					setState(673); kwAllPermissions();
+					setState(673);
+					kwAllPermissions();
 					}
 					break;
 				}
@@ -1260,49 +1400,57 @@ public class CQLParser extends Parser {
 			case K_ALTER:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(676); kwAlter();
+				setState(676);
+				kwAlter();
 				}
 				break;
 			case K_AUTHORIZE:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(677); kwAuthorize();
+				setState(677);
+				kwAuthorize();
 				}
 				break;
 			case K_DESCRIBE:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(678); kwDescibe();
+				setState(678);
+				kwDescibe();
 				}
 				break;
 			case K_EXECUTE:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(679); kwExecute();
+				setState(679);
+				kwExecute();
 				}
 				break;
 			case K_CREATE:
 				enterOuterAlt(_localctx, 6);
 				{
-				setState(680); kwCreate();
+				setState(680);
+				kwCreate();
 				}
 				break;
 			case K_DROP:
 				enterOuterAlt(_localctx, 7);
 				{
-				setState(681); kwDrop();
+				setState(681);
+				kwDrop();
 				}
 				break;
 			case K_MODIFY:
 				enterOuterAlt(_localctx, 8);
 				{
-				setState(682); kwModify();
+				setState(682);
+				kwModify();
 				}
 				break;
 			case K_SELECT:
 				enterOuterAlt(_localctx, 9);
 				{
-				setState(683); kwSelect();
+				setState(683);
+				kwSelect();
 				}
 				break;
 			default:
@@ -1324,33 +1472,8 @@ public class CQLParser extends Parser {
 		public KwAllContext kwAll() {
 			return getRuleContext(KwAllContext.class,0);
 		}
-		public KeyspaceContext keyspace() {
-			return getRuleContext(KeyspaceContext.class,0);
-		}
-		public RoleContext role() {
-			return getRuleContext(RoleContext.class,0);
-		}
-		public KwTableContext kwTable() {
-			return getRuleContext(KwTableContext.class,0);
-		}
-		public KwKeyspacesContext kwKeyspaces() {
-			return getRuleContext(KwKeyspacesContext.class,0);
-		}
-		public KwRolesContext kwRoles() {
-			return getRuleContext(KwRolesContext.class,0);
-		}
 		public KwFunctionsContext kwFunctions() {
 			return getRuleContext(KwFunctionsContext.class,0);
-		}
-		public TableContext table() {
-			return getRuleContext(TableContext.class,0);
-		}
-		public KwFunctionContext kwFunction() {
-			return getRuleContext(KwFunctionContext.class,0);
-		}
-		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
-		public KwRoleContext kwRole() {
-			return getRuleContext(KwRoleContext.class,0);
 		}
 		public KwInContext kwIn() {
 			return getRuleContext(KwInContext.class,0);
@@ -1358,8 +1481,33 @@ public class CQLParser extends Parser {
 		public KwKeyspaceContext kwKeyspace() {
 			return getRuleContext(KwKeyspaceContext.class,0);
 		}
+		public KeyspaceContext keyspace() {
+			return getRuleContext(KeyspaceContext.class,0);
+		}
+		public KwFunctionContext kwFunction() {
+			return getRuleContext(KwFunctionContext.class,0);
+		}
 		public FunctionContext function() {
 			return getRuleContext(FunctionContext.class,0);
+		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
+		public KwKeyspacesContext kwKeyspaces() {
+			return getRuleContext(KwKeyspacesContext.class,0);
+		}
+		public TableContext table() {
+			return getRuleContext(TableContext.class,0);
+		}
+		public KwTableContext kwTable() {
+			return getRuleContext(KwTableContext.class,0);
+		}
+		public KwRolesContext kwRoles() {
+			return getRuleContext(KwRolesContext.class,0);
+		}
+		public KwRoleContext kwRole() {
+			return getRuleContext(KwRoleContext.class,0);
+		}
+		public RoleContext role() {
+			return getRuleContext(RoleContext.class,0);
 		}
 		public ResourceContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1381,89 +1529,116 @@ public class CQLParser extends Parser {
 		int _la;
 		try {
 			setState(724);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,18,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(686); kwAll();
-				setState(687); kwFunctions();
+				setState(686);
+				kwAll();
+				setState(687);
+				kwFunctions();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(689); kwAll();
-				setState(690); kwFunctions();
-				setState(691); kwIn();
-				setState(692); kwKeyspace();
-				setState(693); keyspace();
+				setState(689);
+				kwAll();
+				setState(690);
+				kwFunctions();
+				setState(691);
+				kwIn();
+				setState(692);
+				kwKeyspace();
+				setState(693);
+				keyspace();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(695); kwFunction();
+				setState(695);
+				kwFunction();
 				setState(699);
+				_errHandler.sync(this);
 				switch ( getInterpreter().adaptivePredict(_input,15,_ctx) ) {
 				case 1:
 					{
-					setState(696); keyspace();
-					setState(697); match(DOT);
+					setState(696);
+					keyspace();
+					setState(697);
+					match(DOT);
 					}
 					break;
 				}
-				setState(701); function();
+				setState(701);
+				function();
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(703); kwAll();
-				setState(704); kwKeyspaces();
+				setState(703);
+				kwAll();
+				setState(704);
+				kwKeyspaces();
 				}
 				break;
 			case 5:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(706); kwKeyspace();
-				setState(707); keyspace();
+				setState(706);
+				kwKeyspace();
+				setState(707);
+				keyspace();
 				}
 				break;
 			case 6:
 				enterOuterAlt(_localctx, 6);
 				{
 				setState(710);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if (_la==K_TABLE) {
 					{
-					setState(709); kwTable();
+					setState(709);
+					kwTable();
 					}
 				}
 
 				setState(715);
+				_errHandler.sync(this);
 				switch ( getInterpreter().adaptivePredict(_input,17,_ctx) ) {
 				case 1:
 					{
-					setState(712); keyspace();
-					setState(713); match(DOT);
+					setState(712);
+					keyspace();
+					setState(713);
+					match(DOT);
 					}
 					break;
 				}
-				setState(717); table();
+				setState(717);
+				table();
 				}
 				break;
 			case 7:
 				enterOuterAlt(_localctx, 7);
 				{
-				setState(718); kwAll();
-				setState(719); kwRoles();
+				setState(718);
+				kwAll();
+				setState(719);
+				kwRoles();
 				}
 				break;
 			case 8:
 				enterOuterAlt(_localctx, 8);
 				{
-				setState(721); kwRole();
-				setState(722); role();
+				setState(721);
+				kwRole();
+				setState(722);
+				role();
 				}
 				break;
 			}
@@ -1480,17 +1655,14 @@ public class CQLParser extends Parser {
 	}
 
 	public static class CreateUserContext extends ParserRuleContext {
-		public KwNosuperuserContext kwNosuperuser() {
-			return getRuleContext(KwNosuperuserContext.class,0);
+		public KwCreateContext kwCreate() {
+			return getRuleContext(KwCreateContext.class,0);
 		}
 		public KwUserContext kwUser() {
 			return getRuleContext(KwUserContext.class,0);
 		}
 		public UserContext user() {
 			return getRuleContext(UserContext.class,0);
-		}
-		public IfNotExistContext ifNotExist() {
-			return getRuleContext(IfNotExistContext.class,0);
 		}
 		public KwWithContext kwWith() {
 			return getRuleContext(KwWithContext.class,0);
@@ -1501,11 +1673,14 @@ public class CQLParser extends Parser {
 		public StringLiteralContext stringLiteral() {
 			return getRuleContext(StringLiteralContext.class,0);
 		}
+		public IfNotExistContext ifNotExist() {
+			return getRuleContext(IfNotExistContext.class,0);
+		}
 		public KwSuperuserContext kwSuperuser() {
 			return getRuleContext(KwSuperuserContext.class,0);
 		}
-		public KwCreateContext kwCreate() {
-			return getRuleContext(KwCreateContext.class,0);
+		public KwNosuperuserContext kwNosuperuser() {
+			return getRuleContext(KwNosuperuserContext.class,0);
 		}
 		public CreateUserContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1528,30 +1703,41 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(726); kwCreate();
-			setState(727); kwUser();
+			setState(726);
+			kwCreate();
+			setState(727);
+			kwUser();
 			setState(729);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(728); ifNotExist();
+				setState(728);
+				ifNotExist();
 				}
 			}
 
-			setState(731); user();
-			setState(732); kwWith();
-			setState(733); kwPassword();
-			setState(734); stringLiteral();
+			setState(731);
+			user();
+			setState(732);
+			kwWith();
+			setState(733);
+			kwPassword();
+			setState(734);
+			stringLiteral();
 			setState(737);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case K_SUPERUSER:
 				{
-				setState(735); kwSuperuser();
+				setState(735);
+				kwSuperuser();
 				}
 				break;
 			case K_NOSUPERUSER:
 				{
-				setState(736); kwNosuperuser();
+				setState(736);
+				kwNosuperuser();
 				}
 				break;
 			case EOF:
@@ -1559,7 +1745,7 @@ public class CQLParser extends Parser {
 			case MINUSMINUS:
 				break;
 			default:
-				throw new NoViableAltException(this);
+				break;
 			}
 			}
 		}
@@ -1575,8 +1761,8 @@ public class CQLParser extends Parser {
 	}
 
 	public static class CreateRoleContext extends ParserRuleContext {
-		public RoleWithContext roleWith() {
-			return getRuleContext(RoleWithContext.class,0);
+		public KwCreateContext kwCreate() {
+			return getRuleContext(KwCreateContext.class,0);
 		}
 		public KwRoleContext kwRole() {
 			return getRuleContext(KwRoleContext.class,0);
@@ -1587,8 +1773,8 @@ public class CQLParser extends Parser {
 		public IfNotExistContext ifNotExist() {
 			return getRuleContext(IfNotExistContext.class,0);
 		}
-		public KwCreateContext kwCreate() {
-			return getRuleContext(KwCreateContext.class,0);
+		public RoleWithContext roleWith() {
+			return getRuleContext(RoleWithContext.class,0);
 		}
 		public CreateRoleContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1611,22 +1797,29 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(739); kwCreate();
-			setState(740); kwRole();
+			setState(739);
+			kwCreate();
+			setState(740);
+			kwRole();
 			setState(742);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(741); ifNotExist();
+				setState(741);
+				ifNotExist();
 				}
 			}
 
-			setState(744); role();
+			setState(744);
+			role();
 			setState(746);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_WITH) {
 				{
-				setState(745); roleWith();
+				setState(745);
+				roleWith();
 				}
 			}
 
@@ -1644,31 +1837,31 @@ public class CQLParser extends Parser {
 	}
 
 	public static class CreateTypeContext extends ParserRuleContext {
-		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
-		public KeyspaceContext keyspace() {
-			return getRuleContext(KeyspaceContext.class,0);
-		}
-		public TypeMemberColumnListContext typeMemberColumnList() {
-			return getRuleContext(TypeMemberColumnListContext.class,0);
-		}
-		public IfNotExistContext ifNotExist() {
-			return getRuleContext(IfNotExistContext.class,0);
-		}
-		public SyntaxBracketLrContext syntaxBracketLr() {
-			return getRuleContext(SyntaxBracketLrContext.class,0);
-		}
-		public TypeContext type() {
-			return getRuleContext(TypeContext.class,0);
-		}
 		public KwCreateContext kwCreate() {
 			return getRuleContext(KwCreateContext.class,0);
-		}
-		public SyntaxBracketRrContext syntaxBracketRr() {
-			return getRuleContext(SyntaxBracketRrContext.class,0);
 		}
 		public KwTypeContext kwType() {
 			return getRuleContext(KwTypeContext.class,0);
 		}
+		public TypeContext type() {
+			return getRuleContext(TypeContext.class,0);
+		}
+		public SyntaxBracketLrContext syntaxBracketLr() {
+			return getRuleContext(SyntaxBracketLrContext.class,0);
+		}
+		public TypeMemberColumnListContext typeMemberColumnList() {
+			return getRuleContext(TypeMemberColumnListContext.class,0);
+		}
+		public SyntaxBracketRrContext syntaxBracketRr() {
+			return getRuleContext(SyntaxBracketRrContext.class,0);
+		}
+		public IfNotExistContext ifNotExist() {
+			return getRuleContext(IfNotExistContext.class,0);
+		}
+		public KeyspaceContext keyspace() {
+			return getRuleContext(KeyspaceContext.class,0);
+		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
 		public CreateTypeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -1690,29 +1883,40 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(748); kwCreate();
-			setState(749); kwType();
+			setState(748);
+			kwCreate();
+			setState(749);
+			kwType();
 			setState(751);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(750); ifNotExist();
+				setState(750);
+				ifNotExist();
 				}
 			}
 
 			setState(756);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,24,_ctx) ) {
 			case 1:
 				{
-				setState(753); keyspace();
-				setState(754); match(DOT);
+				setState(753);
+				keyspace();
+				setState(754);
+				match(DOT);
 				}
 				break;
 			}
-			setState(758); type();
-			setState(759); syntaxBracketLr();
-			setState(760); typeMemberColumnList();
-			setState(761); syntaxBracketRr();
+			setState(758);
+			type();
+			setState(759);
+			syntaxBracketLr();
+			setState(760);
+			typeMemberColumnList();
+			setState(761);
+			syntaxBracketRr();
 			}
 		}
 		catch (RecognitionException re) {
@@ -1727,23 +1931,23 @@ public class CQLParser extends Parser {
 	}
 
 	public static class TypeMemberColumnListContext extends ParserRuleContext {
-		public List<SyntaxCommaContext> syntaxComma() {
-			return getRuleContexts(SyntaxCommaContext.class);
-		}
 		public List<ColumnContext> column() {
 			return getRuleContexts(ColumnContext.class);
-		}
-		public SyntaxCommaContext syntaxComma(int i) {
-			return getRuleContext(SyntaxCommaContext.class,i);
-		}
-		public DataTypeContext dataType(int i) {
-			return getRuleContext(DataTypeContext.class,i);
 		}
 		public ColumnContext column(int i) {
 			return getRuleContext(ColumnContext.class,i);
 		}
 		public List<DataTypeContext> dataType() {
 			return getRuleContexts(DataTypeContext.class);
+		}
+		public DataTypeContext dataType(int i) {
+			return getRuleContext(DataTypeContext.class,i);
+		}
+		public List<SyntaxCommaContext> syntaxComma() {
+			return getRuleContexts(SyntaxCommaContext.class);
+		}
+		public SyntaxCommaContext syntaxComma(int i) {
+			return getRuleContext(SyntaxCommaContext.class,i);
 		}
 		public TypeMemberColumnListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1766,17 +1970,22 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(763); column();
-			setState(764); dataType();
+			setState(763);
+			column();
+			setState(764);
+			dataType();
 			setState(771);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==COMMA) {
 				{
 				{
-				setState(765); syntaxComma();
-				setState(766); column();
-				setState(767); dataType();
+				setState(765);
+				syntaxComma();
+				setState(766);
+				column();
+				setState(767);
+				dataType();
 				}
 				}
 				setState(773);
@@ -1797,28 +2006,28 @@ public class CQLParser extends Parser {
 	}
 
 	public static class CreateTriggerContext extends ParserRuleContext {
-		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
-		public KeyspaceContext keyspace() {
-			return getRuleContext(KeyspaceContext.class,0);
-		}
-		public TriggerContext trigger() {
-			return getRuleContext(TriggerContext.class,0);
-		}
-		public IfNotExistContext ifNotExist() {
-			return getRuleContext(IfNotExistContext.class,0);
+		public KwCreateContext kwCreate() {
+			return getRuleContext(KwCreateContext.class,0);
 		}
 		public KwTriggerContext kwTrigger() {
 			return getRuleContext(KwTriggerContext.class,0);
 		}
-		public TriggerClassContext triggerClass() {
-			return getRuleContext(TriggerClassContext.class,0);
+		public TriggerContext trigger() {
+			return getRuleContext(TriggerContext.class,0);
 		}
 		public KwUsingContext kwUsing() {
 			return getRuleContext(KwUsingContext.class,0);
 		}
-		public KwCreateContext kwCreate() {
-			return getRuleContext(KwCreateContext.class,0);
+		public TriggerClassContext triggerClass() {
+			return getRuleContext(TriggerClassContext.class,0);
 		}
+		public IfNotExistContext ifNotExist() {
+			return getRuleContext(IfNotExistContext.class,0);
+		}
+		public KeyspaceContext keyspace() {
+			return getRuleContext(KeyspaceContext.class,0);
+		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
 		public CreateTriggerContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -1840,28 +2049,38 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(774); kwCreate();
-			setState(775); kwTrigger();
+			setState(774);
+			kwCreate();
+			setState(775);
+			kwTrigger();
 			setState(777);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(776); ifNotExist();
+				setState(776);
+				ifNotExist();
 				}
 			}
 
 			setState(782);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,27,_ctx) ) {
 			case 1:
 				{
-				setState(779); keyspace();
-				setState(780); match(DOT);
+				setState(779);
+				keyspace();
+				setState(780);
+				match(DOT);
 				}
 				break;
 			}
-			setState(784); trigger();
-			setState(785); kwUsing();
-			setState(786); triggerClass();
+			setState(784);
+			trigger();
+			setState(785);
+			kwUsing();
+			setState(786);
+			triggerClass();
 			}
 		}
 		catch (RecognitionException re) {
@@ -1876,48 +2095,41 @@ public class CQLParser extends Parser {
 	}
 
 	public static class CreateMaterializedViewContext extends ParserRuleContext {
-		public List<ColumnListContext> columnList() {
-			return getRuleContexts(ColumnListContext.class);
+		public KwCreateContext kwCreate() {
+			return getRuleContext(KwCreateContext.class,0);
 		}
-		public List<KeyspaceContext> keyspace() {
-			return getRuleContexts(KeyspaceContext.class);
-		}
-		public MaterializedViewOptionsContext materializedViewOptions() {
-			return getRuleContext(MaterializedViewOptionsContext.class,0);
-		}
-		public MaterializedViewWhereContext materializedViewWhere() {
-			return getRuleContext(MaterializedViewWhereContext.class,0);
-		}
-		public IfNotExistContext ifNotExist() {
-			return getRuleContext(IfNotExistContext.class,0);
-		}
-		public KwFromContext kwFrom() {
-			return getRuleContext(KwFromContext.class,0);
-		}
-		public ColumnListContext columnList(int i) {
-			return getRuleContext(ColumnListContext.class,i);
-		}
-		public KwPrimaryContext kwPrimary() {
-			return getRuleContext(KwPrimaryContext.class,0);
-		}
-		public SyntaxBracketRrContext syntaxBracketRr() {
-			return getRuleContext(SyntaxBracketRrContext.class,0);
-		}
-		public TerminalNode DOT(int i) {
-			return getToken(CQLParser.DOT, i);
-		}
-		public TableContext table() {
-			return getRuleContext(TableContext.class,0);
+		public KwMaterializedContext kwMaterialized() {
+			return getRuleContext(KwMaterializedContext.class,0);
 		}
 		public KwViewContext kwView() {
 			return getRuleContext(KwViewContext.class,0);
 		}
+		public MaterializedViewContext materializedView() {
+			return getRuleContext(MaterializedViewContext.class,0);
+		}
 		public KwAsContext kwAs() {
 			return getRuleContext(KwAsContext.class,0);
 		}
-		public List<TerminalNode> DOT() { return getTokens(CQLParser.DOT); }
-		public MaterializedViewContext materializedView() {
-			return getRuleContext(MaterializedViewContext.class,0);
+		public KwSelectContext kwSelect() {
+			return getRuleContext(KwSelectContext.class,0);
+		}
+		public List<ColumnListContext> columnList() {
+			return getRuleContexts(ColumnListContext.class);
+		}
+		public ColumnListContext columnList(int i) {
+			return getRuleContext(ColumnListContext.class,i);
+		}
+		public KwFromContext kwFrom() {
+			return getRuleContext(KwFromContext.class,0);
+		}
+		public TableContext table() {
+			return getRuleContext(TableContext.class,0);
+		}
+		public MaterializedViewWhereContext materializedViewWhere() {
+			return getRuleContext(MaterializedViewWhereContext.class,0);
+		}
+		public KwPrimaryContext kwPrimary() {
+			return getRuleContext(KwPrimaryContext.class,0);
 		}
 		public KwKeyContext kwKey() {
 			return getRuleContext(KwKeyContext.class,0);
@@ -1925,20 +2137,27 @@ public class CQLParser extends Parser {
 		public SyntaxBracketLrContext syntaxBracketLr() {
 			return getRuleContext(SyntaxBracketLrContext.class,0);
 		}
-		public KwWithContext kwWith() {
-			return getRuleContext(KwWithContext.class,0);
+		public SyntaxBracketRrContext syntaxBracketRr() {
+			return getRuleContext(SyntaxBracketRrContext.class,0);
+		}
+		public IfNotExistContext ifNotExist() {
+			return getRuleContext(IfNotExistContext.class,0);
+		}
+		public List<KeyspaceContext> keyspace() {
+			return getRuleContexts(KeyspaceContext.class);
 		}
 		public KeyspaceContext keyspace(int i) {
 			return getRuleContext(KeyspaceContext.class,i);
 		}
-		public KwCreateContext kwCreate() {
-			return getRuleContext(KwCreateContext.class,0);
+		public List<TerminalNode> DOT() { return getTokens(CQLParser.DOT); }
+		public TerminalNode DOT(int i) {
+			return getToken(CQLParser.DOT, i);
 		}
-		public KwSelectContext kwSelect() {
-			return getRuleContext(KwSelectContext.class,0);
+		public KwWithContext kwWith() {
+			return getRuleContext(KwWithContext.class,0);
 		}
-		public KwMaterializedContext kwMaterialized() {
-			return getRuleContext(KwMaterializedContext.class,0);
+		public MaterializedViewOptionsContext materializedViewOptions() {
+			return getRuleContext(MaterializedViewOptionsContext.class,0);
 		}
 		public CreateMaterializedViewContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -1961,53 +2180,79 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(788); kwCreate();
-			setState(789); kwMaterialized();
-			setState(790); kwView();
+			setState(788);
+			kwCreate();
+			setState(789);
+			kwMaterialized();
+			setState(790);
+			kwView();
 			setState(792);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(791); ifNotExist();
+				setState(791);
+				ifNotExist();
 				}
 			}
 
 			setState(797);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,29,_ctx) ) {
 			case 1:
 				{
-				setState(794); keyspace();
-				setState(795); match(DOT);
+				setState(794);
+				keyspace();
+				setState(795);
+				match(DOT);
 				}
 				break;
 			}
-			setState(799); materializedView();
-			setState(800); kwAs();
-			setState(801); kwSelect();
-			setState(802); columnList();
-			setState(803); kwFrom();
+			setState(799);
+			materializedView();
+			setState(800);
+			kwAs();
+			setState(801);
+			kwSelect();
+			setState(802);
+			columnList();
+			setState(803);
+			kwFrom();
 			setState(807);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,30,_ctx) ) {
 			case 1:
 				{
-				setState(804); keyspace();
-				setState(805); match(DOT);
+				setState(804);
+				keyspace();
+				setState(805);
+				match(DOT);
 				}
 				break;
 			}
-			setState(809); table();
-			setState(810); materializedViewWhere();
-			setState(811); kwPrimary();
-			setState(812); kwKey();
-			setState(813); syntaxBracketLr();
-			setState(814); columnList();
-			setState(815); syntaxBracketRr();
+			setState(809);
+			table();
+			setState(810);
+			materializedViewWhere();
+			setState(811);
+			kwPrimary();
+			setState(812);
+			kwKey();
+			setState(813);
+			syntaxBracketLr();
+			setState(814);
+			columnList();
+			setState(815);
+			syntaxBracketRr();
 			setState(819);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_WITH) {
 				{
-				setState(816); kwWith();
-				setState(817); materializedViewOptions();
+				setState(816);
+				kwWith();
+				setState(817);
+				materializedViewOptions();
 				}
 			}
 
@@ -2028,14 +2273,14 @@ public class CQLParser extends Parser {
 		public KwWhereContext kwWhere() {
 			return getRuleContext(KwWhereContext.class,0);
 		}
-		public RelationElementsContext relationElements() {
-			return getRuleContext(RelationElementsContext.class,0);
-		}
 		public ColumnNotNullListContext columnNotNullList() {
 			return getRuleContext(ColumnNotNullListContext.class,0);
 		}
 		public KwAndContext kwAnd() {
 			return getRuleContext(KwAndContext.class,0);
+		}
+		public RelationElementsContext relationElements() {
+			return getRuleContext(RelationElementsContext.class,0);
 		}
 		public MaterializedViewWhereContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2058,14 +2303,19 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(821); kwWhere();
-			setState(822); columnNotNullList();
+			setState(821);
+			kwWhere();
+			setState(822);
+			columnNotNullList();
 			setState(826);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_AND) {
 				{
-				setState(823); kwAnd();
-				setState(824); relationElements();
+				setState(823);
+				kwAnd();
+				setState(824);
+				relationElements();
 				}
 			}
 
@@ -2083,9 +2333,6 @@ public class CQLParser extends Parser {
 	}
 
 	public static class ColumnNotNullListContext extends ParserRuleContext {
-		public KwAndContext kwAnd(int i) {
-			return getRuleContext(KwAndContext.class,i);
-		}
 		public List<ColumnNotNullContext> columnNotNull() {
 			return getRuleContexts(ColumnNotNullContext.class);
 		}
@@ -2094,6 +2341,9 @@ public class CQLParser extends Parser {
 		}
 		public List<KwAndContext> kwAnd() {
 			return getRuleContexts(KwAndContext.class);
+		}
+		public KwAndContext kwAnd(int i) {
+			return getRuleContext(KwAndContext.class,i);
 		}
 		public ColumnNotNullListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2116,7 +2366,8 @@ public class CQLParser extends Parser {
 			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(828); columnNotNull();
+			setState(828);
+			columnNotNull();
 			setState(834);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,33,_ctx);
@@ -2124,8 +2375,10 @@ public class CQLParser extends Parser {
 				if ( _alt==1 ) {
 					{
 					{
-					setState(829); kwAnd();
-					setState(830); columnNotNull();
+					setState(829);
+					kwAnd();
+					setState(830);
+					columnNotNull();
 					}
 					} 
 				}
@@ -2147,17 +2400,17 @@ public class CQLParser extends Parser {
 	}
 
 	public static class ColumnNotNullContext extends ParserRuleContext {
-		public KwIsContext kwIs() {
-			return getRuleContext(KwIsContext.class,0);
-		}
-		public KwNullContext kwNull() {
-			return getRuleContext(KwNullContext.class,0);
-		}
 		public ColumnContext column() {
 			return getRuleContext(ColumnContext.class,0);
 		}
+		public KwIsContext kwIs() {
+			return getRuleContext(KwIsContext.class,0);
+		}
 		public KwNotContext kwNot() {
 			return getRuleContext(KwNotContext.class,0);
+		}
+		public KwNullContext kwNull() {
+			return getRuleContext(KwNullContext.class,0);
 		}
 		public ColumnNotNullContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2179,10 +2432,14 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(837); column();
-			setState(838); kwIs();
-			setState(839); kwNot();
-			setState(840); kwNull();
+			setState(837);
+			column();
+			setState(838);
+			kwIs();
+			setState(839);
+			kwNot();
+			setState(840);
+			kwNull();
 			}
 		}
 		catch (RecognitionException re) {
@@ -2197,14 +2454,14 @@ public class CQLParser extends Parser {
 	}
 
 	public static class MaterializedViewOptionsContext extends ParserRuleContext {
-		public ClusteringOrderContext clusteringOrder() {
-			return getRuleContext(ClusteringOrderContext.class,0);
-		}
 		public TableOptionsContext tableOptions() {
 			return getRuleContext(TableOptionsContext.class,0);
 		}
 		public KwAndContext kwAnd() {
 			return getRuleContext(KwAndContext.class,0);
+		}
+		public ClusteringOrderContext clusteringOrder() {
+			return getRuleContext(ClusteringOrderContext.class,0);
 		}
 		public MaterializedViewOptionsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2225,25 +2482,31 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 42, RULE_materializedViewOptions);
 		try {
 			setState(848);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,34,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(842); tableOptions();
+				setState(842);
+				tableOptions();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(843); tableOptions();
-				setState(844); kwAnd();
-				setState(845); clusteringOrder();
+				setState(843);
+				tableOptions();
+				setState(844);
+				kwAnd();
+				setState(845);
+				clusteringOrder();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(847); clusteringOrder();
+				setState(847);
+				clusteringOrder();
 				}
 				break;
 			}
@@ -2260,39 +2523,39 @@ public class CQLParser extends Parser {
 	}
 
 	public static class CreateKeyspaceContext extends ParserRuleContext {
-		public ReplicationListContext replicationList() {
-			return getRuleContext(ReplicationListContext.class,0);
+		public KwCreateContext kwCreate() {
+			return getRuleContext(KwCreateContext.class,0);
+		}
+		public KwKeyspaceContext kwKeyspace() {
+			return getRuleContext(KwKeyspaceContext.class,0);
 		}
 		public KeyspaceContext keyspace() {
 			return getRuleContext(KeyspaceContext.class,0);
 		}
-		public DurableWritesContext durableWrites() {
-			return getRuleContext(DurableWritesContext.class,0);
+		public KwWithContext kwWith() {
+			return getRuleContext(KwWithContext.class,0);
+		}
+		public KwReplicationContext kwReplication() {
+			return getRuleContext(KwReplicationContext.class,0);
 		}
 		public TerminalNode OPERATOR_EQ() { return getToken(CQLParser.OPERATOR_EQ, 0); }
+		public SyntaxBracketLcContext syntaxBracketLc() {
+			return getRuleContext(SyntaxBracketLcContext.class,0);
+		}
+		public ReplicationListContext replicationList() {
+			return getRuleContext(ReplicationListContext.class,0);
+		}
 		public SyntaxBracketRcContext syntaxBracketRc() {
 			return getRuleContext(SyntaxBracketRcContext.class,0);
 		}
 		public IfNotExistContext ifNotExist() {
 			return getRuleContext(IfNotExistContext.class,0);
 		}
-		public KwWithContext kwWith() {
-			return getRuleContext(KwWithContext.class,0);
-		}
-		public SyntaxBracketLcContext syntaxBracketLc() {
-			return getRuleContext(SyntaxBracketLcContext.class,0);
-		}
 		public KwAndContext kwAnd() {
 			return getRuleContext(KwAndContext.class,0);
 		}
-		public KwKeyspaceContext kwKeyspace() {
-			return getRuleContext(KwKeyspaceContext.class,0);
-		}
-		public KwReplicationContext kwReplication() {
-			return getRuleContext(KwReplicationContext.class,0);
-		}
-		public KwCreateContext kwCreate() {
-			return getRuleContext(KwCreateContext.class,0);
+		public DurableWritesContext durableWrites() {
+			return getRuleContext(DurableWritesContext.class,0);
 		}
 		public CreateKeyspaceContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2315,29 +2578,43 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(850); kwCreate();
-			setState(851); kwKeyspace();
+			setState(850);
+			kwCreate();
+			setState(851);
+			kwKeyspace();
 			setState(853);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(852); ifNotExist();
+				setState(852);
+				ifNotExist();
 				}
 			}
 
-			setState(855); keyspace();
-			setState(856); kwWith();
-			setState(857); kwReplication();
-			setState(858); match(OPERATOR_EQ);
-			setState(859); syntaxBracketLc();
-			setState(860); replicationList();
-			setState(861); syntaxBracketRc();
+			setState(855);
+			keyspace();
+			setState(856);
+			kwWith();
+			setState(857);
+			kwReplication();
+			setState(858);
+			match(OPERATOR_EQ);
+			setState(859);
+			syntaxBracketLc();
+			setState(860);
+			replicationList();
+			setState(861);
+			syntaxBracketRc();
 			setState(865);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_AND) {
 				{
-				setState(862); kwAnd();
-				setState(863); durableWrites();
+				setState(862);
+				kwAnd();
+				setState(863);
+				durableWrites();
 				}
 			}
 
@@ -2355,17 +2632,17 @@ public class CQLParser extends Parser {
 	}
 
 	public static class CreateFunctionContext extends ParserRuleContext {
-		public KwReturnsContext kwReturns() {
-			return getRuleContext(KwReturnsContext.class,0);
+		public KwCreateContext kwCreate() {
+			return getRuleContext(KwCreateContext.class,0);
 		}
-		public KeyspaceContext keyspace() {
-			return getRuleContext(KeyspaceContext.class,0);
+		public KwFunctionContext kwFunction() {
+			return getRuleContext(KwFunctionContext.class,0);
 		}
-		public IfNotExistContext ifNotExist() {
-			return getRuleContext(IfNotExistContext.class,0);
+		public FunctionContext function() {
+			return getRuleContext(FunctionContext.class,0);
 		}
-		public CodeBlockContext codeBlock() {
-			return getRuleContext(CodeBlockContext.class,0);
+		public SyntaxBracketLrContext syntaxBracketLr() {
+			return getRuleContext(SyntaxBracketLrContext.class,0);
 		}
 		public SyntaxBracketRrContext syntaxBracketRr() {
 			return getRuleContext(SyntaxBracketRrContext.class,0);
@@ -2373,36 +2650,36 @@ public class CQLParser extends Parser {
 		public ReturnModeContext returnMode() {
 			return getRuleContext(ReturnModeContext.class,0);
 		}
-		public KwFunctionContext kwFunction() {
-			return getRuleContext(KwFunctionContext.class,0);
+		public KwReturnsContext kwReturns() {
+			return getRuleContext(KwReturnsContext.class,0);
 		}
-		public KwAsContext kwAs() {
-			return getRuleContext(KwAsContext.class,0);
-		}
-		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
-		public OrReplaceContext orReplace() {
-			return getRuleContext(OrReplaceContext.class,0);
-		}
-		public ParamListContext paramList() {
-			return getRuleContext(ParamListContext.class,0);
+		public DataTypeContext dataType() {
+			return getRuleContext(DataTypeContext.class,0);
 		}
 		public KwLanguageContext kwLanguage() {
 			return getRuleContext(KwLanguageContext.class,0);
 		}
-		public SyntaxBracketLrContext syntaxBracketLr() {
-			return getRuleContext(SyntaxBracketLrContext.class,0);
-		}
 		public LanguageContext language() {
 			return getRuleContext(LanguageContext.class,0);
 		}
-		public KwCreateContext kwCreate() {
-			return getRuleContext(KwCreateContext.class,0);
+		public KwAsContext kwAs() {
+			return getRuleContext(KwAsContext.class,0);
 		}
-		public FunctionContext function() {
-			return getRuleContext(FunctionContext.class,0);
+		public CodeBlockContext codeBlock() {
+			return getRuleContext(CodeBlockContext.class,0);
 		}
-		public DataTypeContext dataType() {
-			return getRuleContext(DataTypeContext.class,0);
+		public OrReplaceContext orReplace() {
+			return getRuleContext(OrReplaceContext.class,0);
+		}
+		public IfNotExistContext ifNotExist() {
+			return getRuleContext(IfNotExistContext.class,0);
+		}
+		public KeyspaceContext keyspace() {
+			return getRuleContext(KeyspaceContext.class,0);
+		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
+		public ParamListContext paramList() {
+			return getRuleContext(ParamListContext.class,0);
 		}
 		public CreateFunctionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2425,51 +2702,72 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(867); kwCreate();
+			setState(867);
+			kwCreate();
 			setState(869);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_OR) {
 				{
-				setState(868); orReplace();
+				setState(868);
+				orReplace();
 				}
 			}
 
-			setState(871); kwFunction();
+			setState(871);
+			kwFunction();
 			setState(873);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(872); ifNotExist();
+				setState(872);
+				ifNotExist();
 				}
 			}
 
 			setState(878);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,39,_ctx) ) {
 			case 1:
 				{
-				setState(875); keyspace();
-				setState(876); match(DOT);
+				setState(875);
+				keyspace();
+				setState(876);
+				match(DOT);
 				}
 				break;
 			}
-			setState(880); function();
-			setState(881); syntaxBracketLr();
+			setState(880);
+			function();
+			setState(881);
+			syntaxBracketLr();
 			setState(883);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==OBJECT_NAME) {
 				{
-				setState(882); paramList();
+				setState(882);
+				paramList();
 				}
 			}
 
-			setState(885); syntaxBracketRr();
-			setState(886); returnMode();
-			setState(887); kwReturns();
-			setState(888); dataType();
-			setState(889); kwLanguage();
-			setState(890); language();
-			setState(891); kwAs();
-			setState(892); codeBlock();
+			setState(885);
+			syntaxBracketRr();
+			setState(886);
+			returnMode();
+			setState(887);
+			kwReturns();
+			setState(888);
+			dataType();
+			setState(889);
+			kwLanguage();
+			setState(890);
+			language();
+			setState(891);
+			kwAs();
+			setState(892);
+			codeBlock();
 			}
 		}
 		catch (RecognitionException re) {
@@ -2505,7 +2803,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(894); match(CODE_BLOCK);
+			setState(894);
+			match(CODE_BLOCK);
 			}
 		}
 		catch (RecognitionException re) {
@@ -2520,17 +2819,17 @@ public class CQLParser extends Parser {
 	}
 
 	public static class ParamListContext extends ParserRuleContext {
-		public List<SyntaxCommaContext> syntaxComma() {
-			return getRuleContexts(SyntaxCommaContext.class);
-		}
 		public List<ParamContext> param() {
 			return getRuleContexts(ParamContext.class);
 		}
-		public SyntaxCommaContext syntaxComma(int i) {
-			return getRuleContext(SyntaxCommaContext.class,i);
-		}
 		public ParamContext param(int i) {
 			return getRuleContext(ParamContext.class,i);
+		}
+		public List<SyntaxCommaContext> syntaxComma() {
+			return getRuleContexts(SyntaxCommaContext.class);
+		}
+		public SyntaxCommaContext syntaxComma(int i) {
+			return getRuleContext(SyntaxCommaContext.class,i);
 		}
 		public ParamListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2553,15 +2852,18 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(896); param();
+			setState(896);
+			param();
 			setState(902);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==COMMA) {
 				{
 				{
-				setState(897); syntaxComma();
-				setState(898); param();
+				setState(897);
+				syntaxComma();
+				setState(898);
+				param();
 				}
 				}
 				setState(904);
@@ -2582,23 +2884,23 @@ public class CQLParser extends Parser {
 	}
 
 	public static class ReturnModeContext extends ParserRuleContext {
+		public KwOnContext kwOn() {
+			return getRuleContext(KwOnContext.class,0);
+		}
 		public List<KwNullContext> kwNull() {
 			return getRuleContexts(KwNullContext.class);
 		}
-		public KwReturnsContext kwReturns() {
-			return getRuleContext(KwReturnsContext.class,0);
-		}
 		public KwNullContext kwNull(int i) {
 			return getRuleContext(KwNullContext.class,i);
-		}
-		public KwOnContext kwOn() {
-			return getRuleContext(KwOnContext.class,0);
 		}
 		public KwInputContext kwInput() {
 			return getRuleContext(KwInputContext.class,0);
 		}
 		public KwCalledContext kwCalled() {
 			return getRuleContext(KwCalledContext.class,0);
+		}
+		public KwReturnsContext kwReturns() {
+			return getRuleContext(KwReturnsContext.class,0);
 		}
 		public ReturnModeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2621,24 +2923,31 @@ public class CQLParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(909);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case K_CALLED:
 				{
-				setState(905); kwCalled();
+				setState(905);
+				kwCalled();
 				}
 				break;
 			case K_RETURNS:
 				{
-				setState(906); kwReturns();
-				setState(907); kwNull();
+				setState(906);
+				kwReturns();
+				setState(907);
+				kwNull();
 				}
 				break;
 			default:
 				throw new NoViableAltException(this);
 			}
-			setState(911); kwOn();
-			setState(912); kwNull();
-			setState(913); kwInput();
+			setState(911);
+			kwOn();
+			setState(912);
+			kwNull();
+			setState(913);
+			kwInput();
 			}
 		}
 		catch (RecognitionException re) {
@@ -2653,58 +2962,58 @@ public class CQLParser extends Parser {
 	}
 
 	public static class CreateAggregateContext extends ParserRuleContext {
+		public KwCreateContext kwCreate() {
+			return getRuleContext(KwCreateContext.class,0);
+		}
+		public KwAggregateContext kwAggregate() {
+			return getRuleContext(KwAggregateContext.class,0);
+		}
+		public AggregateContext aggregate() {
+			return getRuleContext(AggregateContext.class,0);
+		}
+		public SyntaxBracketLrContext syntaxBracketLr() {
+			return getRuleContext(SyntaxBracketLrContext.class,0);
+		}
+		public List<DataTypeContext> dataType() {
+			return getRuleContexts(DataTypeContext.class);
+		}
+		public DataTypeContext dataType(int i) {
+			return getRuleContext(DataTypeContext.class,i);
+		}
+		public SyntaxBracketRrContext syntaxBracketRr() {
+			return getRuleContext(SyntaxBracketRrContext.class,0);
+		}
+		public KwSfuncContext kwSfunc() {
+			return getRuleContext(KwSfuncContext.class,0);
+		}
+		public List<FunctionContext> function() {
+			return getRuleContexts(FunctionContext.class);
+		}
+		public FunctionContext function(int i) {
+			return getRuleContext(FunctionContext.class,i);
+		}
 		public KwStypeContext kwStype() {
 			return getRuleContext(KwStypeContext.class,0);
 		}
 		public KwFinalfuncContext kwFinalfunc() {
 			return getRuleContext(KwFinalfuncContext.class,0);
 		}
+		public KwInitcondContext kwInitcond() {
+			return getRuleContext(KwInitcondContext.class,0);
+		}
 		public InitCondDefinitionContext initCondDefinition() {
 			return getRuleContext(InitCondDefinitionContext.class,0);
 		}
-		public KeyspaceContext keyspace() {
-			return getRuleContext(KeyspaceContext.class,0);
+		public OrReplaceContext orReplace() {
+			return getRuleContext(OrReplaceContext.class,0);
 		}
 		public IfNotExistContext ifNotExist() {
 			return getRuleContext(IfNotExistContext.class,0);
 		}
-		public AggregateContext aggregate() {
-			return getRuleContext(AggregateContext.class,0);
-		}
-		public DataTypeContext dataType(int i) {
-			return getRuleContext(DataTypeContext.class,i);
-		}
-		public KwInitcondContext kwInitcond() {
-			return getRuleContext(KwInitcondContext.class,0);
-		}
-		public SyntaxBracketRrContext syntaxBracketRr() {
-			return getRuleContext(SyntaxBracketRrContext.class,0);
+		public KeyspaceContext keyspace() {
+			return getRuleContext(KeyspaceContext.class,0);
 		}
 		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
-		public OrReplaceContext orReplace() {
-			return getRuleContext(OrReplaceContext.class,0);
-		}
-		public KwSfuncContext kwSfunc() {
-			return getRuleContext(KwSfuncContext.class,0);
-		}
-		public KwAggregateContext kwAggregate() {
-			return getRuleContext(KwAggregateContext.class,0);
-		}
-		public FunctionContext function(int i) {
-			return getRuleContext(FunctionContext.class,i);
-		}
-		public SyntaxBracketLrContext syntaxBracketLr() {
-			return getRuleContext(SyntaxBracketLrContext.class,0);
-		}
-		public KwCreateContext kwCreate() {
-			return getRuleContext(KwCreateContext.class,0);
-		}
-		public List<DataTypeContext> dataType() {
-			return getRuleContexts(DataTypeContext.class);
-		}
-		public List<FunctionContext> function() {
-			return getRuleContexts(FunctionContext.class);
-		}
 		public CreateAggregateContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -2726,45 +3035,66 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(915); kwCreate();
+			setState(915);
+			kwCreate();
 			setState(917);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_OR) {
 				{
-				setState(916); orReplace();
+				setState(916);
+				orReplace();
 				}
 			}
 
-			setState(919); kwAggregate();
+			setState(919);
+			kwAggregate();
 			setState(921);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(920); ifNotExist();
+				setState(920);
+				ifNotExist();
 				}
 			}
 
 			setState(926);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,45,_ctx) ) {
 			case 1:
 				{
-				setState(923); keyspace();
-				setState(924); match(DOT);
+				setState(923);
+				keyspace();
+				setState(924);
+				match(DOT);
 				}
 				break;
 			}
-			setState(928); aggregate();
-			setState(929); syntaxBracketLr();
-			setState(930); dataType();
-			setState(931); syntaxBracketRr();
-			setState(932); kwSfunc();
-			setState(933); function();
-			setState(934); kwStype();
-			setState(935); dataType();
-			setState(936); kwFinalfunc();
-			setState(937); function();
-			setState(938); kwInitcond();
-			setState(939); initCondDefinition();
+			setState(928);
+			aggregate();
+			setState(929);
+			syntaxBracketLr();
+			setState(930);
+			dataType();
+			setState(931);
+			syntaxBracketRr();
+			setState(932);
+			kwSfunc();
+			setState(933);
+			function();
+			setState(934);
+			kwStype();
+			setState(935);
+			dataType();
+			setState(936);
+			kwFinalfunc();
+			setState(937);
+			function();
+			setState(938);
+			kwInitcond();
+			setState(939);
+			initCondDefinition();
 			}
 		}
 		catch (RecognitionException re) {
@@ -2785,11 +3115,11 @@ public class CQLParser extends Parser {
 		public InitCondListContext initCondList() {
 			return getRuleContext(InitCondListContext.class,0);
 		}
-		public InitCondHashContext initCondHash() {
-			return getRuleContext(InitCondHashContext.class,0);
-		}
 		public InitCondListNestedContext initCondListNested() {
 			return getRuleContext(InitCondListNestedContext.class,0);
+		}
+		public InitCondHashContext initCondHash() {
+			return getRuleContext(InitCondHashContext.class,0);
 		}
 		public InitCondDefinitionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2810,29 +3140,34 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 56, RULE_initCondDefinition);
 		try {
 			setState(945);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,46,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(941); constant();
+				setState(941);
+				constant();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(942); initCondList();
+				setState(942);
+				initCondList();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(943); initCondListNested();
+				setState(943);
+				initCondListNested();
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(944); initCondHash();
+				setState(944);
+				initCondHash();
 				}
 				break;
 			}
@@ -2849,23 +3184,23 @@ public class CQLParser extends Parser {
 	}
 
 	public static class InitCondHashContext extends ParserRuleContext {
-		public List<SyntaxCommaContext> syntaxComma() {
-			return getRuleContexts(SyntaxCommaContext.class);
-		}
-		public InitCondHashItemContext initCondHashItem(int i) {
-			return getRuleContext(InitCondHashItemContext.class,i);
-		}
-		public SyntaxCommaContext syntaxComma(int i) {
-			return getRuleContext(SyntaxCommaContext.class,i);
-		}
-		public SyntaxBracketRcContext syntaxBracketRc() {
-			return getRuleContext(SyntaxBracketRcContext.class,0);
-		}
 		public SyntaxBracketLcContext syntaxBracketLc() {
 			return getRuleContext(SyntaxBracketLcContext.class,0);
 		}
 		public List<InitCondHashItemContext> initCondHashItem() {
 			return getRuleContexts(InitCondHashItemContext.class);
+		}
+		public InitCondHashItemContext initCondHashItem(int i) {
+			return getRuleContext(InitCondHashItemContext.class,i);
+		}
+		public SyntaxBracketRcContext syntaxBracketRc() {
+			return getRuleContext(SyntaxBracketRcContext.class,0);
+		}
+		public List<SyntaxCommaContext> syntaxComma() {
+			return getRuleContexts(SyntaxCommaContext.class);
+		}
+		public SyntaxCommaContext syntaxComma(int i) {
+			return getRuleContext(SyntaxCommaContext.class,i);
 		}
 		public InitCondHashContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2888,23 +3223,28 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(947); syntaxBracketLc();
-			setState(948); initCondHashItem();
+			setState(947);
+			syntaxBracketLc();
+			setState(948);
+			initCondHashItem();
 			setState(954);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==COMMA) {
 				{
 				{
-				setState(949); syntaxComma();
-				setState(950); initCondHashItem();
+				setState(949);
+				syntaxComma();
+				setState(950);
+				initCondHashItem();
 				}
 				}
 				setState(956);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			}
-			setState(957); syntaxBracketRc();
+			setState(957);
+			syntaxBracketRc();
 			}
 		}
 		catch (RecognitionException re) {
@@ -2919,13 +3259,13 @@ public class CQLParser extends Parser {
 	}
 
 	public static class InitCondHashItemContext extends ParserRuleContext {
-		public InitCondDefinitionContext initCondDefinition() {
-			return getRuleContext(InitCondDefinitionContext.class,0);
-		}
 		public HashKeyContext hashKey() {
 			return getRuleContext(HashKeyContext.class,0);
 		}
 		public TerminalNode COLON() { return getToken(CQLParser.COLON, 0); }
+		public InitCondDefinitionContext initCondDefinition() {
+			return getRuleContext(InitCondDefinitionContext.class,0);
+		}
 		public InitCondHashItemContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -2946,9 +3286,12 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(959); hashKey();
-			setState(960); match(COLON);
-			setState(961); initCondDefinition();
+			setState(959);
+			hashKey();
+			setState(960);
+			match(COLON);
+			setState(961);
+			initCondDefinition();
 			}
 		}
 		catch (RecognitionException re) {
@@ -2963,29 +3306,29 @@ public class CQLParser extends Parser {
 	}
 
 	public static class InitCondListNestedContext extends ParserRuleContext {
-		public List<InitCondListContext> initCondList() {
-			return getRuleContexts(InitCondListContext.class);
-		}
-		public List<SyntaxCommaContext> syntaxComma() {
-			return getRuleContexts(SyntaxCommaContext.class);
-		}
-		public List<ConstantContext> constant() {
-			return getRuleContexts(ConstantContext.class);
-		}
-		public SyntaxCommaContext syntaxComma(int i) {
-			return getRuleContext(SyntaxCommaContext.class,i);
-		}
 		public SyntaxBracketLrContext syntaxBracketLr() {
 			return getRuleContext(SyntaxBracketLrContext.class,0);
 		}
-		public ConstantContext constant(int i) {
-			return getRuleContext(ConstantContext.class,i);
+		public List<InitCondListContext> initCondList() {
+			return getRuleContexts(InitCondListContext.class);
 		}
 		public InitCondListContext initCondList(int i) {
 			return getRuleContext(InitCondListContext.class,i);
 		}
 		public SyntaxBracketRrContext syntaxBracketRr() {
 			return getRuleContext(SyntaxBracketRrContext.class,0);
+		}
+		public List<SyntaxCommaContext> syntaxComma() {
+			return getRuleContexts(SyntaxCommaContext.class);
+		}
+		public SyntaxCommaContext syntaxComma(int i) {
+			return getRuleContext(SyntaxCommaContext.class,i);
+		}
+		public List<ConstantContext> constant() {
+			return getRuleContexts(ConstantContext.class);
+		}
+		public ConstantContext constant(int i) {
+			return getRuleContext(ConstantContext.class,i);
 		}
 		public InitCondListNestedContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3008,24 +3351,30 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(963); syntaxBracketLr();
-			setState(964); initCondList();
+			setState(963);
+			syntaxBracketLr();
+			setState(964);
+			initCondList();
 			setState(971);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==LR_BRACKET || _la==COMMA) {
 				{
 				setState(969);
+				_errHandler.sync(this);
 				switch (_input.LA(1)) {
 				case COMMA:
 					{
-					setState(965); syntaxComma();
-					setState(966); constant();
+					setState(965);
+					syntaxComma();
+					setState(966);
+					constant();
 					}
 					break;
 				case LR_BRACKET:
 					{
-					setState(968); initCondList();
+					setState(968);
+					initCondList();
 					}
 					break;
 				default:
@@ -3036,7 +3385,8 @@ public class CQLParser extends Parser {
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			}
-			setState(974); syntaxBracketRr();
+			setState(974);
+			syntaxBracketRr();
 			}
 		}
 		catch (RecognitionException re) {
@@ -3051,23 +3401,23 @@ public class CQLParser extends Parser {
 	}
 
 	public static class InitCondListContext extends ParserRuleContext {
-		public List<ConstantContext> constant() {
-			return getRuleContexts(ConstantContext.class);
-		}
-		public List<SyntaxCommaContext> syntaxComma() {
-			return getRuleContexts(SyntaxCommaContext.class);
-		}
-		public SyntaxCommaContext syntaxComma(int i) {
-			return getRuleContext(SyntaxCommaContext.class,i);
-		}
 		public SyntaxBracketLrContext syntaxBracketLr() {
 			return getRuleContext(SyntaxBracketLrContext.class,0);
+		}
+		public List<ConstantContext> constant() {
+			return getRuleContexts(ConstantContext.class);
 		}
 		public ConstantContext constant(int i) {
 			return getRuleContext(ConstantContext.class,i);
 		}
 		public SyntaxBracketRrContext syntaxBracketRr() {
 			return getRuleContext(SyntaxBracketRrContext.class,0);
+		}
+		public List<SyntaxCommaContext> syntaxComma() {
+			return getRuleContexts(SyntaxCommaContext.class);
+		}
+		public SyntaxCommaContext syntaxComma(int i) {
+			return getRuleContext(SyntaxCommaContext.class,i);
 		}
 		public InitCondListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3090,23 +3440,28 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(976); syntaxBracketLr();
-			setState(977); constant();
+			setState(976);
+			syntaxBracketLr();
+			setState(977);
+			constant();
 			setState(983);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==COMMA) {
 				{
 				{
-				setState(978); syntaxComma();
-				setState(979); constant();
+				setState(978);
+				syntaxComma();
+				setState(979);
+				constant();
 				}
 				}
 				setState(985);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			}
-			setState(986); syntaxBracketRr();
+			setState(986);
+			syntaxBracketRr();
 			}
 		}
 		catch (RecognitionException re) {
@@ -3147,8 +3502,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(988); kwOr();
-			setState(989); kwReplace();
+			setState(988);
+			kwOr();
+			setState(989);
+			kwReplace();
 			}
 		}
 		catch (RecognitionException re) {
@@ -3166,9 +3523,6 @@ public class CQLParser extends Parser {
 		public KwAlterContext kwAlter() {
 			return getRuleContext(KwAlterContext.class,0);
 		}
-		public UserSuperUserContext userSuperUser() {
-			return getRuleContext(UserSuperUserContext.class,0);
-		}
 		public KwUserContext kwUser() {
 			return getRuleContext(KwUserContext.class,0);
 		}
@@ -3180,6 +3534,9 @@ public class CQLParser extends Parser {
 		}
 		public UserPasswordContext userPassword() {
 			return getRuleContext(UserPasswordContext.class,0);
+		}
+		public UserSuperUserContext userSuperUser() {
+			return getRuleContext(UserSuperUserContext.class,0);
 		}
 		public AlterUserContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3202,16 +3559,23 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(991); kwAlter();
-			setState(992); kwUser();
-			setState(993); user();
-			setState(994); kwWith();
-			setState(995); userPassword();
+			setState(991);
+			kwAlter();
+			setState(992);
+			kwUser();
+			setState(993);
+			user();
+			setState(994);
+			kwWith();
+			setState(995);
+			userPassword();
 			setState(997);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_NOSUPERUSER || _la==K_SUPERUSER) {
 				{
-				setState(996); userSuperUser();
+				setState(996);
+				userSuperUser();
 				}
 			}
 
@@ -3255,8 +3619,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(999); kwPassword();
-			setState(1000); stringLiteral();
+			setState(999);
+			kwPassword();
+			setState(1000);
+			stringLiteral();
 			}
 		}
 		catch (RecognitionException re) {
@@ -3271,11 +3637,11 @@ public class CQLParser extends Parser {
 	}
 
 	public static class UserSuperUserContext extends ParserRuleContext {
-		public KwNosuperuserContext kwNosuperuser() {
-			return getRuleContext(KwNosuperuserContext.class,0);
-		}
 		public KwSuperuserContext kwSuperuser() {
 			return getRuleContext(KwSuperuserContext.class,0);
+		}
+		public KwNosuperuserContext kwNosuperuser() {
+			return getRuleContext(KwNosuperuserContext.class,0);
 		}
 		public UserSuperUserContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3296,17 +3662,20 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 72, RULE_userSuperUser);
 		try {
 			setState(1004);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case K_SUPERUSER:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1002); kwSuperuser();
+				setState(1002);
+				kwSuperuser();
 				}
 				break;
 			case K_NOSUPERUSER:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1003); kwNosuperuser();
+				setState(1003);
+				kwNosuperuser();
 				}
 				break;
 			default:
@@ -3328,19 +3697,19 @@ public class CQLParser extends Parser {
 		public KwAlterContext kwAlter() {
 			return getRuleContext(KwAlterContext.class,0);
 		}
-		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
+		public KwTypeContext kwType() {
+			return getRuleContext(KwTypeContext.class,0);
+		}
+		public TypeContext type() {
+			return getRuleContext(TypeContext.class,0);
+		}
 		public AlterTypeOperationContext alterTypeOperation() {
 			return getRuleContext(AlterTypeOperationContext.class,0);
 		}
 		public KeyspaceContext keyspace() {
 			return getRuleContext(KeyspaceContext.class,0);
 		}
-		public TypeContext type() {
-			return getRuleContext(TypeContext.class,0);
-		}
-		public KwTypeContext kwType() {
-			return getRuleContext(KwTypeContext.class,0);
-		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
 		public AlterTypeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -3361,19 +3730,26 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1006); kwAlter();
-			setState(1007); kwType();
+			setState(1006);
+			kwAlter();
+			setState(1007);
+			kwType();
 			setState(1011);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,53,_ctx) ) {
 			case 1:
 				{
-				setState(1008); keyspace();
-				setState(1009); match(DOT);
+				setState(1008);
+				keyspace();
+				setState(1009);
+				match(DOT);
 				}
 				break;
 			}
-			setState(1013); type();
-			setState(1014); alterTypeOperation();
+			setState(1013);
+			type();
+			setState(1014);
+			alterTypeOperation();
 			}
 		}
 		catch (RecognitionException re) {
@@ -3388,14 +3764,14 @@ public class CQLParser extends Parser {
 	}
 
 	public static class AlterTypeOperationContext extends ParserRuleContext {
-		public AlterTypeRenameContext alterTypeRename() {
-			return getRuleContext(AlterTypeRenameContext.class,0);
-		}
 		public AlterTypeAlterTypeContext alterTypeAlterType() {
 			return getRuleContext(AlterTypeAlterTypeContext.class,0);
 		}
 		public AlterTypeAddContext alterTypeAdd() {
 			return getRuleContext(AlterTypeAddContext.class,0);
+		}
+		public AlterTypeRenameContext alterTypeRename() {
+			return getRuleContext(AlterTypeRenameContext.class,0);
 		}
 		public AlterTypeOperationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3416,23 +3792,27 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 76, RULE_alterTypeOperation);
 		try {
 			setState(1019);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case K_ALTER:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1016); alterTypeAlterType();
+				setState(1016);
+				alterTypeAlterType();
 				}
 				break;
 			case K_ADD:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1017); alterTypeAdd();
+				setState(1017);
+				alterTypeAdd();
 				}
 				break;
 			case K_RENAME:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(1018); alterTypeRename();
+				setState(1018);
+				alterTypeRename();
 				}
 				break;
 			default:
@@ -3451,11 +3831,11 @@ public class CQLParser extends Parser {
 	}
 
 	public static class AlterTypeRenameContext extends ParserRuleContext {
-		public AlterTypeRenameListContext alterTypeRenameList() {
-			return getRuleContext(AlterTypeRenameListContext.class,0);
-		}
 		public KwRenameContext kwRename() {
 			return getRuleContext(KwRenameContext.class,0);
+		}
+		public AlterTypeRenameListContext alterTypeRenameList() {
+			return getRuleContext(AlterTypeRenameListContext.class,0);
 		}
 		public AlterTypeRenameContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3477,8 +3857,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1021); kwRename();
-			setState(1022); alterTypeRenameList();
+			setState(1021);
+			kwRename();
+			setState(1022);
+			alterTypeRenameList();
 			}
 		}
 		catch (RecognitionException re) {
@@ -3493,17 +3875,17 @@ public class CQLParser extends Parser {
 	}
 
 	public static class AlterTypeRenameListContext extends ParserRuleContext {
-		public KwAndContext kwAnd(int i) {
-			return getRuleContext(KwAndContext.class,i);
-		}
-		public List<KwAndContext> kwAnd() {
-			return getRuleContexts(KwAndContext.class);
+		public List<AlterTypeRenameItemContext> alterTypeRenameItem() {
+			return getRuleContexts(AlterTypeRenameItemContext.class);
 		}
 		public AlterTypeRenameItemContext alterTypeRenameItem(int i) {
 			return getRuleContext(AlterTypeRenameItemContext.class,i);
 		}
-		public List<AlterTypeRenameItemContext> alterTypeRenameItem() {
-			return getRuleContexts(AlterTypeRenameItemContext.class);
+		public List<KwAndContext> kwAnd() {
+			return getRuleContexts(KwAndContext.class);
+		}
+		public KwAndContext kwAnd(int i) {
+			return getRuleContext(KwAndContext.class,i);
 		}
 		public AlterTypeRenameListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3526,15 +3908,18 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1024); alterTypeRenameItem();
+			setState(1024);
+			alterTypeRenameItem();
 			setState(1030);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==K_AND) {
 				{
 				{
-				setState(1025); kwAnd();
-				setState(1026); alterTypeRenameItem();
+				setState(1025);
+				kwAnd();
+				setState(1026);
+				alterTypeRenameItem();
 				}
 				}
 				setState(1032);
@@ -3558,11 +3943,11 @@ public class CQLParser extends Parser {
 		public List<ColumnContext> column() {
 			return getRuleContexts(ColumnContext.class);
 		}
-		public KwToContext kwTo() {
-			return getRuleContext(KwToContext.class,0);
-		}
 		public ColumnContext column(int i) {
 			return getRuleContext(ColumnContext.class,i);
+		}
+		public KwToContext kwTo() {
+			return getRuleContext(KwToContext.class,0);
 		}
 		public AlterTypeRenameItemContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3584,9 +3969,12 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1033); column();
-			setState(1034); kwTo();
-			setState(1035); column();
+			setState(1033);
+			column();
+			setState(1034);
+			kwTo();
+			setState(1035);
+			column();
 			}
 		}
 		catch (RecognitionException re) {
@@ -3601,17 +3989,11 @@ public class CQLParser extends Parser {
 	}
 
 	public static class AlterTypeAddContext extends ParserRuleContext {
-		public List<SyntaxCommaContext> syntaxComma() {
-			return getRuleContexts(SyntaxCommaContext.class);
+		public KwAddContext kwAdd() {
+			return getRuleContext(KwAddContext.class,0);
 		}
 		public List<ColumnContext> column() {
 			return getRuleContexts(ColumnContext.class);
-		}
-		public SyntaxCommaContext syntaxComma(int i) {
-			return getRuleContext(SyntaxCommaContext.class,i);
-		}
-		public DataTypeContext dataType(int i) {
-			return getRuleContext(DataTypeContext.class,i);
 		}
 		public ColumnContext column(int i) {
 			return getRuleContext(ColumnContext.class,i);
@@ -3619,8 +4001,14 @@ public class CQLParser extends Parser {
 		public List<DataTypeContext> dataType() {
 			return getRuleContexts(DataTypeContext.class);
 		}
-		public KwAddContext kwAdd() {
-			return getRuleContext(KwAddContext.class,0);
+		public DataTypeContext dataType(int i) {
+			return getRuleContext(DataTypeContext.class,i);
+		}
+		public List<SyntaxCommaContext> syntaxComma() {
+			return getRuleContexts(SyntaxCommaContext.class);
+		}
+		public SyntaxCommaContext syntaxComma(int i) {
+			return getRuleContext(SyntaxCommaContext.class,i);
 		}
 		public AlterTypeAddContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3643,18 +4031,24 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1037); kwAdd();
-			setState(1038); column();
-			setState(1039); dataType();
+			setState(1037);
+			kwAdd();
+			setState(1038);
+			column();
+			setState(1039);
+			dataType();
 			setState(1046);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==COMMA) {
 				{
 				{
-				setState(1040); syntaxComma();
-				setState(1041); column();
-				setState(1042); dataType();
+				setState(1040);
+				syntaxComma();
+				setState(1041);
+				column();
+				setState(1042);
+				dataType();
 				}
 				}
 				setState(1048);
@@ -3681,11 +4075,11 @@ public class CQLParser extends Parser {
 		public ColumnContext column() {
 			return getRuleContext(ColumnContext.class,0);
 		}
-		public DataTypeContext dataType() {
-			return getRuleContext(DataTypeContext.class,0);
-		}
 		public KwTypeContext kwType() {
 			return getRuleContext(KwTypeContext.class,0);
+		}
+		public DataTypeContext dataType() {
+			return getRuleContext(DataTypeContext.class,0);
 		}
 		public AlterTypeAlterTypeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3707,10 +4101,14 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1049); kwAlter();
-			setState(1050); column();
-			setState(1051); kwType();
-			setState(1052); dataType();
+			setState(1049);
+			kwAlter();
+			setState(1050);
+			column();
+			setState(1051);
+			kwType();
+			setState(1052);
+			dataType();
 			}
 		}
 		catch (RecognitionException re) {
@@ -3728,19 +4126,19 @@ public class CQLParser extends Parser {
 		public KwAlterContext kwAlter() {
 			return getRuleContext(KwAlterContext.class,0);
 		}
+		public KwTableContext kwTable() {
+			return getRuleContext(KwTableContext.class,0);
+		}
 		public TableContext table() {
 			return getRuleContext(TableContext.class,0);
 		}
-		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
 		public AlterTableOperationContext alterTableOperation() {
 			return getRuleContext(AlterTableOperationContext.class,0);
 		}
 		public KeyspaceContext keyspace() {
 			return getRuleContext(KeyspaceContext.class,0);
 		}
-		public KwTableContext kwTable() {
-			return getRuleContext(KwTableContext.class,0);
-		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
 		public AlterTableContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -3761,19 +4159,26 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1054); kwAlter();
-			setState(1055); kwTable();
+			setState(1054);
+			kwAlter();
+			setState(1055);
+			kwTable();
 			setState(1059);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,57,_ctx) ) {
 			case 1:
 				{
-				setState(1056); keyspace();
-				setState(1057); match(DOT);
+				setState(1056);
+				keyspace();
+				setState(1057);
+				match(DOT);
 				}
 				break;
 			}
-			setState(1061); table();
-			setState(1062); alterTableOperation();
+			setState(1061);
+			table();
+			setState(1062);
+			alterTableOperation();
 			}
 		}
 		catch (RecognitionException re) {
@@ -3788,17 +4193,17 @@ public class CQLParser extends Parser {
 	}
 
 	public static class AlterTableOperationContext extends ParserRuleContext {
-		public AlterTableRenameContext alterTableRename() {
-			return getRuleContext(AlterTableRenameContext.class,0);
-		}
 		public AlterTableAddContext alterTableAdd() {
 			return getRuleContext(AlterTableAddContext.class,0);
+		}
+		public AlterTableDropColumnsContext alterTableDropColumns() {
+			return getRuleContext(AlterTableDropColumnsContext.class,0);
 		}
 		public AlterTableDropCompactStorageContext alterTableDropCompactStorage() {
 			return getRuleContext(AlterTableDropCompactStorageContext.class,0);
 		}
-		public AlterTableDropColumnsContext alterTableDropColumns() {
-			return getRuleContext(AlterTableDropColumnsContext.class,0);
+		public AlterTableRenameContext alterTableRename() {
+			return getRuleContext(AlterTableRenameContext.class,0);
 		}
 		public AlterTableWithContext alterTableWith() {
 			return getRuleContext(AlterTableWithContext.class,0);
@@ -3822,41 +4227,48 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 90, RULE_alterTableOperation);
 		try {
 			setState(1070);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,58,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1064); alterTableAdd();
+				setState(1064);
+				alterTableAdd();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1065); alterTableDropColumns();
+				setState(1065);
+				alterTableDropColumns();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(1066); alterTableDropColumns();
+				setState(1066);
+				alterTableDropColumns();
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(1067); alterTableDropCompactStorage();
+				setState(1067);
+				alterTableDropCompactStorage();
 				}
 				break;
 			case 5:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(1068); alterTableRename();
+				setState(1068);
+				alterTableRename();
 				}
 				break;
 			case 6:
 				enterOuterAlt(_localctx, 6);
 				{
-				setState(1069); alterTableWith();
+				setState(1069);
+				alterTableWith();
 				}
 				break;
 			}
@@ -3873,11 +4285,11 @@ public class CQLParser extends Parser {
 	}
 
 	public static class AlterTableWithContext extends ParserRuleContext {
-		public TableOptionsContext tableOptions() {
-			return getRuleContext(TableOptionsContext.class,0);
-		}
 		public KwWithContext kwWith() {
 			return getRuleContext(KwWithContext.class,0);
+		}
+		public TableOptionsContext tableOptions() {
+			return getRuleContext(TableOptionsContext.class,0);
 		}
 		public AlterTableWithContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3899,8 +4311,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1072); kwWith();
-			setState(1073); tableOptions();
+			setState(1072);
+			kwWith();
+			setState(1073);
+			tableOptions();
 			}
 		}
 		catch (RecognitionException re) {
@@ -3915,17 +4329,17 @@ public class CQLParser extends Parser {
 	}
 
 	public static class AlterTableRenameContext extends ParserRuleContext {
-		public List<ColumnContext> column() {
-			return getRuleContexts(ColumnContext.class);
-		}
-		public KwToContext kwTo() {
-			return getRuleContext(KwToContext.class,0);
-		}
 		public KwRenameContext kwRename() {
 			return getRuleContext(KwRenameContext.class,0);
 		}
+		public List<ColumnContext> column() {
+			return getRuleContexts(ColumnContext.class);
+		}
 		public ColumnContext column(int i) {
 			return getRuleContext(ColumnContext.class,i);
+		}
+		public KwToContext kwTo() {
+			return getRuleContext(KwToContext.class,0);
 		}
 		public AlterTableRenameContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -3947,10 +4361,14 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1075); kwRename();
-			setState(1076); column();
-			setState(1077); kwTo();
-			setState(1078); column();
+			setState(1075);
+			kwRename();
+			setState(1076);
+			column();
+			setState(1077);
+			kwTo();
+			setState(1078);
+			column();
 			}
 		}
 		catch (RecognitionException re) {
@@ -3994,9 +4412,12 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1080); kwDrop();
-			setState(1081); kwCompact();
-			setState(1082); kwStorage();
+			setState(1080);
+			kwDrop();
+			setState(1081);
+			kwCompact();
+			setState(1082);
+			kwStorage();
 			}
 		}
 		catch (RecognitionException re) {
@@ -4037,8 +4458,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1084); kwDrop();
-			setState(1085); alterTableDropColumnList();
+			setState(1084);
+			kwDrop();
+			setState(1085);
+			alterTableDropColumnList();
 			}
 		}
 		catch (RecognitionException re) {
@@ -4053,17 +4476,17 @@ public class CQLParser extends Parser {
 	}
 
 	public static class AlterTableDropColumnListContext extends ParserRuleContext {
-		public List<SyntaxCommaContext> syntaxComma() {
-			return getRuleContexts(SyntaxCommaContext.class);
-		}
 		public List<ColumnContext> column() {
 			return getRuleContexts(ColumnContext.class);
 		}
-		public SyntaxCommaContext syntaxComma(int i) {
-			return getRuleContext(SyntaxCommaContext.class,i);
-		}
 		public ColumnContext column(int i) {
 			return getRuleContext(ColumnContext.class,i);
+		}
+		public List<SyntaxCommaContext> syntaxComma() {
+			return getRuleContexts(SyntaxCommaContext.class);
+		}
+		public SyntaxCommaContext syntaxComma(int i) {
+			return getRuleContext(SyntaxCommaContext.class,i);
 		}
 		public AlterTableDropColumnListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -4086,15 +4509,18 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1087); column();
+			setState(1087);
+			column();
 			setState(1093);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==COMMA) {
 				{
 				{
-				setState(1088); syntaxComma();
-				setState(1089); column();
+				setState(1088);
+				syntaxComma();
+				setState(1089);
+				column();
 				}
 				}
 				setState(1095);
@@ -4115,11 +4541,11 @@ public class CQLParser extends Parser {
 	}
 
 	public static class AlterTableAddContext extends ParserRuleContext {
-		public AlterTableColumnDefinitionContext alterTableColumnDefinition() {
-			return getRuleContext(AlterTableColumnDefinitionContext.class,0);
-		}
 		public KwAddContext kwAdd() {
 			return getRuleContext(KwAddContext.class,0);
+		}
+		public AlterTableColumnDefinitionContext alterTableColumnDefinition() {
+			return getRuleContext(AlterTableColumnDefinitionContext.class,0);
 		}
 		public AlterTableAddContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -4141,8 +4567,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1096); kwAdd();
-			setState(1097); alterTableColumnDefinition();
+			setState(1096);
+			kwAdd();
+			setState(1097);
+			alterTableColumnDefinition();
 			}
 		}
 		catch (RecognitionException re) {
@@ -4157,23 +4585,23 @@ public class CQLParser extends Parser {
 	}
 
 	public static class AlterTableColumnDefinitionContext extends ParserRuleContext {
-		public List<SyntaxCommaContext> syntaxComma() {
-			return getRuleContexts(SyntaxCommaContext.class);
-		}
 		public List<ColumnContext> column() {
 			return getRuleContexts(ColumnContext.class);
-		}
-		public SyntaxCommaContext syntaxComma(int i) {
-			return getRuleContext(SyntaxCommaContext.class,i);
-		}
-		public DataTypeContext dataType(int i) {
-			return getRuleContext(DataTypeContext.class,i);
 		}
 		public ColumnContext column(int i) {
 			return getRuleContext(ColumnContext.class,i);
 		}
 		public List<DataTypeContext> dataType() {
 			return getRuleContexts(DataTypeContext.class);
+		}
+		public DataTypeContext dataType(int i) {
+			return getRuleContext(DataTypeContext.class,i);
+		}
+		public List<SyntaxCommaContext> syntaxComma() {
+			return getRuleContexts(SyntaxCommaContext.class);
+		}
+		public SyntaxCommaContext syntaxComma(int i) {
+			return getRuleContext(SyntaxCommaContext.class,i);
 		}
 		public AlterTableColumnDefinitionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -4196,17 +4624,22 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1099); column();
-			setState(1100); dataType();
+			setState(1099);
+			column();
+			setState(1100);
+			dataType();
 			setState(1107);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==COMMA) {
 				{
 				{
-				setState(1101); syntaxComma();
-				setState(1102); column();
-				setState(1103); dataType();
+				setState(1101);
+				syntaxComma();
+				setState(1102);
+				column();
+				setState(1103);
+				dataType();
 				}
 				}
 				setState(1109);
@@ -4230,14 +4663,14 @@ public class CQLParser extends Parser {
 		public KwAlterContext kwAlter() {
 			return getRuleContext(KwAlterContext.class,0);
 		}
-		public RoleWithContext roleWith() {
-			return getRuleContext(RoleWithContext.class,0);
-		}
 		public KwRoleContext kwRole() {
 			return getRuleContext(KwRoleContext.class,0);
 		}
 		public RoleContext role() {
 			return getRuleContext(RoleContext.class,0);
+		}
+		public RoleWithContext roleWith() {
+			return getRuleContext(RoleWithContext.class,0);
 		}
 		public AlterRoleContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -4260,14 +4693,19 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1110); kwAlter();
-			setState(1111); kwRole();
-			setState(1112); role();
+			setState(1110);
+			kwAlter();
+			setState(1111);
+			kwRole();
+			setState(1112);
+			role();
 			setState(1114);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_WITH) {
 				{
-				setState(1113); roleWith();
+				setState(1113);
+				roleWith();
 				}
 			}
 
@@ -4285,20 +4723,20 @@ public class CQLParser extends Parser {
 	}
 
 	public static class RoleWithContext extends ParserRuleContext {
-		public List<RoleWithOptionsContext> roleWithOptions() {
-			return getRuleContexts(RoleWithOptionsContext.class);
-		}
-		public KwAndContext kwAnd(int i) {
-			return getRuleContext(KwAndContext.class,i);
-		}
 		public KwWithContext kwWith() {
 			return getRuleContext(KwWithContext.class,0);
+		}
+		public List<RoleWithOptionsContext> roleWithOptions() {
+			return getRuleContexts(RoleWithOptionsContext.class);
 		}
 		public RoleWithOptionsContext roleWithOptions(int i) {
 			return getRuleContext(RoleWithOptionsContext.class,i);
 		}
 		public List<KwAndContext> kwAnd() {
 			return getRuleContexts(KwAndContext.class);
+		}
+		public KwAndContext kwAnd(int i) {
+			return getRuleContext(KwAndContext.class,i);
 		}
 		public RoleWithContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -4321,17 +4759,21 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1116); kwWith();
+			setState(1116);
+			kwWith();
 			{
-			setState(1117); roleWithOptions();
+			setState(1117);
+			roleWithOptions();
 			setState(1123);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==K_AND) {
 				{
 				{
-				setState(1118); kwAnd();
-				setState(1119); roleWithOptions();
+				setState(1118);
+				kwAnd();
+				setState(1119);
+				roleWithOptions();
 				}
 				}
 				setState(1125);
@@ -4353,24 +4795,24 @@ public class CQLParser extends Parser {
 	}
 
 	public static class RoleWithOptionsContext extends ParserRuleContext {
-		public TerminalNode OPERATOR_EQ() { return getToken(CQLParser.OPERATOR_EQ, 0); }
 		public KwPasswordContext kwPassword() {
 			return getRuleContext(KwPasswordContext.class,0);
 		}
+		public TerminalNode OPERATOR_EQ() { return getToken(CQLParser.OPERATOR_EQ, 0); }
 		public StringLiteralContext stringLiteral() {
 			return getRuleContext(StringLiteralContext.class,0);
+		}
+		public KwLoginContext kwLogin() {
+			return getRuleContext(KwLoginContext.class,0);
+		}
+		public BooleanLiteralContext booleanLiteral() {
+			return getRuleContext(BooleanLiteralContext.class,0);
 		}
 		public KwSuperuserContext kwSuperuser() {
 			return getRuleContext(KwSuperuserContext.class,0);
 		}
 		public KwOptionsContext kwOptions() {
 			return getRuleContext(KwOptionsContext.class,0);
-		}
-		public BooleanLiteralContext booleanLiteral() {
-			return getRuleContext(BooleanLiteralContext.class,0);
-		}
-		public KwLoginContext kwLogin() {
-			return getRuleContext(KwLoginContext.class,0);
 		}
 		public OptionHashContext optionHash() {
 			return getRuleContext(OptionHashContext.class,0);
@@ -4394,37 +4836,50 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 110, RULE_roleWithOptions);
 		try {
 			setState(1142);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case K_PASSWORD:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1126); kwPassword();
-				setState(1127); match(OPERATOR_EQ);
-				setState(1128); stringLiteral();
+				setState(1126);
+				kwPassword();
+				setState(1127);
+				match(OPERATOR_EQ);
+				setState(1128);
+				stringLiteral();
 				}
 				break;
 			case K_LOGIN:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1130); kwLogin();
-				setState(1131); match(OPERATOR_EQ);
-				setState(1132); booleanLiteral();
+				setState(1130);
+				kwLogin();
+				setState(1131);
+				match(OPERATOR_EQ);
+				setState(1132);
+				booleanLiteral();
 				}
 				break;
 			case K_SUPERUSER:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(1134); kwSuperuser();
-				setState(1135); match(OPERATOR_EQ);
-				setState(1136); booleanLiteral();
+				setState(1134);
+				kwSuperuser();
+				setState(1135);
+				match(OPERATOR_EQ);
+				setState(1136);
+				booleanLiteral();
 				}
 				break;
 			case K_OPTIONS:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(1138); kwOptions();
-				setState(1139); match(OPERATOR_EQ);
-				setState(1140); optionHash();
+				setState(1138);
+				kwOptions();
+				setState(1139);
+				match(OPERATOR_EQ);
+				setState(1140);
+				optionHash();
 				}
 				break;
 			default:
@@ -4446,24 +4901,24 @@ public class CQLParser extends Parser {
 		public KwAlterContext kwAlter() {
 			return getRuleContext(KwAlterContext.class,0);
 		}
+		public KwMaterializedContext kwMaterialized() {
+			return getRuleContext(KwMaterializedContext.class,0);
+		}
 		public KwViewContext kwView() {
 			return getRuleContext(KwViewContext.class,0);
 		}
-		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
 		public MaterializedViewContext materializedView() {
 			return getRuleContext(MaterializedViewContext.class,0);
 		}
 		public KeyspaceContext keyspace() {
 			return getRuleContext(KeyspaceContext.class,0);
 		}
-		public TableOptionsContext tableOptions() {
-			return getRuleContext(TableOptionsContext.class,0);
-		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
 		public KwWithContext kwWith() {
 			return getRuleContext(KwWithContext.class,0);
 		}
-		public KwMaterializedContext kwMaterialized() {
-			return getRuleContext(KwMaterializedContext.class,0);
+		public TableOptionsContext tableOptions() {
+			return getRuleContext(TableOptionsContext.class,0);
 		}
 		public AlterMaterializedViewContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -4486,25 +4941,35 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1144); kwAlter();
-			setState(1145); kwMaterialized();
-			setState(1146); kwView();
+			setState(1144);
+			kwAlter();
+			setState(1145);
+			kwMaterialized();
+			setState(1146);
+			kwView();
 			setState(1150);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,64,_ctx) ) {
 			case 1:
 				{
-				setState(1147); keyspace();
-				setState(1148); match(DOT);
+				setState(1147);
+				keyspace();
+				setState(1148);
+				match(DOT);
 				}
 				break;
 			}
-			setState(1152); materializedView();
+			setState(1152);
+			materializedView();
 			setState(1156);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_WITH) {
 				{
-				setState(1153); kwWith();
-				setState(1154); tableOptions();
+				setState(1153);
+				kwWith();
+				setState(1154);
+				tableOptions();
 				}
 			}
 
@@ -4555,17 +5020,22 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1158); kwDrop();
-			setState(1159); kwUser();
+			setState(1158);
+			kwDrop();
+			setState(1159);
+			kwUser();
 			setState(1161);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(1160); ifExist();
+				setState(1160);
+				ifExist();
 				}
 			}
 
-			setState(1163); user();
+			setState(1163);
+			user();
 			}
 		}
 		catch (RecognitionException re) {
@@ -4583,19 +5053,19 @@ public class CQLParser extends Parser {
 		public KwDropContext kwDrop() {
 			return getRuleContext(KwDropContext.class,0);
 		}
-		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
-		public KeyspaceContext keyspace() {
-			return getRuleContext(KeyspaceContext.class,0);
-		}
-		public IfExistContext ifExist() {
-			return getRuleContext(IfExistContext.class,0);
+		public KwTypeContext kwType() {
+			return getRuleContext(KwTypeContext.class,0);
 		}
 		public TypeContext type() {
 			return getRuleContext(TypeContext.class,0);
 		}
-		public KwTypeContext kwType() {
-			return getRuleContext(KwTypeContext.class,0);
+		public IfExistContext ifExist() {
+			return getRuleContext(IfExistContext.class,0);
 		}
+		public KeyspaceContext keyspace() {
+			return getRuleContext(KeyspaceContext.class,0);
+		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
 		public DropTypeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -4617,26 +5087,34 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1165); kwDrop();
-			setState(1166); kwType();
+			setState(1165);
+			kwDrop();
+			setState(1166);
+			kwType();
 			setState(1168);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(1167); ifExist();
+				setState(1167);
+				ifExist();
 				}
 			}
 
 			setState(1173);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,68,_ctx) ) {
 			case 1:
 				{
-				setState(1170); keyspace();
-				setState(1171); match(DOT);
+				setState(1170);
+				keyspace();
+				setState(1171);
+				match(DOT);
 				}
 				break;
 			}
-			setState(1175); type();
+			setState(1175);
+			type();
 			}
 		}
 		catch (RecognitionException re) {
@@ -4654,22 +5132,22 @@ public class CQLParser extends Parser {
 		public KwDropContext kwDrop() {
 			return getRuleContext(KwDropContext.class,0);
 		}
+		public KwMaterializedContext kwMaterialized() {
+			return getRuleContext(KwMaterializedContext.class,0);
+		}
 		public KwViewContext kwView() {
 			return getRuleContext(KwViewContext.class,0);
 		}
-		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
 		public MaterializedViewContext materializedView() {
 			return getRuleContext(MaterializedViewContext.class,0);
-		}
-		public KeyspaceContext keyspace() {
-			return getRuleContext(KeyspaceContext.class,0);
 		}
 		public IfExistContext ifExist() {
 			return getRuleContext(IfExistContext.class,0);
 		}
-		public KwMaterializedContext kwMaterialized() {
-			return getRuleContext(KwMaterializedContext.class,0);
+		public KeyspaceContext keyspace() {
+			return getRuleContext(KeyspaceContext.class,0);
 		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
 		public DropMaterializedViewContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -4691,27 +5169,36 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1177); kwDrop();
-			setState(1178); kwMaterialized();
-			setState(1179); kwView();
+			setState(1177);
+			kwDrop();
+			setState(1178);
+			kwMaterialized();
+			setState(1179);
+			kwView();
 			setState(1181);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(1180); ifExist();
+				setState(1180);
+				ifExist();
 				}
 			}
 
 			setState(1186);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,70,_ctx) ) {
 			case 1:
 				{
-				setState(1183); keyspace();
-				setState(1184); match(DOT);
+				setState(1183);
+				keyspace();
+				setState(1184);
+				match(DOT);
 				}
 				break;
 			}
-			setState(1188); materializedView();
+			setState(1188);
+			materializedView();
 			}
 		}
 		catch (RecognitionException re) {
@@ -4729,19 +5216,19 @@ public class CQLParser extends Parser {
 		public KwDropContext kwDrop() {
 			return getRuleContext(KwDropContext.class,0);
 		}
-		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
-		public KeyspaceContext keyspace() {
-			return getRuleContext(KeyspaceContext.class,0);
-		}
 		public KwAggregateContext kwAggregate() {
 			return getRuleContext(KwAggregateContext.class,0);
-		}
-		public IfExistContext ifExist() {
-			return getRuleContext(IfExistContext.class,0);
 		}
 		public AggregateContext aggregate() {
 			return getRuleContext(AggregateContext.class,0);
 		}
+		public IfExistContext ifExist() {
+			return getRuleContext(IfExistContext.class,0);
+		}
+		public KeyspaceContext keyspace() {
+			return getRuleContext(KeyspaceContext.class,0);
+		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
 		public DropAggregateContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -4763,26 +5250,34 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1190); kwDrop();
-			setState(1191); kwAggregate();
+			setState(1190);
+			kwDrop();
+			setState(1191);
+			kwAggregate();
 			setState(1193);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(1192); ifExist();
+				setState(1192);
+				ifExist();
 				}
 			}
 
 			setState(1198);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,72,_ctx) ) {
 			case 1:
 				{
-				setState(1195); keyspace();
-				setState(1196); match(DOT);
+				setState(1195);
+				keyspace();
+				setState(1196);
+				match(DOT);
 				}
 				break;
 			}
-			setState(1200); aggregate();
+			setState(1200);
+			aggregate();
 			}
 		}
 		catch (RecognitionException re) {
@@ -4803,16 +5298,16 @@ public class CQLParser extends Parser {
 		public KwFunctionContext kwFunction() {
 			return getRuleContext(KwFunctionContext.class,0);
 		}
-		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
-		public KeyspaceContext keyspace() {
-			return getRuleContext(KeyspaceContext.class,0);
+		public FunctionContext function() {
+			return getRuleContext(FunctionContext.class,0);
 		}
 		public IfExistContext ifExist() {
 			return getRuleContext(IfExistContext.class,0);
 		}
-		public FunctionContext function() {
-			return getRuleContext(FunctionContext.class,0);
+		public KeyspaceContext keyspace() {
+			return getRuleContext(KeyspaceContext.class,0);
 		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
 		public DropFunctionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -4834,26 +5329,34 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1202); kwDrop();
-			setState(1203); kwFunction();
+			setState(1202);
+			kwDrop();
+			setState(1203);
+			kwFunction();
 			setState(1205);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(1204); ifExist();
+				setState(1204);
+				ifExist();
 				}
 			}
 
 			setState(1210);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,74,_ctx) ) {
 			case 1:
 				{
-				setState(1207); keyspace();
-				setState(1208); match(DOT);
+				setState(1207);
+				keyspace();
+				setState(1208);
+				match(DOT);
 				}
 				break;
 			}
-			setState(1212); function();
+			setState(1212);
+			function();
 			}
 		}
 		catch (RecognitionException re) {
@@ -4868,28 +5371,28 @@ public class CQLParser extends Parser {
 	}
 
 	public static class DropTriggerContext extends ParserRuleContext {
-		public TableContext table() {
-			return getRuleContext(TableContext.class,0);
-		}
 		public KwDropContext kwDrop() {
 			return getRuleContext(KwDropContext.class,0);
-		}
-		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
-		public KeyspaceContext keyspace() {
-			return getRuleContext(KeyspaceContext.class,0);
-		}
-		public TriggerContext trigger() {
-			return getRuleContext(TriggerContext.class,0);
-		}
-		public IfExistContext ifExist() {
-			return getRuleContext(IfExistContext.class,0);
-		}
-		public KwOnContext kwOn() {
-			return getRuleContext(KwOnContext.class,0);
 		}
 		public KwTriggerContext kwTrigger() {
 			return getRuleContext(KwTriggerContext.class,0);
 		}
+		public TriggerContext trigger() {
+			return getRuleContext(TriggerContext.class,0);
+		}
+		public KwOnContext kwOn() {
+			return getRuleContext(KwOnContext.class,0);
+		}
+		public TableContext table() {
+			return getRuleContext(TableContext.class,0);
+		}
+		public IfExistContext ifExist() {
+			return getRuleContext(IfExistContext.class,0);
+		}
+		public KeyspaceContext keyspace() {
+			return getRuleContext(KeyspaceContext.class,0);
+		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
 		public DropTriggerContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -4911,28 +5414,38 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1214); kwDrop();
-			setState(1215); kwTrigger();
+			setState(1214);
+			kwDrop();
+			setState(1215);
+			kwTrigger();
 			setState(1217);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(1216); ifExist();
+				setState(1216);
+				ifExist();
 				}
 			}
 
-			setState(1219); trigger();
-			setState(1220); kwOn();
+			setState(1219);
+			trigger();
+			setState(1220);
+			kwOn();
 			setState(1224);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,76,_ctx) ) {
 			case 1:
 				{
-				setState(1221); keyspace();
-				setState(1222); match(DOT);
+				setState(1221);
+				keyspace();
+				setState(1222);
+				match(DOT);
 				}
 				break;
 			}
-			setState(1226); table();
+			setState(1226);
+			table();
 			}
 		}
 		catch (RecognitionException re) {
@@ -4980,17 +5493,22 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1228); kwDrop();
-			setState(1229); kwRole();
+			setState(1228);
+			kwDrop();
+			setState(1229);
+			kwRole();
 			setState(1231);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(1230); ifExist();
+				setState(1230);
+				ifExist();
 				}
 			}
 
-			setState(1233); role();
+			setState(1233);
+			role();
 			}
 		}
 		catch (RecognitionException re) {
@@ -5005,22 +5523,22 @@ public class CQLParser extends Parser {
 	}
 
 	public static class DropTableContext extends ParserRuleContext {
-		public TableContext table() {
-			return getRuleContext(TableContext.class,0);
-		}
 		public KwDropContext kwDrop() {
 			return getRuleContext(KwDropContext.class,0);
-		}
-		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
-		public KeyspaceContext keyspace() {
-			return getRuleContext(KeyspaceContext.class,0);
 		}
 		public KwTableContext kwTable() {
 			return getRuleContext(KwTableContext.class,0);
 		}
+		public TableContext table() {
+			return getRuleContext(TableContext.class,0);
+		}
 		public IfExistContext ifExist() {
 			return getRuleContext(IfExistContext.class,0);
 		}
+		public KeyspaceContext keyspace() {
+			return getRuleContext(KeyspaceContext.class,0);
+		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
 		public DropTableContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -5042,26 +5560,34 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1235); kwDrop();
-			setState(1236); kwTable();
+			setState(1235);
+			kwDrop();
+			setState(1236);
+			kwTable();
 			setState(1238);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(1237); ifExist();
+				setState(1237);
+				ifExist();
 				}
 			}
 
 			setState(1243);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,79,_ctx) ) {
 			case 1:
 				{
-				setState(1240); keyspace();
-				setState(1241); match(DOT);
+				setState(1240);
+				keyspace();
+				setState(1241);
+				match(DOT);
 				}
 				break;
 			}
-			setState(1245); table();
+			setState(1245);
+			table();
 			}
 		}
 		catch (RecognitionException re) {
@@ -5079,14 +5605,14 @@ public class CQLParser extends Parser {
 		public KwDropContext kwDrop() {
 			return getRuleContext(KwDropContext.class,0);
 		}
+		public KwKeyspaceContext kwKeyspace() {
+			return getRuleContext(KwKeyspaceContext.class,0);
+		}
 		public KeyspaceContext keyspace() {
 			return getRuleContext(KeyspaceContext.class,0);
 		}
 		public IfExistContext ifExist() {
 			return getRuleContext(IfExistContext.class,0);
-		}
-		public KwKeyspaceContext kwKeyspace() {
-			return getRuleContext(KwKeyspaceContext.class,0);
 		}
 		public DropKeyspaceContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5109,17 +5635,22 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1247); kwDrop();
-			setState(1248); kwKeyspace();
+			setState(1247);
+			kwDrop();
+			setState(1248);
+			kwKeyspace();
 			setState(1250);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(1249); ifExist();
+				setState(1249);
+				ifExist();
 				}
 			}
 
-			setState(1252); keyspace();
+			setState(1252);
+			keyspace();
 			}
 		}
 		catch (RecognitionException re) {
@@ -5134,22 +5665,22 @@ public class CQLParser extends Parser {
 	}
 
 	public static class DropIndexContext extends ParserRuleContext {
-		public KwIndexContext kwIndex() {
-			return getRuleContext(KwIndexContext.class,0);
-		}
 		public KwDropContext kwDrop() {
 			return getRuleContext(KwDropContext.class,0);
 		}
-		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
+		public KwIndexContext kwIndex() {
+			return getRuleContext(KwIndexContext.class,0);
+		}
 		public IndexNameContext indexName() {
 			return getRuleContext(IndexNameContext.class,0);
-		}
-		public KeyspaceContext keyspace() {
-			return getRuleContext(KeyspaceContext.class,0);
 		}
 		public IfExistContext ifExist() {
 			return getRuleContext(IfExistContext.class,0);
 		}
+		public KeyspaceContext keyspace() {
+			return getRuleContext(KeyspaceContext.class,0);
+		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
 		public DropIndexContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -5171,26 +5702,34 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1254); kwDrop();
-			setState(1255); kwIndex();
+			setState(1254);
+			kwDrop();
+			setState(1255);
+			kwIndex();
 			setState(1257);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(1256); ifExist();
+				setState(1256);
+				ifExist();
 				}
 			}
 
 			setState(1262);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,82,_ctx) ) {
 			case 1:
 				{
-				setState(1259); keyspace();
-				setState(1260); match(DOT);
+				setState(1259);
+				keyspace();
+				setState(1260);
+				match(DOT);
 				}
 				break;
 			}
-			setState(1264); indexName();
+			setState(1264);
+			indexName();
 			}
 		}
 		catch (RecognitionException re) {
@@ -5205,33 +5744,33 @@ public class CQLParser extends Parser {
 	}
 
 	public static class CreateTableContext extends ParserRuleContext {
-		public TableContext table() {
-			return getRuleContext(TableContext.class,0);
-		}
-		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
-		public WithElementContext withElement() {
-			return getRuleContext(WithElementContext.class,0);
-		}
-		public KeyspaceContext keyspace() {
-			return getRuleContext(KeyspaceContext.class,0);
+		public KwCreateContext kwCreate() {
+			return getRuleContext(KwCreateContext.class,0);
 		}
 		public KwTableContext kwTable() {
 			return getRuleContext(KwTableContext.class,0);
 		}
-		public IfNotExistContext ifNotExist() {
-			return getRuleContext(IfNotExistContext.class,0);
+		public TableContext table() {
+			return getRuleContext(TableContext.class,0);
 		}
 		public SyntaxBracketLrContext syntaxBracketLr() {
 			return getRuleContext(SyntaxBracketLrContext.class,0);
 		}
-		public KwCreateContext kwCreate() {
-			return getRuleContext(KwCreateContext.class,0);
+		public ColumnDefinitionListContext columnDefinitionList() {
+			return getRuleContext(ColumnDefinitionListContext.class,0);
 		}
 		public SyntaxBracketRrContext syntaxBracketRr() {
 			return getRuleContext(SyntaxBracketRrContext.class,0);
 		}
-		public ColumnDefinitionListContext columnDefinitionList() {
-			return getRuleContext(ColumnDefinitionListContext.class,0);
+		public IfNotExistContext ifNotExist() {
+			return getRuleContext(IfNotExistContext.class,0);
+		}
+		public KeyspaceContext keyspace() {
+			return getRuleContext(KeyspaceContext.class,0);
+		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
+		public WithElementContext withElement() {
+			return getRuleContext(WithElementContext.class,0);
 		}
 		public CreateTableContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5254,34 +5793,47 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1266); kwCreate();
-			setState(1267); kwTable();
+			setState(1266);
+			kwCreate();
+			setState(1267);
+			kwTable();
 			setState(1269);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(1268); ifNotExist();
+				setState(1268);
+				ifNotExist();
 				}
 			}
 
 			setState(1274);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,84,_ctx) ) {
 			case 1:
 				{
-				setState(1271); keyspace();
-				setState(1272); match(DOT);
+				setState(1271);
+				keyspace();
+				setState(1272);
+				match(DOT);
 				}
 				break;
 			}
-			setState(1276); table();
-			setState(1277); syntaxBracketLr();
-			setState(1278); columnDefinitionList();
-			setState(1279); syntaxBracketRr();
+			setState(1276);
+			table();
+			setState(1277);
+			syntaxBracketLr();
+			setState(1278);
+			columnDefinitionList();
+			setState(1279);
+			syntaxBracketRr();
 			setState(1281);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_WITH) {
 				{
-				setState(1280); withElement();
+				setState(1280);
+				withElement();
 				}
 			}
 
@@ -5299,14 +5851,14 @@ public class CQLParser extends Parser {
 	}
 
 	public static class WithElementContext extends ParserRuleContext {
-		public ClusteringOrderContext clusteringOrder() {
-			return getRuleContext(ClusteringOrderContext.class,0);
+		public KwWithContext kwWith() {
+			return getRuleContext(KwWithContext.class,0);
 		}
 		public TableOptionsContext tableOptions() {
 			return getRuleContext(TableOptionsContext.class,0);
 		}
-		public KwWithContext kwWith() {
-			return getRuleContext(KwWithContext.class,0);
+		public ClusteringOrderContext clusteringOrder() {
+			return getRuleContext(ClusteringOrderContext.class,0);
 		}
 		public WithElementContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5329,20 +5881,25 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1283); kwWith();
+			setState(1283);
+			kwWith();
 			setState(1285);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==OBJECT_NAME) {
 				{
-				setState(1284); tableOptions();
+				setState(1284);
+				tableOptions();
 				}
 			}
 
 			setState(1288);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_CLUSTERING) {
 				{
-				setState(1287); clusteringOrder();
+				setState(1287);
+				clusteringOrder();
 				}
 			}
 
@@ -5360,8 +5917,8 @@ public class CQLParser extends Parser {
 	}
 
 	public static class ClusteringOrderContext extends ParserRuleContext {
-		public OrderDirectionContext orderDirection() {
-			return getRuleContext(OrderDirectionContext.class,0);
+		public KwClusteringContext kwClustering() {
+			return getRuleContext(KwClusteringContext.class,0);
 		}
 		public KwOrderContext kwOrder() {
 			return getRuleContext(KwOrderContext.class,0);
@@ -5369,17 +5926,17 @@ public class CQLParser extends Parser {
 		public KwByContext kwBy() {
 			return getRuleContext(KwByContext.class,0);
 		}
-		public ColumnContext column() {
-			return getRuleContext(ColumnContext.class,0);
-		}
-		public KwClusteringContext kwClustering() {
-			return getRuleContext(KwClusteringContext.class,0);
-		}
 		public SyntaxBracketLrContext syntaxBracketLr() {
 			return getRuleContext(SyntaxBracketLrContext.class,0);
 		}
+		public ColumnContext column() {
+			return getRuleContext(ColumnContext.class,0);
+		}
 		public SyntaxBracketRrContext syntaxBracketRr() {
 			return getRuleContext(SyntaxBracketRrContext.class,0);
+		}
+		public OrderDirectionContext orderDirection() {
+			return getRuleContext(OrderDirectionContext.class,0);
 		}
 		public ClusteringOrderContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5402,20 +5959,28 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1290); kwClustering();
-			setState(1291); kwOrder();
-			setState(1292); kwBy();
-			setState(1293); syntaxBracketLr();
-			setState(1294); column();
+			setState(1290);
+			kwClustering();
+			setState(1291);
+			kwOrder();
+			setState(1292);
+			kwBy();
+			setState(1293);
+			syntaxBracketLr();
+			setState(1294);
+			column();
 			setState(1296);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_ASC || _la==K_DESC) {
 				{
-				setState(1295); orderDirection();
+				setState(1295);
+				orderDirection();
 				}
 			}
 
-			setState(1298); syntaxBracketRr();
+			setState(1298);
+			syntaxBracketRr();
 			}
 		}
 		catch (RecognitionException re) {
@@ -5430,17 +5995,17 @@ public class CQLParser extends Parser {
 	}
 
 	public static class TableOptionsContext extends ParserRuleContext {
+		public List<TableOptionItemContext> tableOptionItem() {
+			return getRuleContexts(TableOptionItemContext.class);
+		}
 		public TableOptionItemContext tableOptionItem(int i) {
 			return getRuleContext(TableOptionItemContext.class,i);
-		}
-		public KwAndContext kwAnd(int i) {
-			return getRuleContext(KwAndContext.class,i);
 		}
 		public List<KwAndContext> kwAnd() {
 			return getRuleContexts(KwAndContext.class);
 		}
-		public List<TableOptionItemContext> tableOptionItem() {
-			return getRuleContexts(TableOptionItemContext.class);
+		public KwAndContext kwAnd(int i) {
+			return getRuleContext(KwAndContext.class,i);
 		}
 		public TableOptionsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5463,7 +6028,8 @@ public class CQLParser extends Parser {
 			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1300); tableOptionItem();
+			setState(1300);
+			tableOptionItem();
 			setState(1306);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,89,_ctx);
@@ -5471,8 +6037,10 @@ public class CQLParser extends Parser {
 				if ( _alt==1 ) {
 					{
 					{
-					setState(1301); kwAnd();
-					setState(1302); tableOptionItem();
+					setState(1301);
+					kwAnd();
+					setState(1302);
+					tableOptionItem();
 					}
 					} 
 				}
@@ -5523,21 +6091,28 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 142, RULE_tableOptionItem);
 		try {
 			setState(1317);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,90,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1309); tableOptionName();
-				setState(1310); match(OPERATOR_EQ);
-				setState(1311); tableOptionValue();
+				setState(1309);
+				tableOptionName();
+				setState(1310);
+				match(OPERATOR_EQ);
+				setState(1311);
+				tableOptionValue();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1313); tableOptionName();
-				setState(1314); match(OPERATOR_EQ);
-				setState(1315); optionHash();
+				setState(1313);
+				tableOptionName();
+				setState(1314);
+				match(OPERATOR_EQ);
+				setState(1315);
+				optionHash();
 				}
 				break;
 			}
@@ -5575,7 +6150,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1319); match(OBJECT_NAME);
+			setState(1319);
+			match(OBJECT_NAME);
 			}
 		}
 		catch (RecognitionException re) {
@@ -5590,11 +6166,11 @@ public class CQLParser extends Parser {
 	}
 
 	public static class TableOptionValueContext extends ParserRuleContext {
-		public FloatLiteralContext floatLiteral() {
-			return getRuleContext(FloatLiteralContext.class,0);
-		}
 		public StringLiteralContext stringLiteral() {
 			return getRuleContext(StringLiteralContext.class,0);
+		}
+		public FloatLiteralContext floatLiteral() {
+			return getRuleContext(FloatLiteralContext.class,0);
 		}
 		public TableOptionValueContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5615,18 +6191,21 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 146, RULE_tableOptionValue);
 		try {
 			setState(1323);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case STRING_LITERAL:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1321); stringLiteral();
+				setState(1321);
+				stringLiteral();
 				}
 				break;
 			case DECIMAL_LITERAL:
 			case FLOAT_LITERAL:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1322); floatLiteral();
+				setState(1322);
+				floatLiteral();
 				}
 				break;
 			default:
@@ -5645,23 +6224,23 @@ public class CQLParser extends Parser {
 	}
 
 	public static class OptionHashContext extends ParserRuleContext {
-		public List<SyntaxCommaContext> syntaxComma() {
-			return getRuleContexts(SyntaxCommaContext.class);
+		public SyntaxBracketLcContext syntaxBracketLc() {
+			return getRuleContext(SyntaxBracketLcContext.class,0);
 		}
 		public List<OptionHashItemContext> optionHashItem() {
 			return getRuleContexts(OptionHashItemContext.class);
 		}
-		public SyntaxCommaContext syntaxComma(int i) {
-			return getRuleContext(SyntaxCommaContext.class,i);
+		public OptionHashItemContext optionHashItem(int i) {
+			return getRuleContext(OptionHashItemContext.class,i);
 		}
 		public SyntaxBracketRcContext syntaxBracketRc() {
 			return getRuleContext(SyntaxBracketRcContext.class,0);
 		}
-		public SyntaxBracketLcContext syntaxBracketLc() {
-			return getRuleContext(SyntaxBracketLcContext.class,0);
+		public List<SyntaxCommaContext> syntaxComma() {
+			return getRuleContexts(SyntaxCommaContext.class);
 		}
-		public OptionHashItemContext optionHashItem(int i) {
-			return getRuleContext(OptionHashItemContext.class,i);
+		public SyntaxCommaContext syntaxComma(int i) {
+			return getRuleContext(SyntaxCommaContext.class,i);
 		}
 		public OptionHashContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5684,23 +6263,28 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1325); syntaxBracketLc();
-			setState(1326); optionHashItem();
+			setState(1325);
+			syntaxBracketLc();
+			setState(1326);
+			optionHashItem();
 			setState(1332);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==COMMA) {
 				{
 				{
-				setState(1327); syntaxComma();
-				setState(1328); optionHashItem();
+				setState(1327);
+				syntaxComma();
+				setState(1328);
+				optionHashItem();
 				}
 				}
 				setState(1334);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			}
-			setState(1335); syntaxBracketRc();
+			setState(1335);
+			syntaxBracketRc();
 			}
 		}
 		catch (RecognitionException re) {
@@ -5742,9 +6326,12 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1337); optionHashKey();
-			setState(1338); match(COLON);
-			setState(1339); optionHashValue();
+			setState(1337);
+			optionHashKey();
+			setState(1338);
+			match(COLON);
+			setState(1339);
+			optionHashValue();
 			}
 		}
 		catch (RecognitionException re) {
@@ -5782,7 +6369,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1341); stringLiteral();
+			setState(1341);
+			stringLiteral();
 			}
 		}
 		catch (RecognitionException re) {
@@ -5797,11 +6385,11 @@ public class CQLParser extends Parser {
 	}
 
 	public static class OptionHashValueContext extends ParserRuleContext {
-		public FloatLiteralContext floatLiteral() {
-			return getRuleContext(FloatLiteralContext.class,0);
-		}
 		public StringLiteralContext stringLiteral() {
 			return getRuleContext(StringLiteralContext.class,0);
+		}
+		public FloatLiteralContext floatLiteral() {
+			return getRuleContext(FloatLiteralContext.class,0);
 		}
 		public OptionHashValueContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5822,18 +6410,21 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 154, RULE_optionHashValue);
 		try {
 			setState(1345);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case STRING_LITERAL:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1343); stringLiteral();
+				setState(1343);
+				stringLiteral();
 				}
 				break;
 			case DECIMAL_LITERAL:
 			case FLOAT_LITERAL:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1344); floatLiteral();
+				setState(1344);
+				floatLiteral();
 				}
 				break;
 			default:
@@ -5852,20 +6443,20 @@ public class CQLParser extends Parser {
 	}
 
 	public static class ColumnDefinitionListContext extends ParserRuleContext {
-		public List<SyntaxCommaContext> syntaxComma() {
-			return getRuleContexts(SyntaxCommaContext.class);
-		}
-		public PrimaryKeyElementContext primaryKeyElement() {
-			return getRuleContext(PrimaryKeyElementContext.class,0);
-		}
 		public List<ColumnDefinitionContext> columnDefinition() {
 			return getRuleContexts(ColumnDefinitionContext.class);
+		}
+		public ColumnDefinitionContext columnDefinition(int i) {
+			return getRuleContext(ColumnDefinitionContext.class,i);
+		}
+		public List<SyntaxCommaContext> syntaxComma() {
+			return getRuleContexts(SyntaxCommaContext.class);
 		}
 		public SyntaxCommaContext syntaxComma(int i) {
 			return getRuleContext(SyntaxCommaContext.class,i);
 		}
-		public ColumnDefinitionContext columnDefinition(int i) {
-			return getRuleContext(ColumnDefinitionContext.class,i);
+		public PrimaryKeyElementContext primaryKeyElement() {
+			return getRuleContext(PrimaryKeyElementContext.class,0);
 		}
 		public ColumnDefinitionListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5890,7 +6481,8 @@ public class CQLParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(1347); columnDefinition();
+			setState(1347);
+			columnDefinition();
 			}
 			setState(1353);
 			_errHandler.sync(this);
@@ -5899,8 +6491,10 @@ public class CQLParser extends Parser {
 				if ( _alt==1 ) {
 					{
 					{
-					setState(1348); syntaxComma();
-					setState(1349); columnDefinition();
+					setState(1348);
+					syntaxComma();
+					setState(1349);
+					columnDefinition();
 					}
 					} 
 				}
@@ -5909,11 +6503,14 @@ public class CQLParser extends Parser {
 				_alt = getInterpreter().adaptivePredict(_input,94,_ctx);
 			}
 			setState(1359);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==COMMA) {
 				{
-				setState(1356); syntaxComma();
-				setState(1357); primaryKeyElement();
+				setState(1356);
+				syntaxComma();
+				setState(1357);
+				primaryKeyElement();
 				}
 			}
 
@@ -5931,14 +6528,14 @@ public class CQLParser extends Parser {
 	}
 
 	public static class ColumnDefinitionContext extends ParserRuleContext {
-		public PrimaryKeyColumnContext primaryKeyColumn() {
-			return getRuleContext(PrimaryKeyColumnContext.class,0);
-		}
 		public ColumnContext column() {
 			return getRuleContext(ColumnContext.class,0);
 		}
 		public DataTypeContext dataType() {
 			return getRuleContext(DataTypeContext.class,0);
+		}
+		public PrimaryKeyColumnContext primaryKeyColumn() {
+			return getRuleContext(PrimaryKeyColumnContext.class,0);
 		}
 		public ColumnDefinitionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -5961,13 +6558,17 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1361); column();
-			setState(1362); dataType();
+			setState(1361);
+			column();
+			setState(1362);
+			dataType();
 			setState(1364);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_PRIMARY) {
 				{
-				setState(1363); primaryKeyColumn();
+				setState(1363);
+				primaryKeyColumn();
 				}
 			}
 
@@ -5985,11 +6586,11 @@ public class CQLParser extends Parser {
 	}
 
 	public static class PrimaryKeyColumnContext extends ParserRuleContext {
-		public KwKeyContext kwKey() {
-			return getRuleContext(KwKeyContext.class,0);
-		}
 		public KwPrimaryContext kwPrimary() {
 			return getRuleContext(KwPrimaryContext.class,0);
+		}
+		public KwKeyContext kwKey() {
+			return getRuleContext(KwKeyContext.class,0);
 		}
 		public PrimaryKeyColumnContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -6011,8 +6612,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1366); kwPrimary();
-			setState(1367); kwKey();
+			setState(1366);
+			kwPrimary();
+			setState(1367);
+			kwKey();
 			}
 		}
 		catch (RecognitionException re) {
@@ -6027,6 +6630,9 @@ public class CQLParser extends Parser {
 	}
 
 	public static class PrimaryKeyElementContext extends ParserRuleContext {
+		public KwPrimaryContext kwPrimary() {
+			return getRuleContext(KwPrimaryContext.class,0);
+		}
 		public KwKeyContext kwKey() {
 			return getRuleContext(KwKeyContext.class,0);
 		}
@@ -6035,9 +6641,6 @@ public class CQLParser extends Parser {
 		}
 		public PrimaryKeyDefinitionContext primaryKeyDefinition() {
 			return getRuleContext(PrimaryKeyDefinitionContext.class,0);
-		}
-		public KwPrimaryContext kwPrimary() {
-			return getRuleContext(KwPrimaryContext.class,0);
 		}
 		public SyntaxBracketRrContext syntaxBracketRr() {
 			return getRuleContext(SyntaxBracketRrContext.class,0);
@@ -6062,11 +6665,16 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1369); kwPrimary();
-			setState(1370); kwKey();
-			setState(1371); syntaxBracketLr();
-			setState(1372); primaryKeyDefinition();
-			setState(1373); syntaxBracketRr();
+			setState(1369);
+			kwPrimary();
+			setState(1370);
+			kwKey();
+			setState(1371);
+			syntaxBracketLr();
+			setState(1372);
+			primaryKeyDefinition();
+			setState(1373);
+			syntaxBracketRr();
 			}
 		}
 		catch (RecognitionException re) {
@@ -6081,11 +6689,11 @@ public class CQLParser extends Parser {
 	}
 
 	public static class PrimaryKeyDefinitionContext extends ParserRuleContext {
-		public CompoundKeyContext compoundKey() {
-			return getRuleContext(CompoundKeyContext.class,0);
-		}
 		public SinglePrimaryKeyContext singlePrimaryKey() {
 			return getRuleContext(SinglePrimaryKeyContext.class,0);
+		}
+		public CompoundKeyContext compoundKey() {
+			return getRuleContext(CompoundKeyContext.class,0);
 		}
 		public CompositeKeyContext compositeKey() {
 			return getRuleContext(CompositeKeyContext.class,0);
@@ -6109,23 +6717,27 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 164, RULE_primaryKeyDefinition);
 		try {
 			setState(1378);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,97,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1375); singlePrimaryKey();
+				setState(1375);
+				singlePrimaryKey();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1376); compoundKey();
+				setState(1376);
+				compoundKey();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(1377); compositeKey();
+				setState(1377);
+				compositeKey();
 				}
 				break;
 			}
@@ -6165,7 +6777,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1380); column();
+			setState(1380);
+			column();
 			}
 		}
 		catch (RecognitionException re) {
@@ -6180,11 +6793,11 @@ public class CQLParser extends Parser {
 	}
 
 	public static class CompoundKeyContext extends ParserRuleContext {
-		public SyntaxCommaContext syntaxComma() {
-			return getRuleContext(SyntaxCommaContext.class,0);
-		}
 		public PartitionKeyContext partitionKey() {
 			return getRuleContext(PartitionKeyContext.class,0);
+		}
+		public SyntaxCommaContext syntaxComma() {
+			return getRuleContext(SyntaxCommaContext.class,0);
 		}
 		public ClusteringKeyListContext clusteringKeyList() {
 			return getRuleContext(ClusteringKeyListContext.class,0);
@@ -6209,10 +6822,13 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1382); partitionKey();
+			setState(1382);
+			partitionKey();
 			{
-			setState(1383); syntaxComma();
-			setState(1384); clusteringKeyList();
+			setState(1383);
+			syntaxComma();
+			setState(1384);
+			clusteringKeyList();
 			}
 			}
 		}
@@ -6228,17 +6844,17 @@ public class CQLParser extends Parser {
 	}
 
 	public static class CompositeKeyContext extends ParserRuleContext {
-		public SyntaxCommaContext syntaxComma() {
-			return getRuleContext(SyntaxCommaContext.class,0);
+		public SyntaxBracketLrContext syntaxBracketLr() {
+			return getRuleContext(SyntaxBracketLrContext.class,0);
 		}
 		public PartitionKeyListContext partitionKeyList() {
 			return getRuleContext(PartitionKeyListContext.class,0);
 		}
-		public SyntaxBracketLrContext syntaxBracketLr() {
-			return getRuleContext(SyntaxBracketLrContext.class,0);
-		}
 		public SyntaxBracketRrContext syntaxBracketRr() {
 			return getRuleContext(SyntaxBracketRrContext.class,0);
+		}
+		public SyntaxCommaContext syntaxComma() {
+			return getRuleContext(SyntaxCommaContext.class,0);
 		}
 		public ClusteringKeyListContext clusteringKeyList() {
 			return getRuleContext(ClusteringKeyListContext.class,0);
@@ -6263,12 +6879,17 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1386); syntaxBracketLr();
-			setState(1387); partitionKeyList();
-			setState(1388); syntaxBracketRr();
+			setState(1386);
+			syntaxBracketLr();
+			setState(1387);
+			partitionKeyList();
+			setState(1388);
+			syntaxBracketRr();
 			{
-			setState(1389); syntaxComma();
-			setState(1390); clusteringKeyList();
+			setState(1389);
+			syntaxComma();
+			setState(1390);
+			clusteringKeyList();
 			}
 			}
 		}
@@ -6284,6 +6905,9 @@ public class CQLParser extends Parser {
 	}
 
 	public static class PartitionKeyListContext extends ParserRuleContext {
+		public List<PartitionKeyContext> partitionKey() {
+			return getRuleContexts(PartitionKeyContext.class);
+		}
 		public PartitionKeyContext partitionKey(int i) {
 			return getRuleContext(PartitionKeyContext.class,i);
 		}
@@ -6292,9 +6916,6 @@ public class CQLParser extends Parser {
 		}
 		public SyntaxCommaContext syntaxComma(int i) {
 			return getRuleContext(SyntaxCommaContext.class,i);
-		}
-		public List<PartitionKeyContext> partitionKey() {
-			return getRuleContexts(PartitionKeyContext.class);
 		}
 		public PartitionKeyListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -6318,7 +6939,8 @@ public class CQLParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(1392); partitionKey();
+			setState(1392);
+			partitionKey();
 			}
 			setState(1398);
 			_errHandler.sync(this);
@@ -6326,8 +6948,10 @@ public class CQLParser extends Parser {
 			while (_la==COMMA) {
 				{
 				{
-				setState(1393); syntaxComma();
-				setState(1394); partitionKey();
+				setState(1393);
+				syntaxComma();
+				setState(1394);
+				partitionKey();
 				}
 				}
 				setState(1400);
@@ -6348,17 +6972,17 @@ public class CQLParser extends Parser {
 	}
 
 	public static class ClusteringKeyListContext extends ParserRuleContext {
+		public List<ClusteringKeyContext> clusteringKey() {
+			return getRuleContexts(ClusteringKeyContext.class);
+		}
+		public ClusteringKeyContext clusteringKey(int i) {
+			return getRuleContext(ClusteringKeyContext.class,i);
+		}
 		public List<SyntaxCommaContext> syntaxComma() {
 			return getRuleContexts(SyntaxCommaContext.class);
 		}
 		public SyntaxCommaContext syntaxComma(int i) {
 			return getRuleContext(SyntaxCommaContext.class,i);
-		}
-		public ClusteringKeyContext clusteringKey(int i) {
-			return getRuleContext(ClusteringKeyContext.class,i);
-		}
-		public List<ClusteringKeyContext> clusteringKey() {
-			return getRuleContexts(ClusteringKeyContext.class);
 		}
 		public ClusteringKeyListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -6382,7 +7006,8 @@ public class CQLParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(1401); clusteringKey();
+			setState(1401);
+			clusteringKey();
 			}
 			setState(1407);
 			_errHandler.sync(this);
@@ -6390,8 +7015,10 @@ public class CQLParser extends Parser {
 			while (_la==COMMA) {
 				{
 				{
-				setState(1402); syntaxComma();
-				setState(1403); clusteringKey();
+				setState(1402);
+				syntaxComma();
+				setState(1403);
+				clusteringKey();
 				}
 				}
 				setState(1409);
@@ -6435,7 +7062,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1410); column();
+			setState(1410);
+			column();
 			}
 		}
 		catch (RecognitionException re) {
@@ -6473,7 +7101,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1412); column();
+			setState(1412);
+			column();
 			}
 		}
 		catch (RecognitionException re) {
@@ -6514,8 +7143,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1414); kwApply();
-			setState(1415); kwBatch();
+			setState(1414);
+			kwApply();
+			setState(1415);
+			kwBatch();
 			}
 		}
 		catch (RecognitionException re) {
@@ -6530,17 +7161,17 @@ public class CQLParser extends Parser {
 	}
 
 	public static class BeginBatchContext extends ParserRuleContext {
-		public UsingTimestampSpecContext usingTimestampSpec() {
-			return getRuleContext(UsingTimestampSpecContext.class,0);
+		public KwBeginContext kwBegin() {
+			return getRuleContext(KwBeginContext.class,0);
 		}
 		public KwBatchContext kwBatch() {
 			return getRuleContext(KwBatchContext.class,0);
 		}
-		public KwBeginContext kwBegin() {
-			return getRuleContext(KwBeginContext.class,0);
-		}
 		public BatchTypeContext batchType() {
 			return getRuleContext(BatchTypeContext.class,0);
+		}
+		public UsingTimestampSpecContext usingTimestampSpec() {
+			return getRuleContext(UsingTimestampSpecContext.class,0);
 		}
 		public BeginBatchContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -6563,21 +7194,27 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1417); kwBegin();
+			setState(1417);
+			kwBegin();
 			setState(1419);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_LOGGED || _la==K_UNLOGGED) {
 				{
-				setState(1418); batchType();
+				setState(1418);
+				batchType();
 				}
 			}
 
-			setState(1421); kwBatch();
+			setState(1421);
+			kwBatch();
 			setState(1423);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_USING) {
 				{
-				setState(1422); usingTimestampSpec();
+				setState(1422);
+				usingTimestampSpec();
 				}
 			}
 
@@ -6595,11 +7232,11 @@ public class CQLParser extends Parser {
 	}
 
 	public static class BatchTypeContext extends ParserRuleContext {
-		public KwUnloggedContext kwUnlogged() {
-			return getRuleContext(KwUnloggedContext.class,0);
-		}
 		public KwLoggedContext kwLogged() {
 			return getRuleContext(KwLoggedContext.class,0);
+		}
+		public KwUnloggedContext kwUnlogged() {
+			return getRuleContext(KwUnloggedContext.class,0);
 		}
 		public BatchTypeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -6620,17 +7257,20 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 184, RULE_batchType);
 		try {
 			setState(1427);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case K_LOGGED:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1425); kwLogged();
+				setState(1425);
+				kwLogged();
 				}
 				break;
 			case K_UNLOGGED:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1426); kwUnlogged();
+				setState(1426);
+				kwUnlogged();
 				}
 				break;
 			default:
@@ -6652,33 +7292,33 @@ public class CQLParser extends Parser {
 		public KwAlterContext kwAlter() {
 			return getRuleContext(KwAlterContext.class,0);
 		}
-		public ReplicationListContext replicationList() {
-			return getRuleContext(ReplicationListContext.class,0);
+		public KwKeyspaceContext kwKeyspace() {
+			return getRuleContext(KwKeyspaceContext.class,0);
 		}
 		public KeyspaceContext keyspace() {
 			return getRuleContext(KeyspaceContext.class,0);
 		}
-		public DurableWritesContext durableWrites() {
-			return getRuleContext(DurableWritesContext.class,0);
-		}
-		public TerminalNode OPERATOR_EQ() { return getToken(CQLParser.OPERATOR_EQ, 0); }
-		public SyntaxBracketRcContext syntaxBracketRc() {
-			return getRuleContext(SyntaxBracketRcContext.class,0);
-		}
 		public KwWithContext kwWith() {
 			return getRuleContext(KwWithContext.class,0);
 		}
+		public KwReplicationContext kwReplication() {
+			return getRuleContext(KwReplicationContext.class,0);
+		}
+		public TerminalNode OPERATOR_EQ() { return getToken(CQLParser.OPERATOR_EQ, 0); }
 		public SyntaxBracketLcContext syntaxBracketLc() {
 			return getRuleContext(SyntaxBracketLcContext.class,0);
+		}
+		public ReplicationListContext replicationList() {
+			return getRuleContext(ReplicationListContext.class,0);
+		}
+		public SyntaxBracketRcContext syntaxBracketRc() {
+			return getRuleContext(SyntaxBracketRcContext.class,0);
 		}
 		public KwAndContext kwAnd() {
 			return getRuleContext(KwAndContext.class,0);
 		}
-		public KwKeyspaceContext kwKeyspace() {
-			return getRuleContext(KwKeyspaceContext.class,0);
-		}
-		public KwReplicationContext kwReplication() {
-			return getRuleContext(KwReplicationContext.class,0);
+		public DurableWritesContext durableWrites() {
+			return getRuleContext(DurableWritesContext.class,0);
 		}
 		public AlterKeyspaceContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -6701,21 +7341,33 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1429); kwAlter();
-			setState(1430); kwKeyspace();
-			setState(1431); keyspace();
-			setState(1432); kwWith();
-			setState(1433); kwReplication();
-			setState(1434); match(OPERATOR_EQ);
-			setState(1435); syntaxBracketLc();
-			setState(1436); replicationList();
-			setState(1437); syntaxBracketRc();
+			setState(1429);
+			kwAlter();
+			setState(1430);
+			kwKeyspace();
+			setState(1431);
+			keyspace();
+			setState(1432);
+			kwWith();
+			setState(1433);
+			kwReplication();
+			setState(1434);
+			match(OPERATOR_EQ);
+			setState(1435);
+			syntaxBracketLc();
+			setState(1436);
+			replicationList();
+			setState(1437);
+			syntaxBracketRc();
 			setState(1441);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_AND) {
 				{
-				setState(1438); kwAnd();
-				setState(1439); durableWrites();
+				setState(1438);
+				kwAnd();
+				setState(1439);
+				durableWrites();
 				}
 			}
 
@@ -6733,17 +7385,17 @@ public class CQLParser extends Parser {
 	}
 
 	public static class ReplicationListContext extends ParserRuleContext {
-		public List<SyntaxCommaContext> syntaxComma() {
-			return getRuleContexts(SyntaxCommaContext.class);
-		}
-		public SyntaxCommaContext syntaxComma(int i) {
-			return getRuleContext(SyntaxCommaContext.class,i);
-		}
 		public List<ReplicationListItemContext> replicationListItem() {
 			return getRuleContexts(ReplicationListItemContext.class);
 		}
 		public ReplicationListItemContext replicationListItem(int i) {
 			return getRuleContext(ReplicationListItemContext.class,i);
+		}
+		public List<SyntaxCommaContext> syntaxComma() {
+			return getRuleContexts(SyntaxCommaContext.class);
+		}
+		public SyntaxCommaContext syntaxComma(int i) {
+			return getRuleContext(SyntaxCommaContext.class,i);
 		}
 		public ReplicationListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -6767,7 +7419,8 @@ public class CQLParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(1443); replicationListItem();
+			setState(1443);
+			replicationListItem();
 			}
 			setState(1449);
 			_errHandler.sync(this);
@@ -6775,8 +7428,10 @@ public class CQLParser extends Parser {
 			while (_la==COMMA) {
 				{
 				{
-				setState(1444); syntaxComma();
-				setState(1445); replicationListItem();
+				setState(1444);
+				syntaxComma();
+				setState(1445);
+				replicationListItem();
 				}
 				}
 				setState(1451);
@@ -6797,12 +7452,12 @@ public class CQLParser extends Parser {
 	}
 
 	public static class ReplicationListItemContext extends ParserRuleContext {
-		public TerminalNode DECIMAL_LITERAL() { return getToken(CQLParser.DECIMAL_LITERAL, 0); }
-		public TerminalNode COLON() { return getToken(CQLParser.COLON, 0); }
 		public List<TerminalNode> STRING_LITERAL() { return getTokens(CQLParser.STRING_LITERAL); }
 		public TerminalNode STRING_LITERAL(int i) {
 			return getToken(CQLParser.STRING_LITERAL, i);
 		}
+		public TerminalNode COLON() { return getToken(CQLParser.COLON, 0); }
+		public TerminalNode DECIMAL_LITERAL() { return getToken(CQLParser.DECIMAL_LITERAL, 0); }
 		public ReplicationListItemContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -6822,21 +7477,28 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 190, RULE_replicationListItem);
 		try {
 			setState(1458);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,105,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1452); match(STRING_LITERAL);
-				setState(1453); match(COLON);
-				setState(1454); match(STRING_LITERAL);
+				setState(1452);
+				match(STRING_LITERAL);
+				setState(1453);
+				match(COLON);
+				setState(1454);
+				match(STRING_LITERAL);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1455); match(STRING_LITERAL);
-				setState(1456); match(COLON);
-				setState(1457); match(DECIMAL_LITERAL);
+				setState(1455);
+				match(STRING_LITERAL);
+				setState(1456);
+				match(COLON);
+				setState(1457);
+				match(DECIMAL_LITERAL);
 				}
 				break;
 			}
@@ -6853,10 +7515,10 @@ public class CQLParser extends Parser {
 	}
 
 	public static class DurableWritesContext extends ParserRuleContext {
-		public TerminalNode OPERATOR_EQ() { return getToken(CQLParser.OPERATOR_EQ, 0); }
 		public KwDurableWritesContext kwDurableWrites() {
 			return getRuleContext(KwDurableWritesContext.class,0);
 		}
+		public TerminalNode OPERATOR_EQ() { return getToken(CQLParser.OPERATOR_EQ, 0); }
 		public BooleanLiteralContext booleanLiteral() {
 			return getRuleContext(BooleanLiteralContext.class,0);
 		}
@@ -6880,9 +7542,12 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1460); kwDurableWrites();
-			setState(1461); match(OPERATOR_EQ);
-			setState(1462); booleanLiteral();
+			setState(1460);
+			kwDurableWrites();
+			setState(1461);
+			match(OPERATOR_EQ);
+			setState(1462);
+			booleanLiteral();
 			}
 		}
 		catch (RecognitionException re) {
@@ -6923,8 +7588,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1464); kwUse();
-			setState(1465); keyspace();
+			setState(1464);
+			kwUse();
+			setState(1465);
+			keyspace();
 			}
 		}
 		catch (RecognitionException re) {
@@ -6939,19 +7606,19 @@ public class CQLParser extends Parser {
 	}
 
 	public static class TruncateContext extends ParserRuleContext {
+		public KwTruncateContext kwTruncate() {
+			return getRuleContext(KwTruncateContext.class,0);
+		}
 		public TableContext table() {
 			return getRuleContext(TableContext.class,0);
-		}
-		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
-		public KeyspaceContext keyspace() {
-			return getRuleContext(KeyspaceContext.class,0);
 		}
 		public KwTableContext kwTable() {
 			return getRuleContext(KwTableContext.class,0);
 		}
-		public KwTruncateContext kwTruncate() {
-			return getRuleContext(KwTruncateContext.class,0);
+		public KeyspaceContext keyspace() {
+			return getRuleContext(KeyspaceContext.class,0);
 		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
 		public TruncateContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -6973,25 +7640,32 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1467); kwTruncate();
+			setState(1467);
+			kwTruncate();
 			setState(1469);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_TABLE) {
 				{
-				setState(1468); kwTable();
+				setState(1468);
+				kwTable();
 				}
 			}
 
 			setState(1474);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,107,_ctx) ) {
 			case 1:
 				{
-				setState(1471); keyspace();
-				setState(1472); match(DOT);
+				setState(1471);
+				keyspace();
+				setState(1472);
+				match(DOT);
 				}
 				break;
 			}
-			setState(1476); table();
+			setState(1476);
+			table();
 			}
 		}
 		catch (RecognitionException re) {
@@ -7006,37 +7680,37 @@ public class CQLParser extends Parser {
 	}
 
 	public static class CreateIndexContext extends ParserRuleContext {
+		public KwCreateContext kwCreate() {
+			return getRuleContext(KwCreateContext.class,0);
+		}
 		public KwIndexContext kwIndex() {
 			return getRuleContext(KwIndexContext.class,0);
+		}
+		public KwOnContext kwOn() {
+			return getRuleContext(KwOnContext.class,0);
 		}
 		public TableContext table() {
 			return getRuleContext(TableContext.class,0);
 		}
-		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
+		public SyntaxBracketLrContext syntaxBracketLr() {
+			return getRuleContext(SyntaxBracketLrContext.class,0);
+		}
+		public IndexColumnSpecContext indexColumnSpec() {
+			return getRuleContext(IndexColumnSpecContext.class,0);
+		}
+		public SyntaxBracketRrContext syntaxBracketRr() {
+			return getRuleContext(SyntaxBracketRrContext.class,0);
+		}
+		public IfNotExistContext ifNotExist() {
+			return getRuleContext(IfNotExistContext.class,0);
+		}
 		public IndexNameContext indexName() {
 			return getRuleContext(IndexNameContext.class,0);
 		}
 		public KeyspaceContext keyspace() {
 			return getRuleContext(KeyspaceContext.class,0);
 		}
-		public IfNotExistContext ifNotExist() {
-			return getRuleContext(IfNotExistContext.class,0);
-		}
-		public SyntaxBracketLrContext syntaxBracketLr() {
-			return getRuleContext(SyntaxBracketLrContext.class,0);
-		}
-		public KwOnContext kwOn() {
-			return getRuleContext(KwOnContext.class,0);
-		}
-		public IndexColumnSpecContext indexColumnSpec() {
-			return getRuleContext(IndexColumnSpecContext.class,0);
-		}
-		public KwCreateContext kwCreate() {
-			return getRuleContext(KwCreateContext.class,0);
-		}
-		public SyntaxBracketRrContext syntaxBracketRr() {
-			return getRuleContext(SyntaxBracketRrContext.class,0);
-		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
 		public CreateIndexContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -7058,38 +7732,52 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1478); kwCreate();
-			setState(1479); kwIndex();
+			setState(1478);
+			kwCreate();
+			setState(1479);
+			kwIndex();
 			setState(1481);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(1480); ifNotExist();
+				setState(1480);
+				ifNotExist();
 				}
 			}
 
 			setState(1484);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==STRING_LITERAL || _la==OBJECT_NAME) {
 				{
-				setState(1483); indexName();
+				setState(1483);
+				indexName();
 				}
 			}
 
-			setState(1486); kwOn();
+			setState(1486);
+			kwOn();
 			setState(1490);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,110,_ctx) ) {
 			case 1:
 				{
-				setState(1487); keyspace();
-				setState(1488); match(DOT);
+				setState(1487);
+				keyspace();
+				setState(1488);
+				match(DOT);
 				}
 				break;
 			}
-			setState(1492); table();
-			setState(1493); syntaxBracketLr();
-			setState(1494); indexColumnSpec();
-			setState(1495); syntaxBracketRr();
+			setState(1492);
+			table();
+			setState(1493);
+			syntaxBracketLr();
+			setState(1494);
+			indexColumnSpec();
+			setState(1495);
+			syntaxBracketRr();
 			}
 		}
 		catch (RecognitionException re) {
@@ -7127,17 +7815,20 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 200, RULE_indexName);
 		try {
 			setState(1499);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case OBJECT_NAME:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1497); match(OBJECT_NAME);
+				setState(1497);
+				match(OBJECT_NAME);
 				}
 				break;
 			case STRING_LITERAL:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1498); stringLiteral();
+				setState(1498);
+				stringLiteral();
 				}
 				break;
 			default:
@@ -7159,14 +7850,14 @@ public class CQLParser extends Parser {
 		public ColumnContext column() {
 			return getRuleContext(ColumnContext.class,0);
 		}
-		public IndexFullSpecContext indexFullSpec() {
-			return getRuleContext(IndexFullSpecContext.class,0);
-		}
 		public IndexKeysSpecContext indexKeysSpec() {
 			return getRuleContext(IndexKeysSpecContext.class,0);
 		}
 		public IndexEntriesSSpecContext indexEntriesSSpec() {
 			return getRuleContext(IndexEntriesSSpecContext.class,0);
+		}
+		public IndexFullSpecContext indexFullSpec() {
+			return getRuleContext(IndexFullSpecContext.class,0);
 		}
 		public IndexColumnSpecContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -7187,30 +7878,35 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 202, RULE_indexColumnSpec);
 		try {
 			setState(1505);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case DQUOTE:
 			case OBJECT_NAME:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1501); column();
+				setState(1501);
+				column();
 				}
 				break;
 			case K_KEYS:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1502); indexKeysSpec();
+				setState(1502);
+				indexKeysSpec();
 				}
 				break;
 			case K_ENTRIES:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(1503); indexEntriesSSpec();
+				setState(1503);
+				indexEntriesSSpec();
 				}
 				break;
 			case K_FULL:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(1504); indexFullSpec();
+				setState(1504);
+				indexFullSpec();
 				}
 				break;
 			default:
@@ -7229,13 +7925,13 @@ public class CQLParser extends Parser {
 	}
 
 	public static class IndexKeysSpecContext extends ParserRuleContext {
-		public TerminalNode OBJECT_NAME() { return getToken(CQLParser.OBJECT_NAME, 0); }
-		public SyntaxBracketLrContext syntaxBracketLr() {
-			return getRuleContext(SyntaxBracketLrContext.class,0);
-		}
 		public KwKeysContext kwKeys() {
 			return getRuleContext(KwKeysContext.class,0);
 		}
+		public SyntaxBracketLrContext syntaxBracketLr() {
+			return getRuleContext(SyntaxBracketLrContext.class,0);
+		}
+		public TerminalNode OBJECT_NAME() { return getToken(CQLParser.OBJECT_NAME, 0); }
 		public SyntaxBracketRrContext syntaxBracketRr() {
 			return getRuleContext(SyntaxBracketRrContext.class,0);
 		}
@@ -7259,10 +7955,14 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1507); kwKeys();
-			setState(1508); syntaxBracketLr();
-			setState(1509); match(OBJECT_NAME);
-			setState(1510); syntaxBracketRr();
+			setState(1507);
+			kwKeys();
+			setState(1508);
+			syntaxBracketLr();
+			setState(1509);
+			match(OBJECT_NAME);
+			setState(1510);
+			syntaxBracketRr();
 			}
 		}
 		catch (RecognitionException re) {
@@ -7277,13 +7977,13 @@ public class CQLParser extends Parser {
 	}
 
 	public static class IndexEntriesSSpecContext extends ParserRuleContext {
-		public TerminalNode OBJECT_NAME() { return getToken(CQLParser.OBJECT_NAME, 0); }
-		public SyntaxBracketLrContext syntaxBracketLr() {
-			return getRuleContext(SyntaxBracketLrContext.class,0);
-		}
 		public KwEntriesContext kwEntries() {
 			return getRuleContext(KwEntriesContext.class,0);
 		}
+		public SyntaxBracketLrContext syntaxBracketLr() {
+			return getRuleContext(SyntaxBracketLrContext.class,0);
+		}
+		public TerminalNode OBJECT_NAME() { return getToken(CQLParser.OBJECT_NAME, 0); }
 		public SyntaxBracketRrContext syntaxBracketRr() {
 			return getRuleContext(SyntaxBracketRrContext.class,0);
 		}
@@ -7307,10 +8007,14 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1512); kwEntries();
-			setState(1513); syntaxBracketLr();
-			setState(1514); match(OBJECT_NAME);
-			setState(1515); syntaxBracketRr();
+			setState(1512);
+			kwEntries();
+			setState(1513);
+			syntaxBracketLr();
+			setState(1514);
+			match(OBJECT_NAME);
+			setState(1515);
+			syntaxBracketRr();
 			}
 		}
 		catch (RecognitionException re) {
@@ -7325,13 +8029,13 @@ public class CQLParser extends Parser {
 	}
 
 	public static class IndexFullSpecContext extends ParserRuleContext {
-		public TerminalNode OBJECT_NAME() { return getToken(CQLParser.OBJECT_NAME, 0); }
-		public SyntaxBracketLrContext syntaxBracketLr() {
-			return getRuleContext(SyntaxBracketLrContext.class,0);
-		}
 		public KwFullContext kwFull() {
 			return getRuleContext(KwFullContext.class,0);
 		}
+		public SyntaxBracketLrContext syntaxBracketLr() {
+			return getRuleContext(SyntaxBracketLrContext.class,0);
+		}
+		public TerminalNode OBJECT_NAME() { return getToken(CQLParser.OBJECT_NAME, 0); }
 		public SyntaxBracketRrContext syntaxBracketRr() {
 			return getRuleContext(SyntaxBracketRrContext.class,0);
 		}
@@ -7355,10 +8059,14 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1517); kwFull();
-			setState(1518); syntaxBracketLr();
-			setState(1519); match(OBJECT_NAME);
-			setState(1520); syntaxBracketRr();
+			setState(1517);
+			kwFull();
+			setState(1518);
+			syntaxBracketLr();
+			setState(1519);
+			match(OBJECT_NAME);
+			setState(1520);
+			syntaxBracketRr();
 			}
 		}
 		catch (RecognitionException re) {
@@ -7373,14 +8081,17 @@ public class CQLParser extends Parser {
 	}
 
 	public static class DeleteContext extends ParserRuleContext {
-		public BeginBatchContext beginBatch() {
-			return getRuleContext(BeginBatchContext.class,0);
-		}
 		public KwDeleteContext kwDelete() {
 			return getRuleContext(KwDeleteContext.class,0);
 		}
+		public FromSpecContext fromSpec() {
+			return getRuleContext(FromSpecContext.class,0);
+		}
 		public WhereSpecContext whereSpec() {
 			return getRuleContext(WhereSpecContext.class,0);
+		}
+		public BeginBatchContext beginBatch() {
+			return getRuleContext(BeginBatchContext.class,0);
 		}
 		public DeleteColumnListContext deleteColumnList() {
 			return getRuleContext(DeleteColumnListContext.class,0);
@@ -7390,9 +8101,6 @@ public class CQLParser extends Parser {
 		}
 		public IfExistContext ifExist() {
 			return getRuleContext(IfExistContext.class,0);
-		}
-		public FromSpecContext fromSpec() {
-			return getRuleContext(FromSpecContext.class,0);
 		}
 		public IfSpecContext ifSpec() {
 			return getRuleContext(IfSpecContext.class,0);
@@ -7419,42 +8127,54 @@ public class CQLParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(1523);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_BEGIN) {
 				{
-				setState(1522); beginBatch();
+				setState(1522);
+				beginBatch();
 				}
 			}
 
-			setState(1525); kwDelete();
+			setState(1525);
+			kwDelete();
 			setState(1527);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==OBJECT_NAME) {
 				{
-				setState(1526); deleteColumnList();
+				setState(1526);
+				deleteColumnList();
 				}
 			}
 
-			setState(1529); fromSpec();
+			setState(1529);
+			fromSpec();
 			setState(1531);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_USING) {
 				{
-				setState(1530); usingTimestampSpec();
+				setState(1530);
+				usingTimestampSpec();
 				}
 			}
 
-			setState(1533); whereSpec();
+			setState(1533);
+			whereSpec();
 			setState(1536);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,116,_ctx) ) {
 			case 1:
 				{
-				setState(1534); ifExist();
+				setState(1534);
+				ifExist();
 				}
 				break;
 			case 2:
 				{
-				setState(1535); ifSpec();
+				setState(1535);
+				ifSpec();
 				}
 				break;
 			}
@@ -7472,17 +8192,17 @@ public class CQLParser extends Parser {
 	}
 
 	public static class DeleteColumnListContext extends ParserRuleContext {
-		public List<SyntaxCommaContext> syntaxComma() {
-			return getRuleContexts(SyntaxCommaContext.class);
-		}
 		public List<DeleteColumnItemContext> deleteColumnItem() {
 			return getRuleContexts(DeleteColumnItemContext.class);
 		}
-		public SyntaxCommaContext syntaxComma(int i) {
-			return getRuleContext(SyntaxCommaContext.class,i);
-		}
 		public DeleteColumnItemContext deleteColumnItem(int i) {
 			return getRuleContext(DeleteColumnItemContext.class,i);
+		}
+		public List<SyntaxCommaContext> syntaxComma() {
+			return getRuleContexts(SyntaxCommaContext.class);
+		}
+		public SyntaxCommaContext syntaxComma(int i) {
+			return getRuleContext(SyntaxCommaContext.class,i);
 		}
 		public DeleteColumnListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -7506,7 +8226,8 @@ public class CQLParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(1538); deleteColumnItem();
+			setState(1538);
+			deleteColumnItem();
 			}
 			setState(1544);
 			_errHandler.sync(this);
@@ -7514,8 +8235,10 @@ public class CQLParser extends Parser {
 			while (_la==COMMA) {
 				{
 				{
-				setState(1539); syntaxComma();
-				setState(1540); deleteColumnItem();
+				setState(1539);
+				syntaxComma();
+				setState(1540);
+				deleteColumnItem();
 				}
 				}
 				setState(1546);
@@ -7536,14 +8259,14 @@ public class CQLParser extends Parser {
 	}
 
 	public static class DeleteColumnItemContext extends ParserRuleContext {
-		public DecimalLiteralContext decimalLiteral() {
-			return getRuleContext(DecimalLiteralContext.class,0);
-		}
-		public TerminalNode RS_BRACKET() { return getToken(CQLParser.RS_BRACKET, 0); }
 		public TerminalNode OBJECT_NAME() { return getToken(CQLParser.OBJECT_NAME, 0); }
 		public TerminalNode LS_BRACKET() { return getToken(CQLParser.LS_BRACKET, 0); }
+		public TerminalNode RS_BRACKET() { return getToken(CQLParser.RS_BRACKET, 0); }
 		public StringLiteralContext stringLiteral() {
 			return getRuleContext(StringLiteralContext.class,0);
+		}
+		public DecimalLiteralContext decimalLiteral() {
+			return getRuleContext(DecimalLiteralContext.class,0);
 		}
 		public DeleteColumnItemContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -7564,34 +8287,42 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 214, RULE_deleteColumnItem);
 		try {
 			setState(1556);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,119,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1547); match(OBJECT_NAME);
+				setState(1547);
+				match(OBJECT_NAME);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1548); match(OBJECT_NAME);
-				setState(1549); match(LS_BRACKET);
+				setState(1548);
+				match(OBJECT_NAME);
+				setState(1549);
+				match(LS_BRACKET);
 				setState(1552);
+				_errHandler.sync(this);
 				switch (_input.LA(1)) {
 				case STRING_LITERAL:
 					{
-					setState(1550); stringLiteral();
+					setState(1550);
+					stringLiteral();
 					}
 					break;
 				case DECIMAL_LITERAL:
 					{
-					setState(1551); decimalLiteral();
+					setState(1551);
+					decimalLiteral();
 					}
 					break;
 				default:
 					throw new NoViableAltException(this);
 				}
-				setState(1554); match(RS_BRACKET);
+				setState(1554);
+				match(RS_BRACKET);
 				}
 				break;
 			}
@@ -7608,33 +8339,33 @@ public class CQLParser extends Parser {
 	}
 
 	public static class UpdateContext extends ParserRuleContext {
-		public TableContext table() {
-			return getRuleContext(TableContext.class,0);
-		}
-		public BeginBatchContext beginBatch() {
-			return getRuleContext(BeginBatchContext.class,0);
-		}
-		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
-		public WhereSpecContext whereSpec() {
-			return getRuleContext(WhereSpecContext.class,0);
-		}
-		public UsingTtlTimestampContext usingTtlTimestamp() {
-			return getRuleContext(UsingTtlTimestampContext.class,0);
-		}
-		public KeyspaceContext keyspace() {
-			return getRuleContext(KeyspaceContext.class,0);
-		}
 		public KwUpdateContext kwUpdate() {
 			return getRuleContext(KwUpdateContext.class,0);
 		}
-		public IfExistContext ifExist() {
-			return getRuleContext(IfExistContext.class,0);
+		public TableContext table() {
+			return getRuleContext(TableContext.class,0);
+		}
+		public KwSetContext kwSet() {
+			return getRuleContext(KwSetContext.class,0);
 		}
 		public AssignmentsContext assignments() {
 			return getRuleContext(AssignmentsContext.class,0);
 		}
-		public KwSetContext kwSet() {
-			return getRuleContext(KwSetContext.class,0);
+		public WhereSpecContext whereSpec() {
+			return getRuleContext(WhereSpecContext.class,0);
+		}
+		public BeginBatchContext beginBatch() {
+			return getRuleContext(BeginBatchContext.class,0);
+		}
+		public KeyspaceContext keyspace() {
+			return getRuleContext(KeyspaceContext.class,0);
+		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
+		public UsingTtlTimestampContext usingTtlTimestamp() {
+			return getRuleContext(UsingTtlTimestampContext.class,0);
+		}
+		public IfExistContext ifExist() {
+			return getRuleContext(IfExistContext.class,0);
 		}
 		public IfSpecContext ifSpec() {
 			return getRuleContext(IfSpecContext.class,0);
@@ -7661,45 +8392,60 @@ public class CQLParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(1559);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_BEGIN) {
 				{
-				setState(1558); beginBatch();
+				setState(1558);
+				beginBatch();
 				}
 			}
 
-			setState(1561); kwUpdate();
+			setState(1561);
+			kwUpdate();
 			setState(1565);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,121,_ctx) ) {
 			case 1:
 				{
-				setState(1562); keyspace();
-				setState(1563); match(DOT);
+				setState(1562);
+				keyspace();
+				setState(1563);
+				match(DOT);
 				}
 				break;
 			}
-			setState(1567); table();
+			setState(1567);
+			table();
 			setState(1569);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_USING) {
 				{
-				setState(1568); usingTtlTimestamp();
+				setState(1568);
+				usingTtlTimestamp();
 				}
 			}
 
-			setState(1571); kwSet();
-			setState(1572); assignments();
-			setState(1573); whereSpec();
+			setState(1571);
+			kwSet();
+			setState(1572);
+			assignments();
+			setState(1573);
+			whereSpec();
 			setState(1576);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,123,_ctx) ) {
 			case 1:
 				{
-				setState(1574); ifExist();
+				setState(1574);
+				ifExist();
 				}
 				break;
 			case 2:
 				{
-				setState(1575); ifSpec();
+				setState(1575);
+				ifSpec();
 				}
 				break;
 			}
@@ -7743,8 +8489,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1578); kwIf();
-			setState(1579); ifConditionList();
+			setState(1578);
+			kwIf();
+			setState(1579);
+			ifConditionList();
 			}
 		}
 		catch (RecognitionException re) {
@@ -7759,17 +8507,17 @@ public class CQLParser extends Parser {
 	}
 
 	public static class IfConditionListContext extends ParserRuleContext {
-		public KwAndContext kwAnd(int i) {
-			return getRuleContext(KwAndContext.class,i);
-		}
 		public List<IfConditionContext> ifCondition() {
 			return getRuleContexts(IfConditionContext.class);
+		}
+		public IfConditionContext ifCondition(int i) {
+			return getRuleContext(IfConditionContext.class,i);
 		}
 		public List<KwAndContext> kwAnd() {
 			return getRuleContexts(KwAndContext.class);
 		}
-		public IfConditionContext ifCondition(int i) {
-			return getRuleContext(IfConditionContext.class,i);
+		public KwAndContext kwAnd(int i) {
+			return getRuleContext(KwAndContext.class,i);
 		}
 		public IfConditionListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -7793,7 +8541,8 @@ public class CQLParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(1581); ifCondition();
+			setState(1581);
+			ifCondition();
 			}
 			setState(1587);
 			_errHandler.sync(this);
@@ -7801,8 +8550,10 @@ public class CQLParser extends Parser {
 			while (_la==K_AND) {
 				{
 				{
-				setState(1582); kwAnd();
-				setState(1583); ifCondition();
+				setState(1582);
+				kwAnd();
+				setState(1583);
+				ifCondition();
 				}
 				}
 				setState(1589);
@@ -7823,11 +8574,11 @@ public class CQLParser extends Parser {
 	}
 
 	public static class IfConditionContext extends ParserRuleContext {
+		public TerminalNode OBJECT_NAME() { return getToken(CQLParser.OBJECT_NAME, 0); }
+		public TerminalNode OPERATOR_EQ() { return getToken(CQLParser.OPERATOR_EQ, 0); }
 		public ConstantContext constant() {
 			return getRuleContext(ConstantContext.class,0);
 		}
-		public TerminalNode OBJECT_NAME() { return getToken(CQLParser.OBJECT_NAME, 0); }
-		public TerminalNode OPERATOR_EQ() { return getToken(CQLParser.OPERATOR_EQ, 0); }
 		public IfConditionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -7848,9 +8599,12 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1590); match(OBJECT_NAME);
-			setState(1591); match(OPERATOR_EQ);
-			setState(1592); constant();
+			setState(1590);
+			match(OBJECT_NAME);
+			setState(1591);
+			match(OPERATOR_EQ);
+			setState(1592);
+			constant();
 			}
 		}
 		catch (RecognitionException re) {
@@ -7865,17 +8619,17 @@ public class CQLParser extends Parser {
 	}
 
 	public static class AssignmentsContext extends ParserRuleContext {
+		public List<AssignmentElementContext> assignmentElement() {
+			return getRuleContexts(AssignmentElementContext.class);
+		}
+		public AssignmentElementContext assignmentElement(int i) {
+			return getRuleContext(AssignmentElementContext.class,i);
+		}
 		public List<SyntaxCommaContext> syntaxComma() {
 			return getRuleContexts(SyntaxCommaContext.class);
 		}
 		public SyntaxCommaContext syntaxComma(int i) {
 			return getRuleContext(SyntaxCommaContext.class,i);
-		}
-		public AssignmentElementContext assignmentElement(int i) {
-			return getRuleContext(AssignmentElementContext.class,i);
-		}
-		public List<AssignmentElementContext> assignmentElement() {
-			return getRuleContexts(AssignmentElementContext.class);
 		}
 		public AssignmentsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -7899,7 +8653,8 @@ public class CQLParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(1594); assignmentElement();
+			setState(1594);
+			assignmentElement();
 			}
 			setState(1600);
 			_errHandler.sync(this);
@@ -7907,8 +8662,10 @@ public class CQLParser extends Parser {
 			while (_la==COMMA) {
 				{
 				{
-				setState(1595); syntaxComma();
-				setState(1596); assignmentElement();
+				setState(1595);
+				syntaxComma();
+				setState(1596);
+				assignmentElement();
 				}
 				}
 				setState(1602);
@@ -7929,13 +8686,14 @@ public class CQLParser extends Parser {
 	}
 
 	public static class AssignmentElementContext extends ParserRuleContext {
-		public DecimalLiteralContext decimalLiteral() {
-			return getRuleContext(DecimalLiteralContext.class,0);
+		public List<TerminalNode> OBJECT_NAME() { return getTokens(CQLParser.OBJECT_NAME); }
+		public TerminalNode OBJECT_NAME(int i) {
+			return getToken(CQLParser.OBJECT_NAME, i);
 		}
+		public TerminalNode OPERATOR_EQ() { return getToken(CQLParser.OPERATOR_EQ, 0); }
 		public ConstantContext constant() {
 			return getRuleContext(ConstantContext.class,0);
 		}
-		public List<TerminalNode> OBJECT_NAME() { return getTokens(CQLParser.OBJECT_NAME); }
 		public AssignmentMapContext assignmentMap() {
 			return getRuleContext(AssignmentMapContext.class,0);
 		}
@@ -7945,9 +8703,8 @@ public class CQLParser extends Parser {
 		public AssignmentListContext assignmentList() {
 			return getRuleContext(AssignmentListContext.class,0);
 		}
-		public TerminalNode OPERATOR_EQ() { return getToken(CQLParser.OPERATOR_EQ, 0); }
-		public TerminalNode OBJECT_NAME(int i) {
-			return getToken(CQLParser.OBJECT_NAME, i);
+		public DecimalLiteralContext decimalLiteral() {
+			return getRuleContext(DecimalLiteralContext.class,0);
 		}
 		public TerminalNode PLUS() { return getToken(CQLParser.PLUS, 0); }
 		public TerminalNode MINUS() { return getToken(CQLParser.MINUS, 0); }
@@ -7977,32 +8734,40 @@ public class CQLParser extends Parser {
 		int _la;
 		try {
 			setState(1656);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,127,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1603); match(OBJECT_NAME);
-				setState(1604); match(OPERATOR_EQ);
+				setState(1603);
+				match(OBJECT_NAME);
+				setState(1604);
+				match(OPERATOR_EQ);
 				setState(1609);
+				_errHandler.sync(this);
 				switch ( getInterpreter().adaptivePredict(_input,126,_ctx) ) {
 				case 1:
 					{
-					setState(1605); constant();
+					setState(1605);
+					constant();
 					}
 					break;
 				case 2:
 					{
-					setState(1606); assignmentMap();
+					setState(1606);
+					assignmentMap();
 					}
 					break;
 				case 3:
 					{
-					setState(1607); assignmentSet();
+					setState(1607);
+					assignmentSet();
 					}
 					break;
 				case 4:
 					{
-					setState(1608); assignmentList();
+					setState(1608);
+					assignmentList();
 					}
 					break;
 				}
@@ -8011,117 +8776,179 @@ public class CQLParser extends Parser {
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1611); match(OBJECT_NAME);
-				setState(1612); match(OPERATOR_EQ);
-				setState(1613); match(OBJECT_NAME);
+				setState(1611);
+				match(OBJECT_NAME);
+				setState(1612);
+				match(OPERATOR_EQ);
+				setState(1613);
+				match(OBJECT_NAME);
 				setState(1614);
 				_la = _input.LA(1);
 				if ( !(_la==PLUS || _la==MINUS) ) {
 				_errHandler.recoverInline(this);
 				}
-				consume();
-				setState(1615); decimalLiteral();
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(1615);
+				decimalLiteral();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(1616); match(OBJECT_NAME);
-				setState(1617); match(OPERATOR_EQ);
-				setState(1618); match(OBJECT_NAME);
+				setState(1616);
+				match(OBJECT_NAME);
+				setState(1617);
+				match(OPERATOR_EQ);
+				setState(1618);
+				match(OBJECT_NAME);
 				setState(1619);
 				_la = _input.LA(1);
 				if ( !(_la==PLUS || _la==MINUS) ) {
 				_errHandler.recoverInline(this);
 				}
-				consume();
-				setState(1620); assignmentSet();
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(1620);
+				assignmentSet();
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(1621); match(OBJECT_NAME);
-				setState(1622); match(OPERATOR_EQ);
-				setState(1623); assignmentSet();
+				setState(1621);
+				match(OBJECT_NAME);
+				setState(1622);
+				match(OPERATOR_EQ);
+				setState(1623);
+				assignmentSet();
 				setState(1624);
 				_la = _input.LA(1);
 				if ( !(_la==PLUS || _la==MINUS) ) {
 				_errHandler.recoverInline(this);
 				}
-				consume();
-				setState(1625); match(OBJECT_NAME);
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(1625);
+				match(OBJECT_NAME);
 				}
 				break;
 			case 5:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(1627); match(OBJECT_NAME);
-				setState(1628); match(OPERATOR_EQ);
-				setState(1629); match(OBJECT_NAME);
+				setState(1627);
+				match(OBJECT_NAME);
+				setState(1628);
+				match(OPERATOR_EQ);
+				setState(1629);
+				match(OBJECT_NAME);
 				setState(1630);
 				_la = _input.LA(1);
 				if ( !(_la==PLUS || _la==MINUS) ) {
 				_errHandler.recoverInline(this);
 				}
-				consume();
-				setState(1631); assignmentMap();
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(1631);
+				assignmentMap();
 				}
 				break;
 			case 6:
 				enterOuterAlt(_localctx, 6);
 				{
-				setState(1632); match(OBJECT_NAME);
-				setState(1633); match(OPERATOR_EQ);
-				setState(1634); assignmentMap();
+				setState(1632);
+				match(OBJECT_NAME);
+				setState(1633);
+				match(OPERATOR_EQ);
+				setState(1634);
+				assignmentMap();
 				setState(1635);
 				_la = _input.LA(1);
 				if ( !(_la==PLUS || _la==MINUS) ) {
 				_errHandler.recoverInline(this);
 				}
-				consume();
-				setState(1636); match(OBJECT_NAME);
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(1636);
+				match(OBJECT_NAME);
 				}
 				break;
 			case 7:
 				enterOuterAlt(_localctx, 7);
 				{
-				setState(1638); match(OBJECT_NAME);
-				setState(1639); match(OPERATOR_EQ);
-				setState(1640); match(OBJECT_NAME);
+				setState(1638);
+				match(OBJECT_NAME);
+				setState(1639);
+				match(OPERATOR_EQ);
+				setState(1640);
+				match(OBJECT_NAME);
 				setState(1641);
 				_la = _input.LA(1);
 				if ( !(_la==PLUS || _la==MINUS) ) {
 				_errHandler.recoverInline(this);
 				}
-				consume();
-				setState(1642); assignmentList();
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(1642);
+				assignmentList();
 				}
 				break;
 			case 8:
 				enterOuterAlt(_localctx, 8);
 				{
-				setState(1643); match(OBJECT_NAME);
-				setState(1644); match(OPERATOR_EQ);
-				setState(1645); assignmentList();
+				setState(1643);
+				match(OBJECT_NAME);
+				setState(1644);
+				match(OPERATOR_EQ);
+				setState(1645);
+				assignmentList();
 				setState(1646);
 				_la = _input.LA(1);
 				if ( !(_la==PLUS || _la==MINUS) ) {
 				_errHandler.recoverInline(this);
 				}
-				consume();
-				setState(1647); match(OBJECT_NAME);
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(1647);
+				match(OBJECT_NAME);
 				}
 				break;
 			case 9:
 				enterOuterAlt(_localctx, 9);
 				{
-				setState(1649); match(OBJECT_NAME);
-				setState(1650); syntaxBracketLs();
-				setState(1651); decimalLiteral();
-				setState(1652); syntaxBracketRs();
-				setState(1653); match(OPERATOR_EQ);
-				setState(1654); constant();
+				setState(1649);
+				match(OBJECT_NAME);
+				setState(1650);
+				syntaxBracketLs();
+				setState(1651);
+				decimalLiteral();
+				setState(1652);
+				syntaxBracketRs();
+				setState(1653);
+				match(OPERATOR_EQ);
+				setState(1654);
+				constant();
 				}
 				break;
 			}
@@ -8138,23 +8965,23 @@ public class CQLParser extends Parser {
 	}
 
 	public static class AssignmentSetContext extends ParserRuleContext {
+		public SyntaxBracketLcContext syntaxBracketLc() {
+			return getRuleContext(SyntaxBracketLcContext.class,0);
+		}
+		public SyntaxBracketRcContext syntaxBracketRc() {
+			return getRuleContext(SyntaxBracketRcContext.class,0);
+		}
 		public List<ConstantContext> constant() {
 			return getRuleContexts(ConstantContext.class);
+		}
+		public ConstantContext constant(int i) {
+			return getRuleContext(ConstantContext.class,i);
 		}
 		public List<SyntaxCommaContext> syntaxComma() {
 			return getRuleContexts(SyntaxCommaContext.class);
 		}
 		public SyntaxCommaContext syntaxComma(int i) {
 			return getRuleContext(SyntaxCommaContext.class,i);
-		}
-		public SyntaxBracketRcContext syntaxBracketRc() {
-			return getRuleContext(SyntaxBracketRcContext.class,0);
-		}
-		public SyntaxBracketLcContext syntaxBracketLc() {
-			return getRuleContext(SyntaxBracketLcContext.class,0);
-		}
-		public ConstantContext constant(int i) {
-			return getRuleContext(ConstantContext.class,i);
 		}
 		public AssignmentSetContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -8177,20 +9004,25 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1658); syntaxBracketLc();
+			setState(1658);
+			syntaxBracketLc();
 			setState(1668);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_FALSE || _la==K_NULL || ((((_la - 125)) & ~0x3f) == 0 && ((1L << (_la - 125)) & ((1L << (K_TRUE - 125)) | (1L << (CODE_BLOCK - 125)) | (1L << (STRING_LITERAL - 125)) | (1L << (DECIMAL_LITERAL - 125)) | (1L << (FLOAT_LITERAL - 125)) | (1L << (HEXADECIMAL_LITERAL - 125)) | (1L << (UUID - 125)))) != 0)) {
 				{
-				setState(1659); constant();
+				setState(1659);
+				constant();
 				setState(1665);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 				while (_la==COMMA) {
 					{
 					{
-					setState(1660); syntaxComma();
-					setState(1661); constant();
+					setState(1660);
+					syntaxComma();
+					setState(1661);
+					constant();
 					}
 					}
 					setState(1667);
@@ -8200,7 +9032,8 @@ public class CQLParser extends Parser {
 				}
 			}
 
-			setState(1670); syntaxBracketRc();
+			setState(1670);
+			syntaxBracketRc();
 			}
 		}
 		catch (RecognitionException re) {
@@ -8215,23 +9048,23 @@ public class CQLParser extends Parser {
 	}
 
 	public static class AssignmentMapContext extends ParserRuleContext {
-		public List<SyntaxColonContext> syntaxColon() {
-			return getRuleContexts(SyntaxColonContext.class);
-		}
-		public List<ConstantContext> constant() {
-			return getRuleContexts(ConstantContext.class);
-		}
-		public SyntaxColonContext syntaxColon(int i) {
-			return getRuleContext(SyntaxColonContext.class,i);
+		public SyntaxBracketLcContext syntaxBracketLc() {
+			return getRuleContext(SyntaxBracketLcContext.class,0);
 		}
 		public SyntaxBracketRcContext syntaxBracketRc() {
 			return getRuleContext(SyntaxBracketRcContext.class,0);
 		}
-		public SyntaxBracketLcContext syntaxBracketLc() {
-			return getRuleContext(SyntaxBracketLcContext.class,0);
+		public List<ConstantContext> constant() {
+			return getRuleContexts(ConstantContext.class);
 		}
 		public ConstantContext constant(int i) {
 			return getRuleContext(ConstantContext.class,i);
+		}
+		public List<SyntaxColonContext> syntaxColon() {
+			return getRuleContexts(SyntaxColonContext.class);
+		}
+		public SyntaxColonContext syntaxColon(int i) {
+			return getRuleContext(SyntaxColonContext.class,i);
 		}
 		public AssignmentMapContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -8254,11 +9087,15 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1672); syntaxBracketLc();
+			setState(1672);
+			syntaxBracketLc();
 			{
-			setState(1673); constant();
-			setState(1674); syntaxColon();
-			setState(1675); constant();
+			setState(1673);
+			constant();
+			setState(1674);
+			syntaxColon();
+			setState(1675);
+			constant();
 			}
 			setState(1683);
 			_errHandler.sync(this);
@@ -8266,16 +9103,20 @@ public class CQLParser extends Parser {
 			while (_la==K_FALSE || _la==K_NULL || ((((_la - 125)) & ~0x3f) == 0 && ((1L << (_la - 125)) & ((1L << (K_TRUE - 125)) | (1L << (CODE_BLOCK - 125)) | (1L << (STRING_LITERAL - 125)) | (1L << (DECIMAL_LITERAL - 125)) | (1L << (FLOAT_LITERAL - 125)) | (1L << (HEXADECIMAL_LITERAL - 125)) | (1L << (UUID - 125)))) != 0)) {
 				{
 				{
-				setState(1677); constant();
-				setState(1678); syntaxColon();
-				setState(1679); constant();
+				setState(1677);
+				constant();
+				setState(1678);
+				syntaxColon();
+				setState(1679);
+				constant();
 				}
 				}
 				setState(1685);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			}
-			setState(1686); syntaxBracketRc();
+			setState(1686);
+			syntaxBracketRc();
 			}
 		}
 		catch (RecognitionException re) {
@@ -8290,23 +9131,23 @@ public class CQLParser extends Parser {
 	}
 
 	public static class AssignmentListContext extends ParserRuleContext {
-		public List<ConstantContext> constant() {
-			return getRuleContexts(ConstantContext.class);
-		}
-		public List<SyntaxCommaContext> syntaxComma() {
-			return getRuleContexts(SyntaxCommaContext.class);
-		}
-		public SyntaxCommaContext syntaxComma(int i) {
-			return getRuleContext(SyntaxCommaContext.class,i);
-		}
 		public SyntaxBracketLsContext syntaxBracketLs() {
 			return getRuleContext(SyntaxBracketLsContext.class,0);
+		}
+		public List<ConstantContext> constant() {
+			return getRuleContexts(ConstantContext.class);
 		}
 		public ConstantContext constant(int i) {
 			return getRuleContext(ConstantContext.class,i);
 		}
 		public SyntaxBracketRsContext syntaxBracketRs() {
 			return getRuleContext(SyntaxBracketRsContext.class,0);
+		}
+		public List<SyntaxCommaContext> syntaxComma() {
+			return getRuleContexts(SyntaxCommaContext.class);
+		}
+		public SyntaxCommaContext syntaxComma(int i) {
+			return getRuleContext(SyntaxCommaContext.class,i);
 		}
 		public AssignmentListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -8329,23 +9170,28 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1688); syntaxBracketLs();
-			setState(1689); constant();
+			setState(1688);
+			syntaxBracketLs();
+			setState(1689);
+			constant();
 			setState(1695);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==COMMA) {
 				{
 				{
-				setState(1690); syntaxComma();
-				setState(1691); constant();
+				setState(1690);
+				syntaxComma();
+				setState(1691);
+				constant();
 				}
 				}
 				setState(1697);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			}
-			setState(1698); syntaxBracketRs();
+			setState(1698);
+			syntaxBracketRs();
 			}
 		}
 		catch (RecognitionException re) {
@@ -8360,29 +9206,29 @@ public class CQLParser extends Parser {
 	}
 
 	public static class AssignmentTupleContext extends ParserRuleContext {
-		public List<ConstantContext> constant() {
-			return getRuleContexts(ConstantContext.class);
-		}
-		public List<SyntaxCommaContext> syntaxComma() {
-			return getRuleContexts(SyntaxCommaContext.class);
-		}
-		public List<AssignmentTupleContext> assignmentTuple() {
-			return getRuleContexts(AssignmentTupleContext.class);
-		}
-		public SyntaxCommaContext syntaxComma(int i) {
-			return getRuleContext(SyntaxCommaContext.class,i);
-		}
 		public SyntaxBracketLrContext syntaxBracketLr() {
 			return getRuleContext(SyntaxBracketLrContext.class,0);
 		}
-		public AssignmentTupleContext assignmentTuple(int i) {
-			return getRuleContext(AssignmentTupleContext.class,i);
+		public SyntaxBracketRrContext syntaxBracketRr() {
+			return getRuleContext(SyntaxBracketRrContext.class,0);
+		}
+		public List<ConstantContext> constant() {
+			return getRuleContexts(ConstantContext.class);
 		}
 		public ConstantContext constant(int i) {
 			return getRuleContext(ConstantContext.class,i);
 		}
-		public SyntaxBracketRrContext syntaxBracketRr() {
-			return getRuleContext(SyntaxBracketRrContext.class,0);
+		public List<AssignmentTupleContext> assignmentTuple() {
+			return getRuleContexts(AssignmentTupleContext.class);
+		}
+		public AssignmentTupleContext assignmentTuple(int i) {
+			return getRuleContext(AssignmentTupleContext.class,i);
+		}
+		public List<SyntaxCommaContext> syntaxComma() {
+			return getRuleContexts(SyntaxCommaContext.class);
+		}
+		public SyntaxCommaContext syntaxComma(int i) {
+			return getRuleContext(SyntaxCommaContext.class,i);
 		}
 		public AssignmentTupleContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -8405,8 +9251,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1700); syntaxBracketLr();
+			setState(1700);
+			syntaxBracketLr();
 			setState(1729);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case K_FALSE:
 			case K_NULL:
@@ -8418,8 +9266,10 @@ public class CQLParser extends Parser {
 			case HEXADECIMAL_LITERAL:
 			case UUID:
 				{
-				setState(1701); constant();
+				setState(1701);
+				constant();
 				setState(1718);
+				_errHandler.sync(this);
 				switch ( getInterpreter().adaptivePredict(_input,134,_ctx) ) {
 				case 1:
 					{
@@ -8429,8 +9279,10 @@ public class CQLParser extends Parser {
 					while (_la==COMMA) {
 						{
 						{
-						setState(1702); syntaxComma();
-						setState(1703); constant();
+						setState(1702);
+						syntaxComma();
+						setState(1703);
+						constant();
 						}
 						}
 						setState(1709);
@@ -8447,8 +9299,10 @@ public class CQLParser extends Parser {
 					while (_la==COMMA) {
 						{
 						{
-						setState(1710); syntaxComma();
-						setState(1711); assignmentTuple();
+						setState(1710);
+						syntaxComma();
+						setState(1711);
+						assignmentTuple();
 						}
 						}
 						setState(1717);
@@ -8462,15 +9316,18 @@ public class CQLParser extends Parser {
 				break;
 			case LR_BRACKET:
 				{
-				setState(1720); assignmentTuple();
+				setState(1720);
+				assignmentTuple();
 				setState(1726);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 				while (_la==COMMA) {
 					{
 					{
-					setState(1721); syntaxComma();
-					setState(1722); assignmentTuple();
+					setState(1721);
+					syntaxComma();
+					setState(1722);
+					assignmentTuple();
 					}
 					}
 					setState(1728);
@@ -8482,7 +9339,8 @@ public class CQLParser extends Parser {
 			default:
 				throw new NoViableAltException(this);
 			}
-			setState(1731); syntaxBracketRr();
+			setState(1731);
+			syntaxBracketRr();
 			}
 		}
 		catch (RecognitionException re) {
@@ -8497,33 +9355,33 @@ public class CQLParser extends Parser {
 	}
 
 	public static class InsertContext extends ParserRuleContext {
+		public KwInsertContext kwInsert() {
+			return getRuleContext(KwInsertContext.class,0);
+		}
+		public KwIntoContext kwInto() {
+			return getRuleContext(KwIntoContext.class,0);
+		}
 		public TableContext table() {
 			return getRuleContext(TableContext.class,0);
+		}
+		public InsertValuesSpecContext insertValuesSpec() {
+			return getRuleContext(InsertValuesSpecContext.class,0);
 		}
 		public BeginBatchContext beginBatch() {
 			return getRuleContext(BeginBatchContext.class,0);
 		}
-		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
-		public InsertValuesSpecContext insertValuesSpec() {
-			return getRuleContext(InsertValuesSpecContext.class,0);
-		}
-		public UsingTtlTimestampContext usingTtlTimestamp() {
-			return getRuleContext(UsingTtlTimestampContext.class,0);
-		}
 		public KeyspaceContext keyspace() {
 			return getRuleContext(KeyspaceContext.class,0);
 		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
 		public InsertColumnSpecContext insertColumnSpec() {
 			return getRuleContext(InsertColumnSpecContext.class,0);
 		}
 		public IfNotExistContext ifNotExist() {
 			return getRuleContext(IfNotExistContext.class,0);
 		}
-		public KwInsertContext kwInsert() {
-			return getRuleContext(KwInsertContext.class,0);
-		}
-		public KwIntoContext kwInto() {
-			return getRuleContext(KwIntoContext.class,0);
+		public UsingTtlTimestampContext usingTtlTimestamp() {
+			return getRuleContext(UsingTtlTimestampContext.class,0);
 		}
 		public InsertContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -8547,47 +9405,62 @@ public class CQLParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(1734);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_BEGIN) {
 				{
-				setState(1733); beginBatch();
+				setState(1733);
+				beginBatch();
 				}
 			}
 
-			setState(1736); kwInsert();
-			setState(1737); kwInto();
+			setState(1736);
+			kwInsert();
+			setState(1737);
+			kwInto();
 			setState(1741);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,138,_ctx) ) {
 			case 1:
 				{
-				setState(1738); keyspace();
-				setState(1739); match(DOT);
+				setState(1738);
+				keyspace();
+				setState(1739);
+				match(DOT);
 				}
 				break;
 			}
-			setState(1743); table();
+			setState(1743);
+			table();
 			setState(1745);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==LR_BRACKET) {
 				{
-				setState(1744); insertColumnSpec();
+				setState(1744);
+				insertColumnSpec();
 				}
 			}
 
-			setState(1747); insertValuesSpec();
+			setState(1747);
+			insertValuesSpec();
 			setState(1749);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_IF) {
 				{
-				setState(1748); ifNotExist();
+				setState(1748);
+				ifNotExist();
 				}
 			}
 
 			setState(1752);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_USING) {
 				{
-				setState(1751); usingTtlTimestamp();
+				setState(1751);
+				usingTtlTimestamp();
 				}
 			}
 
@@ -8605,8 +9478,8 @@ public class CQLParser extends Parser {
 	}
 
 	public static class UsingTtlTimestampContext extends ParserRuleContext {
-		public TimestampContext timestamp() {
-			return getRuleContext(TimestampContext.class,0);
+		public KwUsingContext kwUsing() {
+			return getRuleContext(KwUsingContext.class,0);
 		}
 		public TtlContext ttl() {
 			return getRuleContext(TtlContext.class,0);
@@ -8614,8 +9487,8 @@ public class CQLParser extends Parser {
 		public KwAndContext kwAnd() {
 			return getRuleContext(KwAndContext.class,0);
 		}
-		public KwUsingContext kwUsing() {
-			return getRuleContext(KwUsingContext.class,0);
+		public TimestampContext timestamp() {
+			return getRuleContext(TimestampContext.class,0);
 		}
 		public UsingTtlTimestampContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -8636,37 +9509,50 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 238, RULE_usingTtlTimestamp);
 		try {
 			setState(1770);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,142,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1754); kwUsing();
-				setState(1755); ttl();
+				setState(1754);
+				kwUsing();
+				setState(1755);
+				ttl();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1757); kwUsing();
-				setState(1758); ttl();
-				setState(1759); kwAnd();
-				setState(1760); timestamp();
+				setState(1757);
+				kwUsing();
+				setState(1758);
+				ttl();
+				setState(1759);
+				kwAnd();
+				setState(1760);
+				timestamp();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(1762); kwUsing();
-				setState(1763); timestamp();
+				setState(1762);
+				kwUsing();
+				setState(1763);
+				timestamp();
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(1765); kwUsing();
-				setState(1766); timestamp();
-				setState(1767); kwAnd();
-				setState(1768); ttl();
+				setState(1765);
+				kwUsing();
+				setState(1766);
+				timestamp();
+				setState(1767);
+				kwAnd();
+				setState(1768);
+				ttl();
 				}
 				break;
 			}
@@ -8683,11 +9569,11 @@ public class CQLParser extends Parser {
 	}
 
 	public static class TimestampContext extends ParserRuleContext {
-		public DecimalLiteralContext decimalLiteral() {
-			return getRuleContext(DecimalLiteralContext.class,0);
-		}
 		public KwTimestampContext kwTimestamp() {
 			return getRuleContext(KwTimestampContext.class,0);
+		}
+		public DecimalLiteralContext decimalLiteral() {
+			return getRuleContext(DecimalLiteralContext.class,0);
 		}
 		public TimestampContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -8709,8 +9595,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1772); kwTimestamp();
-			setState(1773); decimalLiteral();
+			setState(1772);
+			kwTimestamp();
+			setState(1773);
+			decimalLiteral();
 			}
 		}
 		catch (RecognitionException re) {
@@ -8725,11 +9613,11 @@ public class CQLParser extends Parser {
 	}
 
 	public static class TtlContext extends ParserRuleContext {
-		public DecimalLiteralContext decimalLiteral() {
-			return getRuleContext(DecimalLiteralContext.class,0);
-		}
 		public KwTtlContext kwTtl() {
 			return getRuleContext(KwTtlContext.class,0);
+		}
+		public DecimalLiteralContext decimalLiteral() {
+			return getRuleContext(DecimalLiteralContext.class,0);
 		}
 		public TtlContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -8751,8 +9639,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1775); kwTtl();
-			setState(1776); decimalLiteral();
+			setState(1775);
+			kwTtl();
+			setState(1776);
+			decimalLiteral();
 			}
 		}
 		catch (RecognitionException re) {
@@ -8767,11 +9657,11 @@ public class CQLParser extends Parser {
 	}
 
 	public static class UsingTimestampSpecContext extends ParserRuleContext {
-		public TimestampContext timestamp() {
-			return getRuleContext(TimestampContext.class,0);
-		}
 		public KwUsingContext kwUsing() {
 			return getRuleContext(KwUsingContext.class,0);
+		}
+		public TimestampContext timestamp() {
+			return getRuleContext(TimestampContext.class,0);
 		}
 		public UsingTimestampSpecContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -8793,8 +9683,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1778); kwUsing();
-			setState(1779); timestamp();
+			setState(1778);
+			kwUsing();
+			setState(1779);
+			timestamp();
 			}
 		}
 		catch (RecognitionException re) {
@@ -8812,11 +9704,11 @@ public class CQLParser extends Parser {
 		public KwIfContext kwIf() {
 			return getRuleContext(KwIfContext.class,0);
 		}
-		public KwExistsContext kwExists() {
-			return getRuleContext(KwExistsContext.class,0);
-		}
 		public KwNotContext kwNot() {
 			return getRuleContext(KwNotContext.class,0);
+		}
+		public KwExistsContext kwExists() {
+			return getRuleContext(KwExistsContext.class,0);
 		}
 		public IfNotExistContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -8838,9 +9730,12 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1781); kwIf();
-			setState(1782); kwNot();
-			setState(1783); kwExists();
+			setState(1781);
+			kwIf();
+			setState(1782);
+			kwNot();
+			setState(1783);
+			kwExists();
 			}
 		}
 		catch (RecognitionException re) {
@@ -8881,8 +9776,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1785); kwIf();
-			setState(1786); kwExists();
+			setState(1785);
+			kwIf();
+			setState(1786);
+			kwExists();
 			}
 		}
 		catch (RecognitionException re) {
@@ -8897,17 +9794,19 @@ public class CQLParser extends Parser {
 	}
 
 	public static class InsertValuesSpecContext extends ParserRuleContext {
-		public ConstantContext constant() {
-			return getRuleContext(ConstantContext.class,0);
+		public KwValuesContext kwValues() {
+			return getRuleContext(KwValuesContext.class,0);
 		}
+		public TerminalNode LR_BRACKET() { return getToken(CQLParser.LR_BRACKET, 0); }
 		public ExpressionListContext expressionList() {
 			return getRuleContext(ExpressionListContext.class,0);
 		}
+		public TerminalNode RR_BRACKET() { return getToken(CQLParser.RR_BRACKET, 0); }
 		public KwJsonContext kwJson() {
 			return getRuleContext(KwJsonContext.class,0);
 		}
-		public KwValuesContext kwValues() {
-			return getRuleContext(KwValuesContext.class,0);
+		public ConstantContext constant() {
+			return getRuleContext(ConstantContext.class,0);
 		}
 		public InsertValuesSpecContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -8928,21 +9827,28 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 250, RULE_insertValuesSpec);
 		try {
 			setState(1796);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case K_VALUES:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1788); kwValues();
-				setState(1789); match(LR_BRACKET);
-				setState(1790); expressionList();
-				setState(1791); match(RR_BRACKET);
+				setState(1788);
+				kwValues();
+				setState(1789);
+				match(LR_BRACKET);
+				setState(1790);
+				expressionList();
+				setState(1791);
+				match(RR_BRACKET);
 				}
 				break;
 			case K_JSON:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1793); kwJson();
-				setState(1794); constant();
+				setState(1793);
+				kwJson();
+				setState(1794);
+				constant();
 				}
 				break;
 			default:
@@ -8961,9 +9867,11 @@ public class CQLParser extends Parser {
 	}
 
 	public static class InsertColumnSpecContext extends ParserRuleContext {
+		public TerminalNode LR_BRACKET() { return getToken(CQLParser.LR_BRACKET, 0); }
 		public ColumnListContext columnList() {
 			return getRuleContext(ColumnListContext.class,0);
 		}
+		public TerminalNode RR_BRACKET() { return getToken(CQLParser.RR_BRACKET, 0); }
 		public InsertColumnSpecContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -8984,9 +9892,12 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1798); match(LR_BRACKET);
-			setState(1799); columnList();
-			setState(1800); match(RR_BRACKET);
+			setState(1798);
+			match(LR_BRACKET);
+			setState(1799);
+			columnList();
+			setState(1800);
+			match(RR_BRACKET);
 			}
 		}
 		catch (RecognitionException re) {
@@ -9001,17 +9912,17 @@ public class CQLParser extends Parser {
 	}
 
 	public static class ColumnListContext extends ParserRuleContext {
-		public List<SyntaxCommaContext> syntaxComma() {
-			return getRuleContexts(SyntaxCommaContext.class);
-		}
 		public List<ColumnContext> column() {
 			return getRuleContexts(ColumnContext.class);
 		}
-		public SyntaxCommaContext syntaxComma(int i) {
-			return getRuleContext(SyntaxCommaContext.class,i);
-		}
 		public ColumnContext column(int i) {
 			return getRuleContext(ColumnContext.class,i);
+		}
+		public List<SyntaxCommaContext> syntaxComma() {
+			return getRuleContexts(SyntaxCommaContext.class);
+		}
+		public SyntaxCommaContext syntaxComma(int i) {
+			return getRuleContext(SyntaxCommaContext.class,i);
 		}
 		public ColumnListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -9034,15 +9945,18 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1802); column();
+			setState(1802);
+			column();
 			setState(1808);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==COMMA) {
 				{
 				{
-				setState(1803); syntaxComma();
-				setState(1804); column();
+				setState(1803);
+				syntaxComma();
+				setState(1804);
+				column();
 				}
 				}
 				setState(1810);
@@ -9063,17 +9977,17 @@ public class CQLParser extends Parser {
 	}
 
 	public static class ExpressionListContext extends ParserRuleContext {
+		public List<ExpressionContext> expression() {
+			return getRuleContexts(ExpressionContext.class);
+		}
+		public ExpressionContext expression(int i) {
+			return getRuleContext(ExpressionContext.class,i);
+		}
 		public List<SyntaxCommaContext> syntaxComma() {
 			return getRuleContexts(SyntaxCommaContext.class);
 		}
 		public SyntaxCommaContext syntaxComma(int i) {
 			return getRuleContext(SyntaxCommaContext.class,i);
-		}
-		public ExpressionContext expression(int i) {
-			return getRuleContext(ExpressionContext.class,i);
-		}
-		public List<ExpressionContext> expression() {
-			return getRuleContexts(ExpressionContext.class);
 		}
 		public ExpressionListContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -9096,15 +10010,18 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1811); expression();
+			setState(1811);
+			expression();
 			setState(1817);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==COMMA) {
 				{
 				{
-				setState(1812); syntaxComma();
-				setState(1813); expression();
+				setState(1812);
+				syntaxComma();
+				setState(1813);
+				expression();
 				}
 				}
 				setState(1819);
@@ -9159,35 +10076,41 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 258, RULE_expression);
 		try {
 			setState(1825);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,146,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1820); constant();
+				setState(1820);
+				constant();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1821); assignmentMap();
+				setState(1821);
+				assignmentMap();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(1822); assignmentSet();
+				setState(1822);
+				assignmentSet();
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(1823); assignmentList();
+				setState(1823);
+				assignmentList();
 				}
 				break;
 			case 5:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(1824); assignmentTuple();
+				setState(1824);
+				assignmentTuple();
 				}
 				break;
 			}
@@ -9204,29 +10127,29 @@ public class CQLParser extends Parser {
 	}
 
 	public static class SelectContext extends ParserRuleContext {
-		public DistinctSpecContext distinctSpec() {
-			return getRuleContext(DistinctSpecContext.class,0);
-		}
-		public WhereSpecContext whereSpec() {
-			return getRuleContext(WhereSpecContext.class,0);
-		}
-		public KwJsonContext kwJson() {
-			return getRuleContext(KwJsonContext.class,0);
-		}
-		public LimitSpecContext limitSpec() {
-			return getRuleContext(LimitSpecContext.class,0);
-		}
-		public FromSpecContext fromSpec() {
-			return getRuleContext(FromSpecContext.class,0);
-		}
-		public OrderSpecContext orderSpec() {
-			return getRuleContext(OrderSpecContext.class,0);
-		}
 		public KwSelectContext kwSelect() {
 			return getRuleContext(KwSelectContext.class,0);
 		}
 		public SelectElementsContext selectElements() {
 			return getRuleContext(SelectElementsContext.class,0);
+		}
+		public FromSpecContext fromSpec() {
+			return getRuleContext(FromSpecContext.class,0);
+		}
+		public DistinctSpecContext distinctSpec() {
+			return getRuleContext(DistinctSpecContext.class,0);
+		}
+		public KwJsonContext kwJson() {
+			return getRuleContext(KwJsonContext.class,0);
+		}
+		public WhereSpecContext whereSpec() {
+			return getRuleContext(WhereSpecContext.class,0);
+		}
+		public OrderSpecContext orderSpec() {
+			return getRuleContext(OrderSpecContext.class,0);
+		}
+		public LimitSpecContext limitSpec() {
+			return getRuleContext(LimitSpecContext.class,0);
 		}
 		public AllowFilteringSpecContext allowFilteringSpec() {
 			return getRuleContext(AllowFilteringSpecContext.class,0);
@@ -9252,54 +10175,69 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1827); kwSelect();
+			setState(1827);
+			kwSelect();
 			setState(1829);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_DISTINCT) {
 				{
-				setState(1828); distinctSpec();
+				setState(1828);
+				distinctSpec();
 				}
 			}
 
 			setState(1832);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_JSON) {
 				{
-				setState(1831); kwJson();
+				setState(1831);
+				kwJson();
 				}
 			}
 
-			setState(1834); selectElements();
-			setState(1835); fromSpec();
+			setState(1834);
+			selectElements();
+			setState(1835);
+			fromSpec();
 			setState(1837);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_WHERE) {
 				{
-				setState(1836); whereSpec();
+				setState(1836);
+				whereSpec();
 				}
 			}
 
 			setState(1840);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_ORDER) {
 				{
-				setState(1839); orderSpec();
+				setState(1839);
+				orderSpec();
 				}
 			}
 
 			setState(1843);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_LIMIT) {
 				{
-				setState(1842); limitSpec();
+				setState(1842);
+				limitSpec();
 				}
 			}
 
 			setState(1846);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==K_ALLOW) {
 				{
-				setState(1845); allowFilteringSpec();
+				setState(1845);
+				allowFilteringSpec();
 				}
 			}
 
@@ -9317,11 +10255,11 @@ public class CQLParser extends Parser {
 	}
 
 	public static class AllowFilteringSpecContext extends ParserRuleContext {
-		public KwFilteringContext kwFiltering() {
-			return getRuleContext(KwFilteringContext.class,0);
-		}
 		public KwAllowContext kwAllow() {
 			return getRuleContext(KwAllowContext.class,0);
+		}
+		public KwFilteringContext kwFiltering() {
+			return getRuleContext(KwFilteringContext.class,0);
 		}
 		public AllowFilteringSpecContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -9343,8 +10281,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1848); kwAllow();
-			setState(1849); kwFiltering();
+			setState(1848);
+			kwAllow();
+			setState(1849);
+			kwFiltering();
 			}
 		}
 		catch (RecognitionException re) {
@@ -9359,11 +10299,11 @@ public class CQLParser extends Parser {
 	}
 
 	public static class LimitSpecContext extends ParserRuleContext {
-		public DecimalLiteralContext decimalLiteral() {
-			return getRuleContext(DecimalLiteralContext.class,0);
-		}
 		public KwLimitContext kwLimit() {
 			return getRuleContext(KwLimitContext.class,0);
+		}
+		public DecimalLiteralContext decimalLiteral() {
+			return getRuleContext(DecimalLiteralContext.class,0);
 		}
 		public LimitSpecContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -9385,8 +10325,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1851); kwLimit();
-			setState(1852); decimalLiteral();
+			setState(1851);
+			kwLimit();
+			setState(1852);
+			decimalLiteral();
 			}
 		}
 		catch (RecognitionException re) {
@@ -9401,11 +10343,11 @@ public class CQLParser extends Parser {
 	}
 
 	public static class FromSpecContext extends ParserRuleContext {
-		public FromSpecElementContext fromSpecElement() {
-			return getRuleContext(FromSpecElementContext.class,0);
-		}
 		public KwFromContext kwFrom() {
 			return getRuleContext(KwFromContext.class,0);
+		}
+		public FromSpecElementContext fromSpecElement() {
+			return getRuleContext(FromSpecElementContext.class,0);
 		}
 		public FromSpecContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -9427,8 +10369,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1854); kwFrom();
-			setState(1855); fromSpecElement();
+			setState(1854);
+			kwFrom();
+			setState(1855);
+			fromSpecElement();
 			}
 		}
 		catch (RecognitionException re) {
@@ -9447,6 +10391,7 @@ public class CQLParser extends Parser {
 		public TerminalNode OBJECT_NAME(int i) {
 			return getToken(CQLParser.OBJECT_NAME, i);
 		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
 		public FromSpecElementContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -9466,19 +10411,24 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 268, RULE_fromSpecElement);
 		try {
 			setState(1861);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,153,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1857); match(OBJECT_NAME);
+				setState(1857);
+				match(OBJECT_NAME);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1858); match(OBJECT_NAME);
-				setState(1859); match(DOT);
-				setState(1860); match(OBJECT_NAME);
+				setState(1858);
+				match(OBJECT_NAME);
+				setState(1859);
+				match(DOT);
+				setState(1860);
+				match(OBJECT_NAME);
 				}
 				break;
 			}
@@ -9524,9 +10474,12 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1863); kwOrder();
-			setState(1864); kwBy();
-			setState(1865); orderSpecElement();
+			setState(1863);
+			kwOrder();
+			setState(1864);
+			kwBy();
+			setState(1865);
+			orderSpecElement();
 			}
 		}
 		catch (RecognitionException re) {
@@ -9568,17 +10521,21 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1867); match(OBJECT_NAME);
+			setState(1867);
+			match(OBJECT_NAME);
 			setState(1870);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case K_ASC:
 				{
-				setState(1868); kwAsc();
+				setState(1868);
+				kwAsc();
 				}
 				break;
 			case K_DESC:
 				{
-				setState(1869); kwDesc();
+				setState(1869);
+				kwDesc();
 				}
 				break;
 			case EOF:
@@ -9588,7 +10545,7 @@ public class CQLParser extends Parser {
 			case K_LIMIT:
 				break;
 			default:
-				throw new NoViableAltException(this);
+				break;
 			}
 			}
 		}
@@ -9630,8 +10587,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1872); kwWhere();
-			setState(1873); relationElements();
+			setState(1872);
+			kwWhere();
+			setState(1873);
+			relationElements();
 			}
 		}
 		catch (RecognitionException re) {
@@ -9669,7 +10628,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1875); kwDistinct();
+			setState(1875);
+			kwDistinct();
 			}
 		}
 		catch (RecognitionException re) {
@@ -9685,17 +10645,18 @@ public class CQLParser extends Parser {
 
 	public static class SelectElementsContext extends ParserRuleContext {
 		public Token star;
-		public List<SyntaxCommaContext> syntaxComma() {
-			return getRuleContexts(SyntaxCommaContext.class);
-		}
 		public List<SelectElementContext> selectElement() {
 			return getRuleContexts(SelectElementContext.class);
 		}
-		public SyntaxCommaContext syntaxComma(int i) {
-			return getRuleContext(SyntaxCommaContext.class,i);
-		}
 		public SelectElementContext selectElement(int i) {
 			return getRuleContext(SelectElementContext.class,i);
+		}
+		public TerminalNode STAR() { return getToken(CQLParser.STAR, 0); }
+		public List<SyntaxCommaContext> syntaxComma() {
+			return getRuleContexts(SyntaxCommaContext.class);
+		}
+		public SyntaxCommaContext syntaxComma(int i) {
+			return getRuleContext(SyntaxCommaContext.class,i);
 		}
 		public SelectElementsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -9719,15 +10680,18 @@ public class CQLParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(1879);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case STAR:
 				{
-				setState(1877); ((SelectElementsContext)_localctx).star = match(STAR);
+				setState(1877);
+				((SelectElementsContext)_localctx).star = match(STAR);
 				}
 				break;
 			case OBJECT_NAME:
 				{
-				setState(1878); selectElement();
+				setState(1878);
+				selectElement();
 				}
 				break;
 			default:
@@ -9739,8 +10703,10 @@ public class CQLParser extends Parser {
 			while (_la==COMMA) {
 				{
 				{
-				setState(1881); syntaxComma();
-				setState(1882); selectElement();
+				setState(1881);
+				syntaxComma();
+				setState(1882);
+				selectElement();
 				}
 				}
 				setState(1888);
@@ -9761,15 +10727,17 @@ public class CQLParser extends Parser {
 	}
 
 	public static class SelectElementContext extends ParserRuleContext {
+		public List<TerminalNode> OBJECT_NAME() { return getTokens(CQLParser.OBJECT_NAME); }
+		public TerminalNode OBJECT_NAME(int i) {
+			return getToken(CQLParser.OBJECT_NAME, i);
+		}
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
+		public TerminalNode STAR() { return getToken(CQLParser.STAR, 0); }
 		public KwAsContext kwAs() {
 			return getRuleContext(KwAsContext.class,0);
 		}
 		public FunctionCallContext functionCall() {
 			return getRuleContext(FunctionCallContext.class,0);
-		}
-		public List<TerminalNode> OBJECT_NAME() { return getTokens(CQLParser.OBJECT_NAME); }
-		public TerminalNode OBJECT_NAME(int i) {
-			return getToken(CQLParser.OBJECT_NAME, i);
 		}
 		public SelectElementContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -9791,25 +10759,33 @@ public class CQLParser extends Parser {
 		int _la;
 		try {
 			setState(1904);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,159,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1889); match(OBJECT_NAME);
-				setState(1890); match(DOT);
-				setState(1891); match(STAR);
+				setState(1889);
+				match(OBJECT_NAME);
+				setState(1890);
+				match(DOT);
+				setState(1891);
+				match(STAR);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1892); match(OBJECT_NAME);
+				setState(1892);
+				match(OBJECT_NAME);
 				setState(1896);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if (_la==K_AS) {
 					{
-					setState(1893); kwAs();
-					setState(1894); match(OBJECT_NAME);
+					setState(1893);
+					kwAs();
+					setState(1894);
+					match(OBJECT_NAME);
 					}
 				}
 
@@ -9818,13 +10794,17 @@ public class CQLParser extends Parser {
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(1898); functionCall();
+				setState(1898);
+				functionCall();
 				setState(1902);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if (_la==K_AS) {
 					{
-					setState(1899); kwAs();
-					setState(1900); match(OBJECT_NAME);
+					setState(1899);
+					kwAs();
+					setState(1900);
+					match(OBJECT_NAME);
 					}
 				}
 
@@ -9847,14 +10827,14 @@ public class CQLParser extends Parser {
 		public List<RelationElementContext> relationElement() {
 			return getRuleContexts(RelationElementContext.class);
 		}
-		public KwAndContext kwAnd(int i) {
-			return getRuleContext(KwAndContext.class,i);
-		}
 		public RelationElementContext relationElement(int i) {
 			return getRuleContext(RelationElementContext.class,i);
 		}
 		public List<KwAndContext> kwAnd() {
 			return getRuleContexts(KwAndContext.class);
+		}
+		public KwAndContext kwAnd(int i) {
+			return getRuleContext(KwAndContext.class,i);
 		}
 		public RelationElementsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -9878,7 +10858,8 @@ public class CQLParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			{
-			setState(1906); relationElement();
+			setState(1906);
+			relationElement();
 			}
 			setState(1912);
 			_errHandler.sync(this);
@@ -9886,8 +10867,10 @@ public class CQLParser extends Parser {
 			while (_la==K_AND) {
 				{
 				{
-				setState(1907); kwAnd();
-				setState(1908); relationElement();
+				setState(1907);
+				kwAnd();
+				setState(1908);
+				relationElement();
 				}
 				}
 				setState(1914);
@@ -9908,47 +10891,56 @@ public class CQLParser extends Parser {
 	}
 
 	public static class RelationElementContext extends ParserRuleContext {
-		public FunctionArgsContext functionArgs() {
-			return getRuleContext(FunctionArgsContext.class,0);
-		}
 		public List<TerminalNode> OBJECT_NAME() { return getTokens(CQLParser.OBJECT_NAME); }
-		public TerminalNode OPERATOR_LT() { return getToken(CQLParser.OPERATOR_LT, 0); }
-		public RelalationContainsContext relalationContains() {
-			return getRuleContext(RelalationContainsContext.class,0);
-		}
-		public FunctionCallContext functionCall(int i) {
-			return getRuleContext(FunctionCallContext.class,i);
-		}
 		public TerminalNode OBJECT_NAME(int i) {
 			return getToken(CQLParser.OBJECT_NAME, i);
-		}
-		public TerminalNode OPERATOR_GTE() { return getToken(CQLParser.OPERATOR_GTE, 0); }
-		public RelalationContainsKeyContext relalationContainsKey() {
-			return getRuleContext(RelalationContainsKeyContext.class,0);
-		}
-		public List<FunctionCallContext> functionCall() {
-			return getRuleContexts(FunctionCallContext.class);
 		}
 		public ConstantContext constant() {
 			return getRuleContext(ConstantContext.class,0);
 		}
-		public List<SyntaxCommaContext> syntaxComma() {
-			return getRuleContexts(SyntaxCommaContext.class);
+		public TerminalNode OPERATOR_EQ() { return getToken(CQLParser.OPERATOR_EQ, 0); }
+		public TerminalNode OPERATOR_LT() { return getToken(CQLParser.OPERATOR_LT, 0); }
+		public TerminalNode OPERATOR_GT() { return getToken(CQLParser.OPERATOR_GT, 0); }
+		public TerminalNode OPERATOR_LTE() { return getToken(CQLParser.OPERATOR_LTE, 0); }
+		public TerminalNode OPERATOR_GTE() { return getToken(CQLParser.OPERATOR_GTE, 0); }
+		public TerminalNode DOT() { return getToken(CQLParser.DOT, 0); }
+		public List<FunctionCallContext> functionCall() {
+			return getRuleContexts(FunctionCallContext.class);
+		}
+		public FunctionCallContext functionCall(int i) {
+			return getRuleContext(FunctionCallContext.class,i);
+		}
+		public KwInContext kwIn() {
+			return getRuleContext(KwInContext.class,0);
+		}
+		public List<TerminalNode> LR_BRACKET() { return getTokens(CQLParser.LR_BRACKET); }
+		public TerminalNode LR_BRACKET(int i) {
+			return getToken(CQLParser.LR_BRACKET, i);
+		}
+		public List<TerminalNode> RR_BRACKET() { return getTokens(CQLParser.RR_BRACKET); }
+		public TerminalNode RR_BRACKET(int i) {
+			return getToken(CQLParser.RR_BRACKET, i);
+		}
+		public FunctionArgsContext functionArgs() {
+			return getRuleContext(FunctionArgsContext.class,0);
 		}
 		public List<AssignmentTupleContext> assignmentTuple() {
 			return getRuleContexts(AssignmentTupleContext.class);
 		}
+		public AssignmentTupleContext assignmentTuple(int i) {
+			return getRuleContext(AssignmentTupleContext.class,i);
+		}
+		public List<SyntaxCommaContext> syntaxComma() {
+			return getRuleContexts(SyntaxCommaContext.class);
+		}
 		public SyntaxCommaContext syntaxComma(int i) {
 			return getRuleContext(SyntaxCommaContext.class,i);
 		}
-		public TerminalNode OPERATOR_EQ() { return getToken(CQLParser.OPERATOR_EQ, 0); }
-		public KwInContext kwIn() {
-			return getRuleContext(KwInContext.class,0);
+		public RelalationContainsKeyContext relalationContainsKey() {
+			return getRuleContext(RelalationContainsKeyContext.class,0);
 		}
-		public TerminalNode OPERATOR_GT() { return getToken(CQLParser.OPERATOR_GT, 0); }
-		public TerminalNode OPERATOR_LTE() { return getToken(CQLParser.OPERATOR_LTE, 0); }
-		public AssignmentTupleContext assignmentTuple(int i) {
-			return getRuleContext(AssignmentTupleContext.class,i);
+		public RelalationContainsContext relalationContains() {
+			return getRuleContext(RelalationContainsContext.class,0);
 		}
 		public RelationElementContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -9970,154 +10962,210 @@ public class CQLParser extends Parser {
 		int _la;
 		try {
 			setState(1986);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,166,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1915); match(OBJECT_NAME);
+				setState(1915);
+				match(OBJECT_NAME);
 				setState(1916);
 				_la = _input.LA(1);
 				if ( !(((((_la - 171)) & ~0x3f) == 0 && ((1L << (_la - 171)) & ((1L << (OPERATOR_EQ - 171)) | (1L << (OPERATOR_LT - 171)) | (1L << (OPERATOR_GT - 171)) | (1L << (OPERATOR_LTE - 171)) | (1L << (OPERATOR_GTE - 171)))) != 0)) ) {
 				_errHandler.recoverInline(this);
 				}
-				consume();
-				setState(1917); constant();
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(1917);
+				constant();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(1918); match(OBJECT_NAME);
-				setState(1919); match(DOT);
-				setState(1920); match(OBJECT_NAME);
+				setState(1918);
+				match(OBJECT_NAME);
+				setState(1919);
+				match(DOT);
+				setState(1920);
+				match(OBJECT_NAME);
 				setState(1921);
 				_la = _input.LA(1);
 				if ( !(((((_la - 171)) & ~0x3f) == 0 && ((1L << (_la - 171)) & ((1L << (OPERATOR_EQ - 171)) | (1L << (OPERATOR_LT - 171)) | (1L << (OPERATOR_GT - 171)) | (1L << (OPERATOR_LTE - 171)) | (1L << (OPERATOR_GTE - 171)))) != 0)) ) {
 				_errHandler.recoverInline(this);
 				}
-				consume();
-				setState(1922); constant();
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(1922);
+				constant();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(1923); functionCall();
+				setState(1923);
+				functionCall();
 				setState(1924);
 				_la = _input.LA(1);
 				if ( !(((((_la - 171)) & ~0x3f) == 0 && ((1L << (_la - 171)) & ((1L << (OPERATOR_EQ - 171)) | (1L << (OPERATOR_LT - 171)) | (1L << (OPERATOR_GT - 171)) | (1L << (OPERATOR_LTE - 171)) | (1L << (OPERATOR_GTE - 171)))) != 0)) ) {
 				_errHandler.recoverInline(this);
 				}
-				consume();
-				setState(1925); constant();
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(1925);
+				constant();
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(1927); functionCall();
+				setState(1927);
+				functionCall();
 				setState(1928);
 				_la = _input.LA(1);
 				if ( !(((((_la - 171)) & ~0x3f) == 0 && ((1L << (_la - 171)) & ((1L << (OPERATOR_EQ - 171)) | (1L << (OPERATOR_LT - 171)) | (1L << (OPERATOR_GT - 171)) | (1L << (OPERATOR_LTE - 171)) | (1L << (OPERATOR_GTE - 171)))) != 0)) ) {
 				_errHandler.recoverInline(this);
 				}
-				consume();
-				setState(1929); functionCall();
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(1929);
+				functionCall();
 				}
 				break;
 			case 5:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(1931); match(OBJECT_NAME);
-				setState(1932); kwIn();
-				setState(1933); match(LR_BRACKET);
+				setState(1931);
+				match(OBJECT_NAME);
+				setState(1932);
+				kwIn();
+				setState(1933);
+				match(LR_BRACKET);
 				setState(1935);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if (_la==K_FALSE || _la==K_NULL || ((((_la - 125)) & ~0x3f) == 0 && ((1L << (_la - 125)) & ((1L << (K_TRUE - 125)) | (1L << (CODE_BLOCK - 125)) | (1L << (STRING_LITERAL - 125)) | (1L << (DECIMAL_LITERAL - 125)) | (1L << (FLOAT_LITERAL - 125)) | (1L << (HEXADECIMAL_LITERAL - 125)) | (1L << (OBJECT_NAME - 125)) | (1L << (UUID - 125)))) != 0)) {
 					{
-					setState(1934); functionArgs();
+					setState(1934);
+					functionArgs();
 					}
 				}
 
-				setState(1937); match(RR_BRACKET);
+				setState(1937);
+				match(RR_BRACKET);
 				}
 				break;
 			case 6:
 				enterOuterAlt(_localctx, 6);
 				{
-				setState(1939); match(LR_BRACKET);
-				setState(1940); match(OBJECT_NAME);
+				setState(1939);
+				match(LR_BRACKET);
+				setState(1940);
+				match(OBJECT_NAME);
 				setState(1946);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 				while (_la==COMMA) {
 					{
 					{
-					setState(1941); syntaxComma();
-					setState(1942); match(OBJECT_NAME);
+					setState(1941);
+					syntaxComma();
+					setState(1942);
+					match(OBJECT_NAME);
 					}
 					}
 					setState(1948);
 					_errHandler.sync(this);
 					_la = _input.LA(1);
 				}
-				setState(1949); match(RR_BRACKET);
-				setState(1950); kwIn();
-				setState(1951); match(LR_BRACKET);
-				setState(1952); assignmentTuple();
+				setState(1949);
+				match(RR_BRACKET);
+				setState(1950);
+				kwIn();
+				setState(1951);
+				match(LR_BRACKET);
+				setState(1952);
+				assignmentTuple();
 				setState(1958);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 				while (_la==COMMA) {
 					{
 					{
-					setState(1953); syntaxComma();
-					setState(1954); assignmentTuple();
+					setState(1953);
+					syntaxComma();
+					setState(1954);
+					assignmentTuple();
 					}
 					}
 					setState(1960);
 					_errHandler.sync(this);
 					_la = _input.LA(1);
 				}
-				setState(1961); match(RR_BRACKET);
+				setState(1961);
+				match(RR_BRACKET);
 				}
 				break;
 			case 7:
 				enterOuterAlt(_localctx, 7);
 				{
-				setState(1963); match(LR_BRACKET);
-				setState(1964); match(OBJECT_NAME);
+				setState(1963);
+				match(LR_BRACKET);
+				setState(1964);
+				match(OBJECT_NAME);
 				setState(1970);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 				while (_la==COMMA) {
 					{
 					{
-					setState(1965); syntaxComma();
-					setState(1966); match(OBJECT_NAME);
+					setState(1965);
+					syntaxComma();
+					setState(1966);
+					match(OBJECT_NAME);
 					}
 					}
 					setState(1972);
 					_errHandler.sync(this);
 					_la = _input.LA(1);
 				}
-				setState(1973); match(RR_BRACKET);
+				setState(1973);
+				match(RR_BRACKET);
 				setState(1974);
 				_la = _input.LA(1);
 				if ( !(((((_la - 171)) & ~0x3f) == 0 && ((1L << (_la - 171)) & ((1L << (OPERATOR_EQ - 171)) | (1L << (OPERATOR_LT - 171)) | (1L << (OPERATOR_GT - 171)) | (1L << (OPERATOR_LTE - 171)) | (1L << (OPERATOR_GTE - 171)))) != 0)) ) {
 				_errHandler.recoverInline(this);
 				}
-				consume();
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
 				{
-				setState(1975); assignmentTuple();
+				setState(1975);
+				assignmentTuple();
 				setState(1981);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 				while (_la==COMMA) {
 					{
 					{
-					setState(1976); syntaxComma();
-					setState(1977); assignmentTuple();
+					setState(1976);
+					syntaxComma();
+					setState(1977);
+					assignmentTuple();
 					}
 					}
 					setState(1983);
@@ -10130,13 +11178,15 @@ public class CQLParser extends Parser {
 			case 8:
 				enterOuterAlt(_localctx, 8);
 				{
-				setState(1984); relalationContainsKey();
+				setState(1984);
+				relalationContainsKey();
 				}
 				break;
 			case 9:
 				enterOuterAlt(_localctx, 9);
 				{
-				setState(1985); relalationContains();
+				setState(1985);
+				relalationContains();
 				}
 				break;
 			}
@@ -10153,12 +11203,12 @@ public class CQLParser extends Parser {
 	}
 
 	public static class RelalationContainsContext extends ParserRuleContext {
-		public ConstantContext constant() {
-			return getRuleContext(ConstantContext.class,0);
-		}
 		public TerminalNode OBJECT_NAME() { return getToken(CQLParser.OBJECT_NAME, 0); }
 		public KwContainsContext kwContains() {
 			return getRuleContext(KwContainsContext.class,0);
+		}
+		public ConstantContext constant() {
+			return getRuleContext(ConstantContext.class,0);
 		}
 		public RelalationContainsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -10180,9 +11230,12 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1988); match(OBJECT_NAME);
-			setState(1989); kwContains();
-			setState(1990); constant();
+			setState(1988);
+			match(OBJECT_NAME);
+			setState(1989);
+			kwContains();
+			setState(1990);
+			constant();
 			}
 		}
 		catch (RecognitionException re) {
@@ -10197,15 +11250,15 @@ public class CQLParser extends Parser {
 	}
 
 	public static class RelalationContainsKeyContext extends ParserRuleContext {
+		public TerminalNode OBJECT_NAME() { return getToken(CQLParser.OBJECT_NAME, 0); }
 		public ConstantContext constant() {
 			return getRuleContext(ConstantContext.class,0);
 		}
-		public KwKeyContext kwKey() {
-			return getRuleContext(KwKeyContext.class,0);
-		}
-		public TerminalNode OBJECT_NAME() { return getToken(CQLParser.OBJECT_NAME, 0); }
 		public KwContainsContext kwContains() {
 			return getRuleContext(KwContainsContext.class,0);
+		}
+		public KwKeyContext kwKey() {
+			return getRuleContext(KwKeyContext.class,0);
 		}
 		public RelalationContainsKeyContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -10227,12 +11280,16 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(1992); match(OBJECT_NAME);
+			setState(1992);
+			match(OBJECT_NAME);
 			{
-			setState(1993); kwContains();
-			setState(1994); kwKey();
+			setState(1993);
+			kwContains();
+			setState(1994);
+			kwKey();
 			}
-			setState(1996); constant();
+			setState(1996);
+			constant();
 			}
 		}
 		catch (RecognitionException re) {
@@ -10247,11 +11304,13 @@ public class CQLParser extends Parser {
 	}
 
 	public static class FunctionCallContext extends ParserRuleContext {
+		public TerminalNode OBJECT_NAME() { return getToken(CQLParser.OBJECT_NAME, 0); }
+		public TerminalNode LR_BRACKET() { return getToken(CQLParser.LR_BRACKET, 0); }
+		public TerminalNode STAR() { return getToken(CQLParser.STAR, 0); }
+		public TerminalNode RR_BRACKET() { return getToken(CQLParser.RR_BRACKET, 0); }
 		public FunctionArgsContext functionArgs() {
 			return getRuleContext(FunctionArgsContext.class,0);
 		}
-		public TerminalNode OBJECT_NAME() { return getToken(CQLParser.OBJECT_NAME, 0); }
-		public TerminalNode STAR() { return getToken(CQLParser.STAR, 0); }
 		public FunctionCallContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -10272,30 +11331,40 @@ public class CQLParser extends Parser {
 		int _la;
 		try {
 			setState(2008);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,168,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(1998); match(OBJECT_NAME);
-				setState(1999); match(LR_BRACKET);
-				setState(2000); match(STAR);
-				setState(2001); match(RR_BRACKET);
+				setState(1998);
+				match(OBJECT_NAME);
+				setState(1999);
+				match(LR_BRACKET);
+				setState(2000);
+				match(STAR);
+				setState(2001);
+				match(RR_BRACKET);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(2002); match(OBJECT_NAME);
-				setState(2003); match(LR_BRACKET);
+				setState(2002);
+				match(OBJECT_NAME);
+				setState(2003);
+				match(LR_BRACKET);
 				setState(2005);
+				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if (_la==K_FALSE || _la==K_NULL || ((((_la - 125)) & ~0x3f) == 0 && ((1L << (_la - 125)) & ((1L << (K_TRUE - 125)) | (1L << (CODE_BLOCK - 125)) | (1L << (STRING_LITERAL - 125)) | (1L << (DECIMAL_LITERAL - 125)) | (1L << (FLOAT_LITERAL - 125)) | (1L << (HEXADECIMAL_LITERAL - 125)) | (1L << (OBJECT_NAME - 125)) | (1L << (UUID - 125)))) != 0)) {
 					{
-					setState(2004); functionArgs();
+					setState(2004);
+					functionArgs();
 					}
 				}
 
-				setState(2007); match(RR_BRACKET);
+				setState(2007);
+				match(RR_BRACKET);
 				}
 				break;
 			}
@@ -10312,27 +11381,27 @@ public class CQLParser extends Parser {
 	}
 
 	public static class FunctionArgsContext extends ParserRuleContext {
-		public List<FunctionCallContext> functionCall() {
-			return getRuleContexts(FunctionCallContext.class);
-		}
 		public List<ConstantContext> constant() {
 			return getRuleContexts(ConstantContext.class);
 		}
-		public List<SyntaxCommaContext> syntaxComma() {
-			return getRuleContexts(SyntaxCommaContext.class);
+		public ConstantContext constant(int i) {
+			return getRuleContext(ConstantContext.class,i);
 		}
 		public List<TerminalNode> OBJECT_NAME() { return getTokens(CQLParser.OBJECT_NAME); }
-		public SyntaxCommaContext syntaxComma(int i) {
-			return getRuleContext(SyntaxCommaContext.class,i);
+		public TerminalNode OBJECT_NAME(int i) {
+			return getToken(CQLParser.OBJECT_NAME, i);
+		}
+		public List<FunctionCallContext> functionCall() {
+			return getRuleContexts(FunctionCallContext.class);
 		}
 		public FunctionCallContext functionCall(int i) {
 			return getRuleContext(FunctionCallContext.class,i);
 		}
-		public TerminalNode OBJECT_NAME(int i) {
-			return getToken(CQLParser.OBJECT_NAME, i);
+		public List<SyntaxCommaContext> syntaxComma() {
+			return getRuleContexts(SyntaxCommaContext.class);
 		}
-		public ConstantContext constant(int i) {
-			return getRuleContext(ConstantContext.class,i);
+		public SyntaxCommaContext syntaxComma(int i) {
+			return getRuleContext(SyntaxCommaContext.class,i);
 		}
 		public FunctionArgsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -10356,20 +11425,24 @@ public class CQLParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(2013);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,169,_ctx) ) {
 			case 1:
 				{
-				setState(2010); constant();
+				setState(2010);
+				constant();
 				}
 				break;
 			case 2:
 				{
-				setState(2011); match(OBJECT_NAME);
+				setState(2011);
+				match(OBJECT_NAME);
 				}
 				break;
 			case 3:
 				{
-				setState(2012); functionCall();
+				setState(2012);
+				functionCall();
 				}
 				break;
 			}
@@ -10379,22 +11452,27 @@ public class CQLParser extends Parser {
 			while (_la==COMMA) {
 				{
 				{
-				setState(2015); syntaxComma();
+				setState(2015);
+				syntaxComma();
 				setState(2019);
+				_errHandler.sync(this);
 				switch ( getInterpreter().adaptivePredict(_input,170,_ctx) ) {
 				case 1:
 					{
-					setState(2016); constant();
+					setState(2016);
+					constant();
 					}
 					break;
 				case 2:
 					{
-					setState(2017); match(OBJECT_NAME);
+					setState(2017);
+					match(OBJECT_NAME);
 					}
 					break;
 				case 3:
 					{
-					setState(2018); functionCall();
+					setState(2018);
+					functionCall();
 					}
 					break;
 				}
@@ -10418,27 +11496,27 @@ public class CQLParser extends Parser {
 	}
 
 	public static class ConstantContext extends ParserRuleContext {
+		public TerminalNode UUID() { return getToken(CQLParser.UUID, 0); }
+		public StringLiteralContext stringLiteral() {
+			return getRuleContext(StringLiteralContext.class,0);
+		}
 		public DecimalLiteralContext decimalLiteral() {
 			return getRuleContext(DecimalLiteralContext.class,0);
 		}
-		public TerminalNode UUID() { return getToken(CQLParser.UUID, 0); }
-		public KwNullContext kwNull() {
-			return getRuleContext(KwNullContext.class,0);
-		}
 		public FloatLiteralContext floatLiteral() {
 			return getRuleContext(FloatLiteralContext.class,0);
-		}
-		public CodeBlockContext codeBlock() {
-			return getRuleContext(CodeBlockContext.class,0);
-		}
-		public StringLiteralContext stringLiteral() {
-			return getRuleContext(StringLiteralContext.class,0);
 		}
 		public HexadecimalLiteralContext hexadecimalLiteral() {
 			return getRuleContext(HexadecimalLiteralContext.class,0);
 		}
 		public BooleanLiteralContext booleanLiteral() {
 			return getRuleContext(BooleanLiteralContext.class,0);
+		}
+		public CodeBlockContext codeBlock() {
+			return getRuleContext(CodeBlockContext.class,0);
+		}
+		public KwNullContext kwNull() {
+			return getRuleContext(KwNullContext.class,0);
 		}
 		public ConstantContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -10459,53 +11537,62 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 294, RULE_constant);
 		try {
 			setState(2034);
+			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,172,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(2026); match(UUID);
+				setState(2026);
+				match(UUID);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(2027); stringLiteral();
+				setState(2027);
+				stringLiteral();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(2028); decimalLiteral();
+				setState(2028);
+				decimalLiteral();
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(2029); floatLiteral();
+				setState(2029);
+				floatLiteral();
 				}
 				break;
 			case 5:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(2030); hexadecimalLiteral();
+				setState(2030);
+				hexadecimalLiteral();
 				}
 				break;
 			case 6:
 				enterOuterAlt(_localctx, 6);
 				{
-				setState(2031); booleanLiteral();
+				setState(2031);
+				booleanLiteral();
 				}
 				break;
 			case 7:
 				enterOuterAlt(_localctx, 7);
 				{
-				setState(2032); codeBlock();
+				setState(2032);
+				codeBlock();
 				}
 				break;
 			case 8:
 				enterOuterAlt(_localctx, 8);
 				{
-				setState(2033); kwNull();
+				setState(2033);
+				kwNull();
 				}
 				break;
 			}
@@ -10543,7 +11630,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2036); match(DECIMAL_LITERAL);
+			setState(2036);
+			match(DECIMAL_LITERAL);
 			}
 		}
 		catch (RecognitionException re) {
@@ -10586,7 +11674,11 @@ public class CQLParser extends Parser {
 			if ( !(_la==DECIMAL_LITERAL || _la==FLOAT_LITERAL) ) {
 			_errHandler.recoverInline(this);
 			}
-			consume();
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
 			}
 		}
 		catch (RecognitionException re) {
@@ -10622,7 +11714,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2040); match(STRING_LITERAL);
+			setState(2040);
+			match(STRING_LITERAL);
 			}
 		}
 		catch (RecognitionException re) {
@@ -10637,8 +11730,8 @@ public class CQLParser extends Parser {
 	}
 
 	public static class BooleanLiteralContext extends ParserRuleContext {
-		public TerminalNode K_FALSE() { return getToken(CQLParser.K_FALSE, 0); }
 		public TerminalNode K_TRUE() { return getToken(CQLParser.K_TRUE, 0); }
+		public TerminalNode K_FALSE() { return getToken(CQLParser.K_FALSE, 0); }
 		public BooleanLiteralContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -10665,7 +11758,11 @@ public class CQLParser extends Parser {
 			if ( !(_la==K_FALSE || _la==K_TRUE) ) {
 			_errHandler.recoverInline(this);
 			}
-			consume();
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
 			}
 		}
 		catch (RecognitionException re) {
@@ -10701,7 +11798,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2044); match(HEXADECIMAL_LITERAL);
+			setState(2044);
+			match(HEXADECIMAL_LITERAL);
 			}
 		}
 		catch (RecognitionException re) {
@@ -10740,19 +11838,24 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 306, RULE_keyspace);
 		try {
 			setState(2050);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case OBJECT_NAME:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(2046); match(OBJECT_NAME);
+				setState(2046);
+				match(OBJECT_NAME);
 				}
 				break;
 			case DQUOTE:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(2047); match(DQUOTE);
-				setState(2048); match(OBJECT_NAME);
-				setState(2049); match(DQUOTE);
+				setState(2047);
+				match(DQUOTE);
+				setState(2048);
+				match(OBJECT_NAME);
+				setState(2049);
+				match(DQUOTE);
 				}
 				break;
 			default:
@@ -10795,19 +11898,24 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 308, RULE_table);
 		try {
 			setState(2056);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case OBJECT_NAME:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(2052); match(OBJECT_NAME);
+				setState(2052);
+				match(OBJECT_NAME);
 				}
 				break;
 			case DQUOTE:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(2053); match(DQUOTE);
-				setState(2054); match(OBJECT_NAME);
-				setState(2055); match(DQUOTE);
+				setState(2053);
+				match(DQUOTE);
+				setState(2054);
+				match(OBJECT_NAME);
+				setState(2055);
+				match(DQUOTE);
 				}
 				break;
 			default:
@@ -10850,19 +11958,24 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 310, RULE_column);
 		try {
 			setState(2062);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case OBJECT_NAME:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(2058); match(OBJECT_NAME);
+				setState(2058);
+				match(OBJECT_NAME);
 				}
 				break;
 			case DQUOTE:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(2059); match(DQUOTE);
-				setState(2060); match(OBJECT_NAME);
-				setState(2061); match(DQUOTE);
+				setState(2059);
+				match(DQUOTE);
+				setState(2060);
+				match(OBJECT_NAME);
+				setState(2061);
+				match(DQUOTE);
 				}
 				break;
 			default:
@@ -10908,12 +12021,15 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2064); dataTypeName();
+			setState(2064);
+			dataTypeName();
 			setState(2066);
+			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==OPERATOR_LT) {
 				{
-				setState(2065); dataTypeDefinition();
+				setState(2065);
+				dataTypeDefinition();
 				}
 			}
 
@@ -10931,35 +12047,32 @@ public class CQLParser extends Parser {
 	}
 
 	public static class DataTypeNameContext extends ParserRuleContext {
-		public TerminalNode K_DECIMAL() { return getToken(CQLParser.K_DECIMAL, 0); }
-		public TerminalNode K_INT() { return getToken(CQLParser.K_INT, 0); }
 		public TerminalNode OBJECT_NAME() { return getToken(CQLParser.OBJECT_NAME, 0); }
-		public TerminalNode K_BIGINT() { return getToken(CQLParser.K_BIGINT, 0); }
-		public TerminalNode K_TIMEUUID() { return getToken(CQLParser.K_TIMEUUID, 0); }
-		public TerminalNode K_VARINT() { return getToken(CQLParser.K_VARINT, 0); }
-		public TerminalNode K_TIMESTAMP(int i) {
-			return getToken(CQLParser.K_TIMESTAMP, i);
-		}
-		public TerminalNode K_ASCII() { return getToken(CQLParser.K_ASCII, 0); }
-		public TerminalNode K_BOOLEAN() { return getToken(CQLParser.K_BOOLEAN, 0); }
-		public TerminalNode K_LIST() { return getToken(CQLParser.K_LIST, 0); }
-		public TerminalNode K_SMALLINT() { return getToken(CQLParser.K_SMALLINT, 0); }
-		public TerminalNode K_VARCHAR() { return getToken(CQLParser.K_VARCHAR, 0); }
-		public TerminalNode K_TINYINT() { return getToken(CQLParser.K_TINYINT, 0); }
+		public TerminalNode K_TIMESTAMP() { return getToken(CQLParser.K_TIMESTAMP, 0); }
 		public TerminalNode K_SET() { return getToken(CQLParser.K_SET, 0); }
-		public TerminalNode K_COUNTER() { return getToken(CQLParser.K_COUNTER, 0); }
-		public TerminalNode K_INET() { return getToken(CQLParser.K_INET, 0); }
-		public TerminalNode K_TUPLE() { return getToken(CQLParser.K_TUPLE, 0); }
+		public TerminalNode K_ASCII() { return getToken(CQLParser.K_ASCII, 0); }
+		public TerminalNode K_BIGINT() { return getToken(CQLParser.K_BIGINT, 0); }
 		public TerminalNode K_BLOB() { return getToken(CQLParser.K_BLOB, 0); }
-		public TerminalNode K_FROZEN() { return getToken(CQLParser.K_FROZEN, 0); }
-		public TerminalNode K_FLOAT() { return getToken(CQLParser.K_FLOAT, 0); }
-		public TerminalNode K_UUID() { return getToken(CQLParser.K_UUID, 0); }
-		public TerminalNode K_MAP() { return getToken(CQLParser.K_MAP, 0); }
-		public TerminalNode K_TIME() { return getToken(CQLParser.K_TIME, 0); }
-		public List<TerminalNode> K_TIMESTAMP() { return getTokens(CQLParser.K_TIMESTAMP); }
+		public TerminalNode K_BOOLEAN() { return getToken(CQLParser.K_BOOLEAN, 0); }
+		public TerminalNode K_COUNTER() { return getToken(CQLParser.K_COUNTER, 0); }
 		public TerminalNode K_DATE() { return getToken(CQLParser.K_DATE, 0); }
+		public TerminalNode K_DECIMAL() { return getToken(CQLParser.K_DECIMAL, 0); }
 		public TerminalNode K_DOUBLE() { return getToken(CQLParser.K_DOUBLE, 0); }
+		public TerminalNode K_FLOAT() { return getToken(CQLParser.K_FLOAT, 0); }
+		public TerminalNode K_FROZEN() { return getToken(CQLParser.K_FROZEN, 0); }
+		public TerminalNode K_INET() { return getToken(CQLParser.K_INET, 0); }
+		public TerminalNode K_INT() { return getToken(CQLParser.K_INT, 0); }
+		public TerminalNode K_LIST() { return getToken(CQLParser.K_LIST, 0); }
+		public TerminalNode K_MAP() { return getToken(CQLParser.K_MAP, 0); }
+		public TerminalNode K_SMALLINT() { return getToken(CQLParser.K_SMALLINT, 0); }
 		public TerminalNode K_TEXT() { return getToken(CQLParser.K_TEXT, 0); }
+		public TerminalNode K_TIME() { return getToken(CQLParser.K_TIME, 0); }
+		public TerminalNode K_TIMEUUID() { return getToken(CQLParser.K_TIMEUUID, 0); }
+		public TerminalNode K_TINYINT() { return getToken(CQLParser.K_TINYINT, 0); }
+		public TerminalNode K_TUPLE() { return getToken(CQLParser.K_TUPLE, 0); }
+		public TerminalNode K_VARCHAR() { return getToken(CQLParser.K_VARCHAR, 0); }
+		public TerminalNode K_VARINT() { return getToken(CQLParser.K_VARINT, 0); }
+		public TerminalNode K_UUID() { return getToken(CQLParser.K_UUID, 0); }
 		public DataTypeNameContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -10986,7 +12099,11 @@ public class CQLParser extends Parser {
 			if ( !(((((_la - 113)) & ~0x3f) == 0 && ((1L << (_la - 113)) & ((1L << (K_SET - 113)) | (1L << (K_TIMESTAMP - 113)) | (1L << (K_UUID - 113)) | (1L << (K_ASCII - 113)) | (1L << (K_BIGINT - 113)) | (1L << (K_BLOB - 113)) | (1L << (K_BOOLEAN - 113)) | (1L << (K_COUNTER - 113)) | (1L << (K_DATE - 113)) | (1L << (K_DECIMAL - 113)) | (1L << (K_DOUBLE - 113)) | (1L << (K_FLOAT - 113)) | (1L << (K_FROZEN - 113)) | (1L << (K_INET - 113)) | (1L << (K_INT - 113)) | (1L << (K_LIST - 113)) | (1L << (K_MAP - 113)) | (1L << (K_SMALLINT - 113)) | (1L << (K_TEXT - 113)) | (1L << (K_TIMEUUID - 113)) | (1L << (K_TIME - 113)) | (1L << (K_TINYINT - 113)) | (1L << (K_TUPLE - 113)) | (1L << (K_VARCHAR - 113)) | (1L << (K_VARINT - 113)) | (1L << (OBJECT_NAME - 113)))) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
-			consume();
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
 			}
 		}
 		catch (RecognitionException re) {
@@ -11001,20 +12118,20 @@ public class CQLParser extends Parser {
 	}
 
 	public static class DataTypeDefinitionContext extends ParserRuleContext {
+		public SyntaxBracketLaContext syntaxBracketLa() {
+			return getRuleContext(SyntaxBracketLaContext.class,0);
+		}
 		public List<DataTypeNameContext> dataTypeName() {
 			return getRuleContexts(DataTypeNameContext.class);
+		}
+		public DataTypeNameContext dataTypeName(int i) {
+			return getRuleContext(DataTypeNameContext.class,i);
 		}
 		public SyntaxBracketRaContext syntaxBracketRa() {
 			return getRuleContext(SyntaxBracketRaContext.class,0);
 		}
 		public List<SyntaxCommaContext> syntaxComma() {
 			return getRuleContexts(SyntaxCommaContext.class);
-		}
-		public DataTypeNameContext dataTypeName(int i) {
-			return getRuleContext(DataTypeNameContext.class,i);
-		}
-		public SyntaxBracketLaContext syntaxBracketLa() {
-			return getRuleContext(SyntaxBracketLaContext.class,0);
 		}
 		public SyntaxCommaContext syntaxComma(int i) {
 			return getRuleContext(SyntaxCommaContext.class,i);
@@ -11040,23 +12157,28 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2070); syntaxBracketLa();
-			setState(2071); dataTypeName();
+			setState(2070);
+			syntaxBracketLa();
+			setState(2071);
+			dataTypeName();
 			setState(2077);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==COMMA) {
 				{
 				{
-				setState(2072); syntaxComma();
-				setState(2073); dataTypeName();
+				setState(2072);
+				syntaxComma();
+				setState(2073);
+				dataTypeName();
 				}
 				}
 				setState(2079);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			}
-			setState(2080); syntaxBracketRa();
+			setState(2080);
+			syntaxBracketRa();
 			}
 		}
 		catch (RecognitionException re) {
@@ -11096,17 +12218,20 @@ public class CQLParser extends Parser {
 		enterRule(_localctx, 318, RULE_orderDirection);
 		try {
 			setState(2084);
+			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case K_ASC:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(2082); kwAsc();
+				setState(2082);
+				kwAsc();
 				}
 				break;
 			case K_DESC:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(2083); kwDesc();
+				setState(2083);
+				kwDesc();
 				}
 				break;
 			default:
@@ -11146,7 +12271,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2086); match(OBJECT_NAME);
+			setState(2086);
+			match(OBJECT_NAME);
 			}
 		}
 		catch (RecognitionException re) {
@@ -11182,7 +12308,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2088); match(OBJECT_NAME);
+			setState(2088);
+			match(OBJECT_NAME);
 			}
 		}
 		catch (RecognitionException re) {
@@ -11220,7 +12347,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2090); stringLiteral();
+			setState(2090);
+			stringLiteral();
 			}
 		}
 		catch (RecognitionException re) {
@@ -11256,7 +12384,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2092); match(OBJECT_NAME);
+			setState(2092);
+			match(OBJECT_NAME);
 			}
 		}
 		catch (RecognitionException re) {
@@ -11292,7 +12421,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2094); match(OBJECT_NAME);
+			setState(2094);
+			match(OBJECT_NAME);
 			}
 		}
 		catch (RecognitionException re) {
@@ -11328,7 +12458,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2096); match(OBJECT_NAME);
+			setState(2096);
+			match(OBJECT_NAME);
 			}
 		}
 		catch (RecognitionException re) {
@@ -11364,7 +12495,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2098); match(OBJECT_NAME);
+			setState(2098);
+			match(OBJECT_NAME);
 			}
 		}
 		catch (RecognitionException re) {
@@ -11400,7 +12532,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2100); match(OBJECT_NAME);
+			setState(2100);
+			match(OBJECT_NAME);
 			}
 		}
 		catch (RecognitionException re) {
@@ -11436,7 +12569,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2102); match(OBJECT_NAME);
+			setState(2102);
+			match(OBJECT_NAME);
 			}
 		}
 		catch (RecognitionException re) {
@@ -11474,7 +12608,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2104); stringLiteral();
+			setState(2104);
+			stringLiteral();
 			}
 		}
 		catch (RecognitionException re) {
@@ -11510,7 +12645,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2106); match(OBJECT_NAME);
+			setState(2106);
+			match(OBJECT_NAME);
 			}
 		}
 		catch (RecognitionException re) {
@@ -11551,8 +12687,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2108); paramName();
-			setState(2109); dataType();
+			setState(2108);
+			paramName();
+			setState(2109);
+			dataType();
 			}
 		}
 		catch (RecognitionException re) {
@@ -11588,7 +12726,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2111); match(OBJECT_NAME);
+			setState(2111);
+			match(OBJECT_NAME);
 			}
 		}
 		catch (RecognitionException re) {
@@ -11624,7 +12763,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2113); match(K_ADD);
+			setState(2113);
+			match(K_ADD);
 			}
 		}
 		catch (RecognitionException re) {
@@ -11660,7 +12800,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2115); match(K_AGGREGATE);
+			setState(2115);
+			match(K_AGGREGATE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -11696,7 +12837,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2117); match(K_ALL);
+			setState(2117);
+			match(K_ALL);
 			}
 		}
 		catch (RecognitionException re) {
@@ -11733,8 +12875,10 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2119); match(K_ALL);
-			setState(2120); match(K_PERMISSIONS);
+			setState(2119);
+			match(K_ALL);
+			setState(2120);
+			match(K_PERMISSIONS);
 			}
 		}
 		catch (RecognitionException re) {
@@ -11770,7 +12914,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2122); match(K_ALLOW);
+			setState(2122);
+			match(K_ALLOW);
 			}
 		}
 		catch (RecognitionException re) {
@@ -11806,7 +12951,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2124); match(K_ALTER);
+			setState(2124);
+			match(K_ALTER);
 			}
 		}
 		catch (RecognitionException re) {
@@ -11842,7 +12988,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2126); match(K_AND);
+			setState(2126);
+			match(K_AND);
 			}
 		}
 		catch (RecognitionException re) {
@@ -11878,7 +13025,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2128); match(K_APPLY);
+			setState(2128);
+			match(K_APPLY);
 			}
 		}
 		catch (RecognitionException re) {
@@ -11914,7 +13062,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2130); match(K_AS);
+			setState(2130);
+			match(K_AS);
 			}
 		}
 		catch (RecognitionException re) {
@@ -11950,7 +13099,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2132); match(K_ASC);
+			setState(2132);
+			match(K_ASC);
 			}
 		}
 		catch (RecognitionException re) {
@@ -11986,7 +13136,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2134); match(K_AUTHORIZE);
+			setState(2134);
+			match(K_AUTHORIZE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12022,7 +13173,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2136); match(K_BATCH);
+			setState(2136);
+			match(K_BATCH);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12058,7 +13210,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2138); match(K_BEGIN);
+			setState(2138);
+			match(K_BEGIN);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12094,7 +13247,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2140); match(K_BY);
+			setState(2140);
+			match(K_BY);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12130,7 +13284,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2142); match(K_CALLED);
+			setState(2142);
+			match(K_CALLED);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12166,7 +13321,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2144); match(K_CLUSTERING);
+			setState(2144);
+			match(K_CLUSTERING);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12202,7 +13358,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2146); match(K_COMPACT);
+			setState(2146);
+			match(K_COMPACT);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12238,7 +13395,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2148); match(K_CONTAINS);
+			setState(2148);
+			match(K_CONTAINS);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12274,7 +13432,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2150); match(K_CREATE);
+			setState(2150);
+			match(K_CREATE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12310,7 +13469,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2152); match(K_DELETE);
+			setState(2152);
+			match(K_DELETE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12346,7 +13506,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2154); match(K_DESC);
+			setState(2154);
+			match(K_DESC);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12382,7 +13543,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2156); match(K_DESCRIBE);
+			setState(2156);
+			match(K_DESCRIBE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12418,7 +13580,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2158); match(K_DISTINCT);
+			setState(2158);
+			match(K_DISTINCT);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12454,7 +13617,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2160); match(K_DROP);
+			setState(2160);
+			match(K_DROP);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12490,7 +13654,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2162); match(K_DURABLE_WRITES);
+			setState(2162);
+			match(K_DURABLE_WRITES);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12526,7 +13691,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2164); match(K_ENTRIES);
+			setState(2164);
+			match(K_ENTRIES);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12562,7 +13728,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2166); match(K_EXECUTE);
+			setState(2166);
+			match(K_EXECUTE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12598,7 +13765,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2168); match(K_EXISTS);
+			setState(2168);
+			match(K_EXISTS);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12634,7 +13802,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2170); match(K_FILTERING);
+			setState(2170);
+			match(K_FILTERING);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12670,7 +13839,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2172); match(K_FINALFUNC);
+			setState(2172);
+			match(K_FINALFUNC);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12706,7 +13876,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2174); match(K_FROM);
+			setState(2174);
+			match(K_FROM);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12742,7 +13913,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2176); match(K_FULL);
+			setState(2176);
+			match(K_FULL);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12778,7 +13950,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2178); match(K_FUNCTION);
+			setState(2178);
+			match(K_FUNCTION);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12814,7 +13987,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2180); match(K_FUNCTIONS);
+			setState(2180);
+			match(K_FUNCTIONS);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12850,7 +14024,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2182); match(K_GRANT);
+			setState(2182);
+			match(K_GRANT);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12886,7 +14061,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2184); match(K_IF);
+			setState(2184);
+			match(K_IF);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12922,7 +14098,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2186); match(K_IN);
+			setState(2186);
+			match(K_IN);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12958,7 +14135,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2188); match(K_INDEX);
+			setState(2188);
+			match(K_INDEX);
 			}
 		}
 		catch (RecognitionException re) {
@@ -12994,7 +14172,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2190); match(K_INITCOND);
+			setState(2190);
+			match(K_INITCOND);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13030,7 +14209,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2192); match(K_INPUT);
+			setState(2192);
+			match(K_INPUT);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13066,7 +14246,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2194); match(K_INSERT);
+			setState(2194);
+			match(K_INSERT);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13102,7 +14283,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2196); match(K_INTO);
+			setState(2196);
+			match(K_INTO);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13138,7 +14320,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2198); match(K_IS);
+			setState(2198);
+			match(K_IS);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13174,7 +14357,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2200); match(K_JSON);
+			setState(2200);
+			match(K_JSON);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13210,7 +14394,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2202); match(K_KEY);
+			setState(2202);
+			match(K_KEY);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13246,7 +14431,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2204); match(K_KEYS);
+			setState(2204);
+			match(K_KEYS);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13282,7 +14468,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2206); match(K_KEYSPACE);
+			setState(2206);
+			match(K_KEYSPACE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13318,7 +14505,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2208); match(K_KEYSPACES);
+			setState(2208);
+			match(K_KEYSPACES);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13354,7 +14542,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2210); match(K_LANGUAGE);
+			setState(2210);
+			match(K_LANGUAGE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13390,7 +14579,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2212); match(K_LIMIT);
+			setState(2212);
+			match(K_LIMIT);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13426,7 +14616,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2214); match(K_LIST);
+			setState(2214);
+			match(K_LIST);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13462,7 +14653,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2216); match(K_LOGGED);
+			setState(2216);
+			match(K_LOGGED);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13498,7 +14690,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2218); match(K_LOGIN);
+			setState(2218);
+			match(K_LOGIN);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13534,7 +14727,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2220); match(K_MATERIALIZED);
+			setState(2220);
+			match(K_MATERIALIZED);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13570,7 +14764,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2222); match(K_MODIFY);
+			setState(2222);
+			match(K_MODIFY);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13606,7 +14801,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2224); match(K_NOSUPERUSER);
+			setState(2224);
+			match(K_NOSUPERUSER);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13642,7 +14838,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2226); match(K_NORECURSIVE);
+			setState(2226);
+			match(K_NORECURSIVE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13678,7 +14875,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2228); match(K_NOT);
+			setState(2228);
+			match(K_NOT);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13714,7 +14912,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2230); match(K_NULL);
+			setState(2230);
+			match(K_NULL);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13750,7 +14949,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2232); match(K_OF);
+			setState(2232);
+			match(K_OF);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13786,7 +14986,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2234); match(K_ON);
+			setState(2234);
+			match(K_ON);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13822,7 +15023,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2236); match(K_OPTIONS);
+			setState(2236);
+			match(K_OPTIONS);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13858,7 +15060,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2238); match(K_OR);
+			setState(2238);
+			match(K_OR);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13894,7 +15097,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2240); match(K_ORDER);
+			setState(2240);
+			match(K_ORDER);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13930,7 +15134,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2242); match(K_PASSWORD);
+			setState(2242);
+			match(K_PASSWORD);
 			}
 		}
 		catch (RecognitionException re) {
@@ -13966,7 +15171,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2244); match(K_PRIMARY);
+			setState(2244);
+			match(K_PRIMARY);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14002,7 +15208,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2246); match(K_RENAME);
+			setState(2246);
+			match(K_RENAME);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14038,7 +15245,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2248); match(K_REPLACE);
+			setState(2248);
+			match(K_REPLACE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14074,7 +15282,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2250); match(K_REPLICATION);
+			setState(2250);
+			match(K_REPLICATION);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14110,7 +15319,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2252); match(K_RETURNS);
+			setState(2252);
+			match(K_RETURNS);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14146,7 +15356,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2254); match(K_ROLE);
+			setState(2254);
+			match(K_ROLE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14182,7 +15393,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2256); match(K_ROLES);
+			setState(2256);
+			match(K_ROLES);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14218,7 +15430,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2258); match(K_SELECT);
+			setState(2258);
+			match(K_SELECT);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14254,7 +15467,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2260); match(K_SET);
+			setState(2260);
+			match(K_SET);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14290,7 +15504,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2262); match(K_SFUNC);
+			setState(2262);
+			match(K_SFUNC);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14326,7 +15541,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2264); match(K_STORAGE);
+			setState(2264);
+			match(K_STORAGE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14362,7 +15578,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2266); match(K_STYPE);
+			setState(2266);
+			match(K_STYPE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14398,7 +15615,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2268); match(K_SUPERUSER);
+			setState(2268);
+			match(K_SUPERUSER);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14434,7 +15652,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2270); match(K_TABLE);
+			setState(2270);
+			match(K_TABLE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14470,7 +15689,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2272); match(K_TIMESTAMP);
+			setState(2272);
+			match(K_TIMESTAMP);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14506,7 +15726,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2274); match(K_TO);
+			setState(2274);
+			match(K_TO);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14542,7 +15763,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2276); match(K_TRIGGER);
+			setState(2276);
+			match(K_TRIGGER);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14578,7 +15800,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2278); match(K_TRUNCATE);
+			setState(2278);
+			match(K_TRUNCATE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14614,7 +15837,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2280); match(K_TTL);
+			setState(2280);
+			match(K_TTL);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14650,7 +15874,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2282); match(K_TYPE);
+			setState(2282);
+			match(K_TYPE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14686,7 +15911,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2284); match(K_UNLOGGED);
+			setState(2284);
+			match(K_UNLOGGED);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14722,7 +15948,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2286); match(K_UPDATE);
+			setState(2286);
+			match(K_UPDATE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14758,7 +15985,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2288); match(K_USE);
+			setState(2288);
+			match(K_USE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14794,7 +16022,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2290); match(K_USER);
+			setState(2290);
+			match(K_USER);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14830,7 +16059,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2292); match(K_USERS);
+			setState(2292);
+			match(K_USERS);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14866,7 +16096,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2294); match(K_USING);
+			setState(2294);
+			match(K_USING);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14902,7 +16133,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2296); match(K_VALUES);
+			setState(2296);
+			match(K_VALUES);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14938,7 +16170,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2298); match(K_VIEW);
+			setState(2298);
+			match(K_VIEW);
 			}
 		}
 		catch (RecognitionException re) {
@@ -14974,7 +16207,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2300); match(K_WHERE);
+			setState(2300);
+			match(K_WHERE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -15010,7 +16244,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2302); match(K_WITH);
+			setState(2302);
+			match(K_WITH);
 			}
 		}
 		catch (RecognitionException re) {
@@ -15046,7 +16281,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2304); match(K_REVOKE);
+			setState(2304);
+			match(K_REVOKE);
 			}
 		}
 		catch (RecognitionException re) {
@@ -15082,7 +16318,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2306); match(EOF);
+			setState(2306);
+			match(EOF);
 			}
 		}
 		catch (RecognitionException re) {
@@ -15118,7 +16355,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2308); match(LR_BRACKET);
+			setState(2308);
+			match(LR_BRACKET);
 			}
 		}
 		catch (RecognitionException re) {
@@ -15154,7 +16392,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2310); match(RR_BRACKET);
+			setState(2310);
+			match(RR_BRACKET);
 			}
 		}
 		catch (RecognitionException re) {
@@ -15190,7 +16429,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2312); match(LC_BRACKET);
+			setState(2312);
+			match(LC_BRACKET);
 			}
 		}
 		catch (RecognitionException re) {
@@ -15226,7 +16466,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2314); match(RC_BRACKET);
+			setState(2314);
+			match(RC_BRACKET);
 			}
 		}
 		catch (RecognitionException re) {
@@ -15262,7 +16503,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2316); match(OPERATOR_LT);
+			setState(2316);
+			match(OPERATOR_LT);
 			}
 		}
 		catch (RecognitionException re) {
@@ -15298,7 +16540,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2318); match(OPERATOR_GT);
+			setState(2318);
+			match(OPERATOR_GT);
 			}
 		}
 		catch (RecognitionException re) {
@@ -15334,7 +16577,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2320); match(LS_BRACKET);
+			setState(2320);
+			match(LS_BRACKET);
 			}
 		}
 		catch (RecognitionException re) {
@@ -15370,7 +16614,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2322); match(RS_BRACKET);
+			setState(2322);
+			match(RS_BRACKET);
 			}
 		}
 		catch (RecognitionException re) {
@@ -15406,7 +16651,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2324); match(COMMA);
+			setState(2324);
+			match(COMMA);
 			}
 		}
 		catch (RecognitionException re) {
@@ -15442,7 +16688,8 @@ public class CQLParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(2326); match(COLON);
+			setState(2326);
+			match(COLON);
 			}
 		}
 		catch (RecognitionException re) {
@@ -15457,7 +16704,7 @@ public class CQLParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\u00b2\u091b\4\2\t"+
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\u00b2\u091b\4\2\t"+
 		"\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13"+
 		"\t\13\4\f\t\f\4\r\t\r\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22"+
 		"\4\23\t\23\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31\t\31"+
@@ -15669,12 +16916,12 @@ public class CQLParser extends Parser {
 		"\u0200\u0202\u0204\u0206\u0208\u020a\u020c\u020e\u0210\u0212\u0214\u0216"+
 		"\u0218\u021a\u021c\u021e\u0220\u0222\u0224\u0226\u0228\u022a\u022c\u022e"+
 		"\u0230\2\7\4\2\24\24\26\26\3\2\u00ad\u00b1\3\2\u00a7\u00a8\4\299\177\177"+
-		"\7\2ss{{\u0089\u0089\u008f\u00a4\u00ab\u00ab\u0914\2\u0233\3\2\2\2\4\u0243"+
-		"\3\2\2\2\6\u0250\3\2\2\2\b\u0252\3\2\2\2\n\u0279\3\2\2\2\f\u027b\3\2\2"+
-		"\2\16\u0282\3\2\2\2\20\u0285\3\2\2\2\22\u028f\3\2\2\2\24\u029b\3\2\2\2"+
-		"\26\u02ae\3\2\2\2\30\u02d6\3\2\2\2\32\u02d8\3\2\2\2\34\u02e5\3\2\2\2\36"+
-		"\u02ee\3\2\2\2 \u02fd\3\2\2\2\"\u0308\3\2\2\2$\u0316\3\2\2\2&\u0337\3"+
-		"\2\2\2(\u033e\3\2\2\2*\u0347\3\2\2\2,\u0352\3\2\2\2.\u0354\3\2\2\2\60"+
+		"\7\2ss{{\u0089\u0089\u008f\u00a4\u00ab\u00ab\2\u0914\2\u0233\3\2\2\2\4"+
+		"\u0243\3\2\2\2\6\u0250\3\2\2\2\b\u0252\3\2\2\2\n\u0279\3\2\2\2\f\u027b"+
+		"\3\2\2\2\16\u0282\3\2\2\2\20\u0285\3\2\2\2\22\u028f\3\2\2\2\24\u029b\3"+
+		"\2\2\2\26\u02ae\3\2\2\2\30\u02d6\3\2\2\2\32\u02d8\3\2\2\2\34\u02e5\3\2"+
+		"\2\2\36\u02ee\3\2\2\2 \u02fd\3\2\2\2\"\u0308\3\2\2\2$\u0316\3\2\2\2&\u0337"+
+		"\3\2\2\2(\u033e\3\2\2\2*\u0347\3\2\2\2,\u0352\3\2\2\2.\u0354\3\2\2\2\60"+
 		"\u0365\3\2\2\2\62\u0380\3\2\2\2\64\u0382\3\2\2\2\66\u038f\3\2\2\28\u0395"+
 		"\3\2\2\2:\u03b3\3\2\2\2<\u03b5\3\2\2\2>\u03c1\3\2\2\2@\u03c5\3\2\2\2B"+
 		"\u03d2\3\2\2\2D\u03de\3\2\2\2F\u03e1\3\2\2\2H\u03e9\3\2\2\2J\u03ee\3\2"+
